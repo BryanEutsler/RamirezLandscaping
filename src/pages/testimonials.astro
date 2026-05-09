@@ -1,0 +1,57 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import StarRating from "@/components/StarRating.astro";
+import { testimonials } from "@/data/content";
+import heroEstate from "@/assets/photos/hero-estate.png";
+
+const testimonialSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Testimonials",
+  description: "Curated client reviews for Ramirez Landscaping.",
+};
+---
+
+<BaseLayout title="Testimonials | Ramirez Landscaping" description="Read reviews from residential and commercial Ramirez Landscaping clients." schema={testimonialSchema}>
+  <PageHero
+    title="Testimonials"
+    description="Curated client reviews that speak to craftsmanship, reliability, and the experience of working with our team."
+    image={heroEstate}
+    crumbs={[{ label: "Home", href: "/" }, { label: "Testimonials" }]}
+  />
+
+  <section class="section-pad">
+    <div class="container-shell grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {
+        testimonials.map((item) => (
+          <article class="gold-frame rounded-[1.7rem] bg-midnight p-7">
+            <StarRating rating={item.rating} />
+            <p class="mt-6 text-lg leading-8 text-ivory/92">“{item.quote}”</p>
+            <div class="mt-8 border-t border-white/8 pt-5">
+              <h2 class="font-[var(--font-heading)] text-3xl text-ivory">{item.name}</h2>
+              <p class="mt-1 font-[var(--font-label)] text-xs uppercase tracking-[0.2em] text-white/55">
+                {item.projectType}
+              </p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <div class="container-shell mt-12">
+      <div class="rounded-[1.8rem] border border-champagne/18 bg-[linear-gradient(180deg,#113722,#0d2418)] p-8 md:p-10">
+        <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">
+          Third-Party Reviews
+        </p>
+        <h2 class="mt-3 font-[var(--font-display)] text-4xl text-ivory md:text-5xl">
+          Review feed integration ready for Google Business Profile or Yelp.
+        </h2>
+        <p class="mt-5 max-w-3xl text-base leading-8 text-white/72">
+          This demo section is prepared for a future live review feed once the client confirms the
+          preferred source and credentials. In the meantime, curated testimonials are fully reusable
+          across service, case study, and contact pages.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

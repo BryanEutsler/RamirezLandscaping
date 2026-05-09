@@ -1,0 +1,24 @@
+---
+type Props = {
+  rating: number;
+  light?: boolean;
+};
+
+const { rating, light = false } = Astro.props;
+---
+
+<div class="flex items-center gap-1" aria-label={`${rating} star rating`}>
+  {
+    Array.from({ length: rating }).map(() => (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        class:list={["h-4 w-4", light ? "text-champagne" : "text-champagne"]}
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="m12 2.8 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17l-5.6 3 1.1-6.2L3 9.4l6.2-.9L12 2.8Z" />
+      </svg>
+    ))
+  }
+</div>

@@ -1,0 +1,56 @@
+---
+type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+type Props = {
+  items: FAQItem[];
+  light?: boolean;
+};
+
+const { items, light = false } = Astro.props;
+---
+
+<div class="grid gap-4" data-faq-root>
+  {
+    items.map((item) => (
+      <article
+        class:list={[
+          "overflow-hidden rounded-[1.4rem] border",
+          light ? "border-black/10 bg-white" : "border-champagne/16 bg-white/[0.025]",
+        ]}
+      >
+        <button
+          type="button"
+          class:list={[
+            "flex w-full items-center justify-between gap-4 px-6 py-5 text-left",
+            light ? "text-midnight" : "text-ivory",
+          ]}
+          data-faq-trigger
+          aria-expanded="false"
+        >
+          <span class="font-[var(--font-heading)] text-2xl leading-tight">{item.question}</span>
+          <span class="text-xl text-champagne">+</span>
+        </button>
+        <div class="hidden px-6 pb-6" data-faq-panel>
+          <p class:list={[light ? "text-charcoal/80" : "text-white/68", "max-w-3xl leading-8"]}>{item.answer}</p>
+        </div>
+      </article>
+    ))
+  }
+</div>
+
+<script>
+  document.querySelectorAll("[data-faq-root]").forEach((root) => {
+    root.querySelectorAll("[data-faq-trigger]").forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        const panel = trigger.parentElement?.querySelector("[data-faq-panel]");
+        const expanded = trigger.getAttribute("aria-expanded") === "true";
+        trigger.setAttribute("aria-expanded", String(!expanded));
+        trigger.querySelector("span:last-child")?.replaceChildren(document.createTextNode(expanded ? "+" : "−"));
+        panel?.classList.toggle("hidden", expanded);
+      });
+    });
+  });
+</script>

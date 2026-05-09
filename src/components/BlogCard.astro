@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import type { BlogPost } from "@/data/content";
+
+type Props = {
+  post: BlogPost;
+  featured?: boolean;
+};
+
+const { post, featured = false } = Astro.props;
+---
+
+<article class:list={["overflow-hidden rounded-[1.7rem] border border-black/10 bg-white shadow-[0_22px_42px_rgba(0,0,0,0.06)]", featured && "lg:grid lg:grid-cols-[1.1fr_0.9fr]"]}>
+  <a href={`/blog/${post.slug}`} class="block">
+    <Image
+      src={post.featuredImage}
+      alt={post.title}
+      class:list={["w-full object-cover", featured ? "h-full min-h-[22rem]" : "h-60"]}
+      widths={[520, 900]}
+      format="webp"
+    />
+  </a>
+  <div class="p-7">
+    <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">{post.category}</p>
+    <h3 class="mt-4 font-[var(--font-display)] text-4xl leading-tight text-midnight">{post.title}</h3>
+    <p class="mt-4 text-base leading-8 text-charcoal/80">{post.excerpt}</p>
+    <div class="mt-6 flex flex-wrap gap-4 text-sm uppercase tracking-[0.16em] text-charcoal/50">
+      <span>{post.published}</span>
+      <span>{post.readTime}</span>
+    </div>
+    <a href={`/blog/${post.slug}`} class="link-arrow mt-6 inline-flex text-sm uppercase tracking-[0.2em] text-deep-gold">
+      Read the Full Article
+    </a>
+  </div>
+</article>

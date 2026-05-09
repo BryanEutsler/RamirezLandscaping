@@ -1,0 +1,66 @@
+---
+import { footerNavigation, mainNavigation } from "@/data/navigation";
+import { services } from "@/data/content";
+import { siteConfig } from "@/data/site";
+---
+
+<footer class="border-t border-champagne/15 bg-[#090909]">
+  <div class="container-shell section-pad grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
+    <div>
+      <img src="/brand/ramirez-logo.png" alt="Ramirez Landscaping logo" class="h-20 w-auto" />
+      <p class="mt-6 max-w-sm text-sm leading-7 text-white/68">
+        Premium landscaping services for discerning residential and commercial clients who expect
+        excellence.
+      </p>
+    </div>
+    <div>
+      <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/80">
+        Quick Links
+      </p>
+      <div class="mt-4 grid gap-3 text-sm text-white/72">
+        {mainNavigation.map((item) => <a href={item.href}>{item.label}</a>)}
+      </div>
+    </div>
+    <div>
+      <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/80">
+        Services
+      </p>
+      <div class="mt-4 grid gap-3 text-sm text-white/72">
+        {services.slice(0, 6).map((service) => <a href={`/services/${service.slug}`}>{service.name}</a>)}
+      </div>
+    </div>
+    <div>
+      <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/80">
+        Contact
+      </p>
+      <div class="mt-4 space-y-3 text-sm text-white/72">
+        <p>{siteConfig.phone}</p>
+        <p>{siteConfig.email}</p>
+        <p>Mon - Fri: 7am - 5pm</p>
+        <p>Santa Barbara, CA</p>
+      </div>
+      <div class="mt-5 flex flex-wrap gap-3 text-sm text-white/72">
+        {
+          siteConfig.social.map((item) => (
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-full border border-white/10 px-4 py-2 hover:border-champagne/40 hover:text-champagne"
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/8 py-5">
+    <div class="container-shell flex flex-col gap-4 text-sm text-white/52 md:flex-row md:items-center md:justify-between">
+      <p>© 2026 Ramirez Landscaping. All rights reserved.</p>
+      <div class="flex flex-wrap gap-5">
+        {footerNavigation.map((item) => <a href={item.href}>{item.label}</a>)}
+      </div>
+    </div>
+  </div>
+</footer>

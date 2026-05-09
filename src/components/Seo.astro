@@ -1,0 +1,43 @@
+---
+type Props = {
+  title: string;
+  description: string;
+  canonical?: string;
+  image?: string;
+  noindex?: boolean;
+  schema?: Record<string, unknown> | Array<Record<string, unknown>>;
+};
+
+const {
+  title,
+  description,
+  canonical,
+  image = "/brand/ramirez-logo.png",
+  noindex = false,
+  schema,
+} = Astro.props;
+
+const site = Astro.site?.toString().replace(/\/$/, "") ?? "";
+const canonicalUrl = canonical ? new URL(canonical, site).toString() : undefined;
+const imageUrl = new URL(image, site || "https://www.ramirezlandscaping.com").toString();
+const schemaData = Array.isArray(schema) ? schema : schema ? [schema] : [];
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:site_name" content="Ramirez Landscaping" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+{
+  schemaData.map((item) => (
+    <script type="application/ld+json" set:html={JSON.stringify(item)} />
+  ))
+}

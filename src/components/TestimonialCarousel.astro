@@ -1,0 +1,87 @@
+---
+import type { Testimonial } from "@/data/content";
+import StarRating from "@/components/StarRating.astro";
+
+type Props = {
+  items: Testimonial[];
+};
+
+const { items } = Astro.props;
+---
+
+<section class="relative overflow-hidden rounded-[2rem] border border-champagne/18 bg-midnight px-4 py-8 md:px-8 md:py-10">
+  <div class="flex items-center justify-between gap-4">
+    <div>
+      <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">
+        Client Experiences
+      </p>
+      <h2 class="mt-3 font-[var(--font-display)] text-4xl text-ivory md:text-5xl">Trusted by discerning clients</h2>
+    </div>
+    <div class="hidden gap-3 md:flex">
+      <button
+        type="button"
+        class="carousel-control inline-flex h-12 w-12 items-center justify-center rounded-full border border-champagne/20 text-champagne"
+        data-direction="prev"
+        aria-label="Previous testimonial"
+      >
+        ←
+      </button>
+      <button
+        type="button"
+        class="carousel-control inline-flex h-12 w-12 items-center justify-center rounded-full border border-champagne/20 text-champagne"
+        data-direction="next"
+        aria-label="Next testimonial"
+      >
+        →
+      </button>
+    </div>
+  </div>
+
+  <div class="mt-10 grid gap-5 lg:grid-cols-3" data-carousel-track>
+    {
+      items.map((item, index) => (
+        <article
+          class="testimonial-card rounded-[1.6rem] border border-champagne/18 bg-white/[0.025] p-6 transition duration-300"
+          data-index={index}
+        >
+          <StarRating rating={item.rating} />
+          <p class="mt-5 text-lg leading-8 text-ivory/90">“{item.quote}”</p>
+          <div class="mt-6">
+            <p class="font-[var(--font-heading)] text-2xl text-ivory">{item.name}</p>
+            <p class="mt-1 text-sm uppercase tracking-[0.18em] text-white/55">{item.projectType}</p>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<script>
+  const carouselTrack = document.querySelector("[data-carousel-track]");
+
+  if (carouselTrack) {
+    const cards = [...carouselTrack.querySelectorAll(".testimonial-card")];
+    const controls = [...document.querySelectorAll(".carousel-control")];
+    let active = 0;
+
+    const render = () => {
+      cards.forEach((card, index) => {
+        const visible = [active, (active + 1) % cards.length, (active + 2) % cards.length].includes(index);
+        card.classList.toggle("hidden", !visible && window.innerWidth >= 1024);
+      });
+    };
+
+    const next = (direction) => {
+      active = direction === "next" ? (active + 1) % cards.length : (active - 1 + cards.length) % cards.length;
+      render();
+    };
+
+    controls.forEach((button) => {
+      button.addEventListener("click", () => next(button.dataset.direction || "next"));
+    });
+
+    const interval = setInterval(() => next("next"), 5000);
+    window.addEventListener("beforeunload", () => clearInterval(interval));
+    render();
+  }
+</script>

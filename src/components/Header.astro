@@ -1,0 +1,156 @@
+---
+import { mainNavigation } from "@/data/navigation";
+import { services } from "@/data/content";
+---
+
+<header class="fixed inset-x-0 top-0 z-50">
+  <a
+    href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-white focus:px-4 focus:py-3 focus:text-black"
+  >
+    Skip to content
+  </a>
+  <div class="nav-backdrop border-b border-white/8">
+    <div class="container-shell flex items-center justify-between gap-6 py-4">
+      <a href="/" class="shrink-0">
+        <img
+          src="/brand/ramirez-logo.png"
+          alt="Ramirez Landscaping logo"
+          class="h-16 w-auto md:h-20"
+          loading="eager"
+        />
+      </a>
+
+      <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
+        {
+          mainNavigation.map((item) =>
+            item.label === "Services" ? (
+              <div class="group relative">
+                <a
+                  href={item.href}
+                  class="font-[var(--font-body)] text-[0.95rem] text-ivory hover:text-champagne"
+                >
+                  {item.label}
+                </a>
+                <div class="pointer-events-none absolute left-1/2 top-full mt-5 w-[29rem] -translate-x-1/2 opacity-0 transition group-hover:pointer-events-auto group-hover:opacity-100">
+                  <div class="gold-frame rounded-[1.75rem] bg-midnight p-6 shadow-2xl">
+                    <p class="font-[var(--font-label)] text-[0.65rem] uppercase tracking-[0.24em] text-champagne/80">
+                      Service Categories
+                    </p>
+                    <div class="mt-4 grid gap-3 md:grid-cols-2">
+                      {
+                        services.map((service) => (
+                          <a
+                            href={`/services/${service.slug}`}
+                            class="rounded-2xl border border-white/7 bg-white/[0.02] px-4 py-4 hover:border-champagne/45 hover:bg-white/[0.04]"
+                          >
+                            <p class="font-[var(--font-heading)] text-xl text-ivory">{service.name}</p>
+                            <p class="mt-1 text-sm leading-6 text-white/68">{service.shortDescription}</p>
+                          </a>
+                        ))
+                      }
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a
+                href={item.href}
+                class:list={[
+                  "font-[var(--font-body)] text-[0.95rem] text-ivory hover:text-champagne",
+                  Astro.url.pathname === item.href && "text-champagne",
+                ]}
+              >
+                {item.label}
+              </a>
+            ),
+          )
+        }
+      </nav>
+
+      <div class="hidden lg:block">
+        <a href="/contact" class="button-gold rounded-xl px-6 py-4 text-[0.78rem]">
+          Request a Free Estimate
+        </a>
+      </div>
+
+      <button
+        id="menu-toggle"
+        class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-ivory lg:hidden"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span class="flex flex-col gap-1.5">
+          <span class="h-px w-5 bg-current"></span>
+          <span class="h-px w-5 bg-current"></span>
+          <span class="h-px w-5 bg-current"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-40 hidden bg-black/85 opacity-0 backdrop-blur-xl transition"
+  aria-hidden="true"
+>
+  <div class="flex min-h-full flex-col px-6 pt-28">
+    <nav class="mx-auto flex w-full max-w-lg flex-1 flex-col gap-3" aria-label="Mobile navigation">
+      {
+        mainNavigation.map((item) => (
+          <a
+            href={item.href}
+            class="rounded-2xl border border-white/8 px-5 py-4 font-[var(--font-heading)] text-3xl text-ivory"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+      <div class="mt-3 rounded-[1.5rem] border border-champagne/20 bg-white/[0.03] p-5">
+        <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/80">
+          Services
+        </p>
+        <div class="mt-3 grid gap-2">
+          {
+            services.map((service) => (
+              <a href={`/services/${service.slug}`} class="text-sm leading-6 text-white/72">
+                {service.name}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      <a href="/contact" class="button-gold mt-4 rounded-xl px-6 py-4 text-center text-[0.78rem]">
+        Request a Free Estimate
+      </a>
+    </nav>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  if (toggle && menu) {
+    toggle.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!open));
+      menu.classList.toggle("hidden", open);
+      requestAnimationFrame(() => {
+        menu.classList.toggle("opacity-0", open);
+      });
+      document.body.classList.toggle("overflow-hidden", !open);
+    });
+
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        toggle.setAttribute("aria-expanded", "false");
+        menu.classList.add("opacity-0");
+        setTimeout(() => menu.classList.add("hidden"), 120);
+        document.body.classList.remove("overflow-hidden");
+      });
+    });
+  }
+</script>

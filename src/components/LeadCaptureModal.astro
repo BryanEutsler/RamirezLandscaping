@@ -1,0 +1,81 @@
+<div
+  id="lead-capture-modal"
+  class="fixed inset-0 z-[65] hidden items-end bg-black/72 px-4 pb-4 pt-24 md:items-center md:justify-center"
+  aria-hidden="true"
+>
+  <div class="leaf-pattern gold-frame relative w-full max-w-2xl rounded-[2rem] bg-midnight p-8 md:p-10">
+    <button
+      type="button"
+      class="absolute right-5 top-5 rounded-full border border-white/10 px-4 py-2 text-sm text-white/70"
+      data-lead-modal-close
+      aria-label="Close lead capture"
+    >
+      Close
+    </button>
+    <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/80">
+      Complimentary Consultation
+    </p>
+    <h2 class="mt-4 max-w-xl font-[var(--font-display)] text-4xl leading-tight text-ivory md:text-5xl">
+      Schedule your complimentary landscape consultation today.
+    </h2>
+    <p class="mt-5 max-w-xl text-base leading-8 text-white/70">
+      Share your email or phone number and our team will follow up with a tailored next step.
+    </p>
+    <form class="mt-8 flex flex-col gap-4 md:flex-row" id="lead-capture-form">
+      <input
+        class="h-14 flex-1 rounded-xl border border-white/10 bg-white/[0.04] px-5 text-white placeholder:text-white/38"
+        name="contact"
+        type="text"
+        placeholder="Enter your email or phone"
+        required
+      />
+      <button class="button-gold rounded-xl px-6 py-4 text-[0.78rem]" type="submit">Let's Connect</button>
+    </form>
+    <p id="lead-capture-status" class="mt-4 hidden text-sm text-champagne"></p>
+  </div>
+</div>
+
+<script>
+  const leadModal = document.getElementById("lead-capture-modal");
+  const leadForm = document.getElementById("lead-capture-form");
+  const leadStatus = document.getElementById("lead-capture-status");
+  const closeButtons = document.querySelectorAll("[data-lead-modal-close]");
+  const storageKey = "ramirez-lead-modal-dismissed";
+
+  const openLeadModal = () => {
+    if (!leadModal || localStorage.getItem(storageKey)) return;
+    leadModal.classList.remove("hidden");
+    leadModal.classList.add("flex");
+    document.body.classList.add("overflow-hidden");
+  };
+
+  const closeLeadModal = () => {
+    if (!leadModal) return;
+    leadModal.classList.add("hidden");
+    leadModal.classList.remove("flex");
+    document.body.classList.remove("overflow-hidden");
+    localStorage.setItem(storageKey, "true");
+  };
+
+  if (leadModal) {
+    window.setTimeout(openLeadModal, 30000);
+    document.addEventListener("mouseleave", (event) => {
+      if (event.clientY <= 0) openLeadModal();
+    });
+  }
+
+  closeButtons.forEach((button) => button.addEventListener("click", closeLeadModal));
+  leadModal?.addEventListener("click", (event) => {
+    if (event.target === leadModal) closeLeadModal();
+  });
+
+  leadForm?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!(leadForm instanceof HTMLFormElement) || !leadStatus) return;
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    leadStatus.textContent = "Thank you. We will reach out shortly.";
+    leadStatus.classList.remove("hidden");
+    leadForm.reset();
+    localStorage.setItem(storageKey, "true");
+  });
+</script>

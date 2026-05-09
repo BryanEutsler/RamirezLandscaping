@@ -1,0 +1,128 @@
+---
+type Props = {
+  compact?: boolean;
+};
+
+const { compact = false } = Astro.props;
+const formAction = import.meta.env.PUBLIC_FORMSPARK_ENDPOINT || "";
+---
+
+<form
+  class:list={[
+    "rounded-[1.8rem] border border-black/8 bg-white p-6 shadow-[0_22px_42px_rgba(0,0,0,0.08)] md:p-8",
+    compact && "bg-transparent shadow-none border-white/10 text-white",
+  ]}
+  id="estimate-form"
+  data-form-action={formAction}
+>
+  <div class="grid gap-5 md:grid-cols-2">
+    <label class="grid gap-2 text-sm">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Name</span>
+      <input class="rounded-xl border border-black/10 px-4 py-3" name="name" required />
+    </label>
+    <label class="grid gap-2 text-sm">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Phone</span>
+      <input class="rounded-xl border border-black/10 px-4 py-3" name="phone" required type="tel" />
+    </label>
+    <label class="grid gap-2 text-sm">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Email</span>
+      <input class="rounded-xl border border-black/10 px-4 py-3" name="email" required type="email" />
+    </label>
+    <label class="grid gap-2 text-sm">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Service Type</span>
+      <select class="rounded-xl border border-black/10 px-4 py-3" name="serviceType" required>
+        <option value="">Select a service</option>
+        <option>Landscape Design & Installation</option>
+        <option>Lawn Care & Maintenance Programs</option>
+        <option>Hardscape & Outdoor Living Spaces</option>
+        <option>Irrigation Systems & Water Management</option>
+        <option>Seasonal Color & Planting</option>
+        <option>Commercial Landscape Services</option>
+        <option>Tree & Shrub Services</option>
+        <option>Outdoor Lighting Design</option>
+      </select>
+    </label>
+    <label class="grid gap-2 text-sm md:col-span-2">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Property Address</span>
+      <input class="rounded-xl border border-black/10 px-4 py-3" name="propertyAddress" required />
+    </label>
+    <label class="grid gap-2 text-sm md:col-span-2">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Project Description</span>
+      <textarea
+        class="min-h-36 rounded-xl border border-black/10 px-4 py-3"
+        name="projectDescription"
+        required
+      ></textarea>
+    </label>
+    <label class="grid gap-2 text-sm">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>How did you hear about us?</span>
+      <select class="rounded-xl border border-black/10 px-4 py-3" name="heardFrom" required>
+        <option value="">Select an option</option>
+        <option>Referral</option>
+        <option>Google Search</option>
+        <option>Instagram</option>
+        <option>Builder or Architect</option>
+        <option>Drive-by Signage</option>
+      </select>
+    </label>
+    <label class="grid gap-2 text-sm">
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Preferred Contact Method</span>
+      <select class="rounded-xl border border-black/10 px-4 py-3" name="preferredContactMethod" required>
+        <option value="">Select an option</option>
+        <option>Phone</option>
+        <option>Email</option>
+        <option>Text Message</option>
+      </select>
+    </label>
+  </div>
+  <label class="hidden">
+    Leave this field empty
+    <input type="text" name="company" tabindex="-1" autocomplete="off" />
+  </label>
+  <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <p class:list={[compact ? "text-white/70" : "text-charcoal/75", "text-sm leading-6"]}>
+      We use spam protection and only use your information to respond to your request.
+    </p>
+    <button type="submit" class="button-gold rounded-xl px-6 py-4 text-[0.78rem]">Send Request</button>
+  </div>
+  <p id="form-status" class="mt-4 hidden rounded-xl bg-forest px-4 py-3 text-sm text-white"></p>
+</form>
+
+<script>
+  const form = document.getElementById("estimate-form");
+  const status = document.getElementById("form-status");
+
+  if (form instanceof HTMLFormElement && status) {
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) return;
+
+      const formData = new FormData(form);
+      const honeypot = formData.get("company");
+
+      if (honeypot) return;
+
+      const action = form.dataset.formAction;
+
+      try {
+        if (action) {
+          await fetch(action, { method: "POST", body: formData });
+        } else {
+          await new Promise((resolve) => setTimeout(resolve, 900));
+        }
+
+        status.textContent =
+          "Thank you. Your request has been received and our team will reach out shortly.";
+        status.classList.remove("hidden");
+        form.reset();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: "estimate_form_submit" });
+      } catch {
+        status.textContent =
+          "There was a problem sending your request. Please call us directly and we will take care of it.";
+        status.classList.remove("hidden");
+      }
+    });
+  }
+</script>

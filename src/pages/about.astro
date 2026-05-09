@@ -1,0 +1,173 @@
+---
+import { Image } from "astro:assets";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import SectionHeading from "@/components/SectionHeading.astro";
+import Icon from "@/components/Icon.astro";
+import { awards, coreValues, teamMembers } from "@/data/content";
+import founderPortrait from "@/assets/photos/founder-portrait.png";
+import heroEstate from "@/assets/photos/hero-estate.png";
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About Ramirez Landscaping",
+  description: "Company story, mission, values, team, and service area for Ramirez Landscaping.",
+};
+---
+
+<BaseLayout title="About Ramirez Landscaping" description="Learn about the story, values, team, and service philosophy behind Ramirez Landscaping." schema={aboutSchema}>
+  <PageHero
+    title="About Ramirez Landscaping"
+    description="A company built on craftsmanship, hospitality, and a deep respect for how outdoor spaces shape daily life."
+    image={heroEstate}
+    crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
+  />
+
+  <section class="paper-panel section-pad">
+    <div class="container-shell grid gap-12 xl:grid-cols-[0.9fr_1.1fr]">
+      <div class="overflow-hidden rounded-[2rem] border border-black/8 bg-white shadow-[0_24px_46px_rgba(0,0,0,0.08)]">
+        <Image src={founderPortrait} alt="Carlos Ramirez portrait" class="h-full min-h-[36rem] w-full object-cover" widths={[720, 960]} format="webp" loading="eager" />
+      </div>
+      <div>
+        <SectionHeading
+          title="Our Story"
+          description="Founded on a passion for craftsmanship and nature, Ramirez Landscaping was built to elevate outdoor spaces with artistry, precision, and enduring integrity."
+          theme="light"
+        />
+        <div class="rich-text mt-8 max-w-3xl">
+          <p>
+            What began as a hands-on commitment to exceptional landscape care evolved into a
+            full-service practice centered on design, installation, and long-term stewardship.
+            Clients come to Ramirez Landscaping because they want more than maintenance alone. They
+            want a trusted partner who can shape the entire outdoor experience with clarity and
+            discipline.
+          </p>
+          <p>
+            We approach each property with the belief that the landscape should feel deeply
+            connected to the architecture, the rhythm of daily life, and the values of the people
+            who live there. That is why our work balances beauty with performance, and detail with
+            long-term practicality.
+          </p>
+        </div>
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          <article class="rounded-[1.5rem] border border-black/8 bg-white p-6">
+            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">Mission</p>
+            <p class="mt-3 text-base leading-8 text-charcoal/85">
+              To create and care for outdoor environments that feel timeless, welcoming, and
+              impeccably maintained.
+            </p>
+          </article>
+          <article class="rounded-[1.5rem] border border-black/8 bg-white p-6">
+            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">What Sets Us Apart</p>
+            <p class="mt-3 text-base leading-8 text-charcoal/85">
+              Design fluency, disciplined execution, and service standards that reflect a true
+              white-glove client experience.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container-shell">
+      <SectionHeading
+        title="Meet the Team"
+        description="A small, experienced leadership group overseeing design quality, jobsite execution, and long-term client care."
+        align="center"
+      />
+      <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {
+          teamMembers.map((member) => (
+            <article class="gold-frame overflow-hidden rounded-[1.7rem] bg-midnight">
+              {
+                member.image ? (
+                  <Image src={member.image} alt={member.name} class="h-72 w-full object-cover" widths={[420, 720]} format="webp" loading="eager" />
+                ) : (
+                  <div class="flex h-72 items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(201,168,76,0.28),_transparent_50%),linear-gradient(180deg,#181818,_#111)]">
+                    <span class="font-[var(--font-display)] text-7xl text-champagne">{member.initials}</span>
+                  </div>
+                )
+              }
+              <div class="p-6">
+                <h2 class="font-[var(--font-heading)] text-3xl text-ivory">{member.name}</h2>
+                <p class="mt-2 font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">
+                  {member.title}
+                </p>
+                <p class="mt-4 text-sm leading-7 text-white/68">{member.bio}</p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="paper-panel section-pad">
+    <div class="container-shell grid gap-10 xl:grid-cols-[0.95fr_1.05fr]">
+      <div>
+        <SectionHeading title="Our Values" description="The principles that guide how we design, build, communicate, and care for each property." theme="light" />
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          {
+            coreValues.map((value, index) => (
+              <article class="rounded-[1.5rem] border border-black/8 bg-white p-6">
+                <div class="text-deep-gold">
+                  <Icon name={index % 2 === 0 ? "shield" : "sprout"} class="h-8 w-8" />
+                </div>
+                <h2 class="mt-5 font-[var(--font-heading)] text-3xl text-midnight">{value.title}</h2>
+                <p class="mt-3 text-sm leading-7 text-charcoal/78">{value.description}</p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+      <div class="rounded-[2rem] border border-black/8 bg-[linear-gradient(180deg,#0c3c27,#173d2a)] p-8 text-white shadow-[0_24px_46px_rgba(0,0,0,0.12)]">
+        <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">Service Area</p>
+        <h2 class="mt-3 font-[var(--font-display)] text-4xl">Serving Southern California</h2>
+        <p class="mt-4 max-w-xl text-base leading-8 text-white/74">
+          We primarily work throughout the Central Coast and Southern California for residential,
+          estate, and high-visibility commercial properties.
+        </p>
+        <div class="mt-8 rounded-[1.5rem] border border-white/10 bg-black/15 p-6">
+          <div class="grid gap-3 sm:grid-cols-2">
+            <span>Santa Barbara County</span>
+            <span>Ventura County</span>
+            <span>Los Angeles County</span>
+            <span>Orange County</span>
+            <span>Riverside County</span>
+            <span>San Diego County</span>
+          </div>
+        </div>
+        <div class="mt-8 h-64 overflow-hidden rounded-[1.5rem] border border-white/10">
+          <iframe
+            title="Ramirez Landscaping service area map"
+            class="h-full w-full border-0 grayscale"
+            loading="lazy"
+            src="https://www.google.com/maps?q=Southern+California&output=embed"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container-shell">
+      <SectionHeading
+        title="Awards & Affiliations"
+        description="Demo trust signals ready to be replaced with client-provided badge art and certification details."
+        align="center"
+      />
+      <div class="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        {
+          awards.map((award) => (
+            <article class="gold-frame flex min-h-36 items-center justify-center rounded-[1.5rem] bg-white/[0.025] px-5 py-6 text-center">
+              <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.2em] text-white/70">{award}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

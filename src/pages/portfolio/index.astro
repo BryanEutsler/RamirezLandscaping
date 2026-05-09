@@ -1,0 +1,122 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+import { projectFilters, projects } from "@/data/content";
+import heroEstate from "@/assets/photos/hero-estate.png";
+
+const portfolioSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Portfolio",
+  description: "Filterable portfolio of luxury residential and commercial landscaping projects.",
+};
+---
+
+<BaseLayout title="Portfolio | Ramirez Landscaping" description="Browse featured landscaping case studies and portfolio projects." schema={portfolioSchema}>
+  <PageHero
+    title="Portfolio"
+    description="Explore our body of work across estates, gardens, and commercial properties."
+    image={heroEstate}
+    crumbs={[{ label: "Home", href: "/" }, { label: "Portfolio" }]}
+  />
+
+  <section class="section-pad">
+    <div class="container-shell">
+      <div class="grid gap-4 rounded-[1.8rem] border border-champagne/16 bg-midnight p-6 md:grid-cols-4">
+        <label class="grid gap-2 text-sm text-white/72">
+          <span class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">Filter by Service</span>
+          <select class="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3" data-filter-service>
+            {projectFilters.services.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <label class="grid gap-2 text-sm text-white/72">
+          <span class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">Property Type</span>
+          <select class="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3" data-filter-property>
+            {projectFilters.propertyTypes.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <label class="grid gap-2 text-sm text-white/72">
+          <span class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">Project Scale</span>
+          <select class="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3" data-filter-scale>
+            {projectFilters.scales.map((option) => <option value={option}>{option}</option>)}
+          </select>
+        </label>
+        <div class="flex items-end">
+          <button type="button" class="button-outline w-full rounded-xl px-4 py-3 text-[0.72rem]" data-filter-reset>
+            Reset Filters
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4" data-portfolio-grid>
+        {
+          projects.map((project) => (
+            <div
+              data-project-card
+              data-service={project.category}
+              data-property={project.propertyType}
+              data-scale={project.scale}
+            >
+              <ProjectCard project={project} compact />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const grid = document.querySelector("[data-portfolio-grid]");
+    const cards = [...document.querySelectorAll("[data-project-card]")];
+    const serviceSelect = document.querySelector("[data-filter-service]");
+    const propertySelect = document.querySelector("[data-filter-property]");
+    const scaleSelect = document.querySelector("[data-filter-scale]");
+    const resetButton = document.querySelector("[data-filter-reset]");
+
+    const syncFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      const service = params.get("service");
+      const property = params.get("property");
+      const scale = params.get("scale");
+      if (service && serviceSelect) serviceSelect.value = service;
+      if (property && propertySelect) propertySelect.value = property;
+      if (scale && scaleSelect) scaleSelect.value = scale;
+    };
+
+    const applyFilters = () => {
+      const service = serviceSelect?.value || "All Services";
+      const property = propertySelect?.value || "All Property Types";
+      const scale = scaleSelect?.value || "All Scales";
+      const params = new URLSearchParams();
+
+      cards.forEach((card) => {
+        const matchesService = service === "All Services" || card.dataset.service === service;
+        const matchesProperty = property === "All Property Types" || card.dataset.property === property;
+        const matchesScale = scale === "All Scales" || card.dataset.scale === scale;
+        card.classList.toggle("hidden", !(matchesService && matchesProperty && matchesScale));
+      });
+
+      if (service !== "All Services") params.set("service", service);
+      if (property !== "All Property Types") params.set("property", property);
+      if (scale !== "All Scales") params.set("scale", scale);
+
+      const nextUrl = `${window.location.pathname}${params.toString() ? `?${params}` : ""}`;
+      window.history.replaceState({}, "", nextUrl);
+    };
+
+    [serviceSelect, propertySelect, scaleSelect].forEach((element) => {
+      element?.addEventListener("change", applyFilters);
+    });
+
+    resetButton?.addEventListener("click", () => {
+      if (serviceSelect) serviceSelect.value = "All Services";
+      if (propertySelect) propertySelect.value = "All Property Types";
+      if (scaleSelect) scaleSelect.value = "All Scales";
+      applyFilters();
+    });
+
+    syncFromUrl();
+    applyFilters();
+  </script>
+</BaseLayout>

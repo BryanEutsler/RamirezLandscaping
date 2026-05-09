@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import type { Project } from "@/data/content";
+
+type Props = {
+  project: Project;
+  compact?: boolean;
+};
+
+const { project, compact = false } = Astro.props;
+---
+
+<article
+  class:list={[
+    "group overflow-hidden rounded-[1.5rem] border border-champagne/20 bg-midnight shadow-[0_18px_44px_rgba(0,0,0,0.26)]",
+    compact ? "h-full" : "",
+  ]}
+>
+  <a href={`/portfolio/${project.slug}`} class="block h-full">
+    <div class="relative overflow-hidden">
+      <Image
+        src={project.thumbnail}
+        alt={project.title}
+        class:list={[
+          "w-full object-cover transition duration-500 group-hover:scale-105",
+          compact ? "h-52" : "h-72",
+        ]}
+        widths={[420, 720]}
+        format="webp"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent"></div>
+      <div class="absolute inset-x-0 bottom-0 p-5">
+        <p class="font-[var(--font-label)] text-[0.68rem] uppercase tracking-[0.24em] text-champagne/80">
+          {project.category}
+        </p>
+        <h3 class="mt-2 font-[var(--font-heading)] text-2xl leading-tight text-ivory">{project.title}</h3>
+        <p class="mt-2 text-sm text-white/68">{project.location}</p>
+      </div>
+    </div>
+  </a>
+</article>

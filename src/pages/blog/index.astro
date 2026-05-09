@@ -1,0 +1,39 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PageHero from "@/components/PageHero.astro";
+import BlogCard from "@/components/BlogCard.astro";
+import { articleCategories, blogPosts } from "@/data/content";
+import designInstallation from "@/assets/photos/design-installation.png";
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: "Ramirez Landscaping Journal & Resources",
+  description: "Educational articles on landscape design, maintenance, irrigation, and outdoor living.",
+};
+---
+
+<BaseLayout title="Blog | Ramirez Landscaping" description="Educational landscape design and maintenance resources from Ramirez Landscaping." schema={blogSchema}>
+  <PageHero
+    title="Journal & Resources"
+    description="Insights, inspiration, and practical guidance to help you enjoy a more beautiful outdoor life."
+    image={designInstallation}
+    crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
+  />
+
+  <section class="paper-panel section-pad">
+    <div class="container-shell">
+      <div class="flex flex-wrap gap-3">
+        {articleCategories.map((category) => <span class="rounded-full border border-black/10 bg-white px-4 py-2 text-sm text-charcoal/75">{category}</span>)}
+      </div>
+      <div class="mt-10 grid gap-6 xl:grid-cols-[1.2fr_0.8fr_0.8fr]">
+        <BlogCard post={blogPosts[0]} featured />
+        <BlogCard post={blogPosts[1]} />
+        <BlogCard post={blogPosts[2]} />
+      </div>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <BlogCard post={blogPosts[3]} />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

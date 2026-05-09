@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+type Props = {
+  beforeImage: ImageMetadata;
+  afterImage: ImageMetadata;
+};
+
+const { beforeImage, afterImage } = Astro.props;
+---
+
+<div class="relative overflow-hidden rounded-[1.8rem] border border-black/10 bg-black/5" data-before-after>
+  <div class="relative aspect-[16/10]">
+    <Image src={afterImage} alt="After project image" class="absolute inset-0 h-full w-full object-cover" format="webp" widths={[720, 1200]} />
+    <div class="absolute inset-0 overflow-hidden" data-before-pane style="width: 50%">
+      <Image src={beforeImage} alt="Before project image" class="h-full w-full max-w-none object-cover" format="webp" widths={[720, 1200]} />
+    </div>
+    <div class="absolute inset-y-0 left-1/2 w-px bg-white/90" data-before-line></div>
+    <button
+      type="button"
+      class="absolute left-1/2 top-1/2 inline-flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/80 bg-black/60 text-white"
+      aria-label="Adjust before and after slider"
+      data-before-handle
+    >
+      ↔
+    </button>
+    <span class="absolute left-5 top-5 rounded-full bg-black/55 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white">
+      Before
+    </span>
+    <span class="absolute right-5 top-5 rounded-full bg-black/55 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white">
+      After
+    </span>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll("[data-before-after]").forEach((root) => {
+    const pane = root.querySelector("[data-before-pane]");
+    const line = root.querySelector("[data-before-line]");
+    const handle = root.querySelector("[data-before-handle]");
+    let active = false;
+
+    const update = (event) => {
+      if (!pane || !line || !handle) return;
+      const rect = root.getBoundingClientRect();
+      const x = Math.min(Math.max(event.clientX - rect.left, 0), rect.width);
+      const percent = `${(x / rect.width) * 100}%`;
+      pane.style.width = percent;
+      line.style.left = percent;
+      handle.style.left = percent;
+    };
+
+    handle?.addEventListener("pointerdown", () => {
+      active = true;
+    });
+
+    window.addEventListener("pointerup", () => {
+      active = false;
+    });
+
+    window.addEventListener("pointermove", (event) => {
+      if (active) update(event);
+    });
+  });
+</script>
