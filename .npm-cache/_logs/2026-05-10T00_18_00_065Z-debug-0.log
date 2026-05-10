@@ -1,0 +1,1118 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v24.13.0
+3 silly config load:file:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\.npmrc
+5 silly config load:file:C:\Users\Risix\.npmrc
+6 silly config load:file:C:\Users\Risix\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_18_00_065Z-
+10 verbose logfile C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_18_00_065Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly reify moves {}
+16 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-wasm32-wasi
+17 silly reify mark deleted [
+17 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-wasm32-wasi'
+17 silly reify ]
+18 silly audit bulk request {
+18 silly audit   '@astrojs/compiler': [ '2.13.1' ],
+18 silly audit   '@astrojs/internal-helpers': [ '0.7.6' ],
+18 silly audit   '@astrojs/markdown-remark': [ '6.3.11' ],
+18 silly audit   '@astrojs/prism': [ '3.3.0' ],
+18 silly audit   '@astrojs/sitemap': [ '3.7.2' ],
+18 silly audit   '@astrojs/telemetry': [ '3.3.0' ],
+18 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+18 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+18 silly audit   '@babel/parser': [ '7.29.3' ],
+18 silly audit   '@babel/types': [ '7.29.0' ],
+18 silly audit   '@capsizecss/unpack': [ '4.0.0' ],
+18 silly audit   '@emnapi/core': [ '1.10.0' ],
+18 silly audit   '@emnapi/runtime': [ '1.10.0' ],
+18 silly audit   '@emnapi/wasi-threads': [ '1.2.1' ],
+18 silly audit   '@esbuild/aix-ppc64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/android-arm': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/android-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/android-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/darwin-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/darwin-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/freebsd-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/freebsd-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-arm': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-ia32': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-loong64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-mips64el': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-ppc64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-riscv64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-s390x': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/linux-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/netbsd-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/netbsd-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/openbsd-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/openbsd-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/openharmony-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/sunos-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/win32-arm64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/win32-ia32': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@esbuild/win32-x64': [ '0.27.7', '0.25.12' ],
+18 silly audit   '@img/colour': [ '1.1.0' ],
+18 silly audit   '@img/sharp-darwin-arm64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-darwin-x64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.4' ],
+18 silly audit   '@img/sharp-linux-arm': [ '0.34.5' ],
+18 silly audit   '@img/sharp-linux-arm64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-linux-ppc64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-linux-riscv64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-linux-s390x': [ '0.34.5' ],
+18 silly audit   '@img/sharp-linux-x64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-wasm32': [ '0.34.5' ],
+18 silly audit   '@img/sharp-win32-arm64': [ '0.34.5' ],
+18 silly audit   '@img/sharp-win32-ia32': [ '0.34.5' ],
+18 silly audit   '@img/sharp-win32-x64': [ '0.34.5' ],
+18 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+18 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+18 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+18 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+18 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+18 silly audit   '@napi-rs/wasm-runtime': [ '1.1.4' ],
+18 silly audit   '@oslojs/encoding': [ '1.1.0' ],
+18 silly audit   '@oxc-project/types': [ '0.128.0' ],
+18 silly audit   '@rolldown/binding-android-arm64': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-darwin-arm64': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-darwin-x64': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-freebsd-x64': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-linux-arm-gnueabihf': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-linux-arm64-gnu': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-linux-arm64-musl': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-linux-ppc64-gnu': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-linux-s390x-gnu': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-linux-x64-gnu': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-linux-x64-musl': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-openharmony-arm64': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-wasm32-wasi': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-win32-arm64-msvc': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/binding-win32-x64-msvc': [ '1.0.0-rc.18' ],
+18 silly audit   '@rolldown/pluginutils': [ '1.0.0-rc.18' ],
+18 silly audit   '@rollup/pluginutils': [ '5.3.0' ],
+18 silly audit   'estree-walker': [ '2.0.2', '3.0.3' ],
+18 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-android-arm64': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-darwin-arm64': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-darwin-x64': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-freebsd-x64': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-loong64-musl': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-ppc64-musl': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-openbsd-x64': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.60.3' ],
+18 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.60.3' ],
+18 silly audit   '@shikijs/core': [ '3.23.0' ],
+18 silly audit   '@shikijs/engine-javascript': [ '3.23.0' ],
+18 silly audit   '@shikijs/engine-oniguruma': [ '3.23.0' ],
+18 silly audit   '@shikijs/langs': [ '3.23.0' ],
+18 silly audit   '@shikijs/themes': [ '3.23.0' ],
+18 silly audit   '@shikijs/types': [ '3.23.0' ],
+18 silly audit   '@shikijs/vscode-textmate': [ '10.0.2' ],
+18 silly audit   '@tailwindcss/node': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.3.0' ],
+18 silly audit   '@tailwindcss/vite': [ '4.3.0' ],
+18 silly audit   '@tybys/wasm-util': [ '0.10.2' ],
+18 silly audit   '@types/debug': [ '4.1.13' ],
+18 silly audit   '@types/estree': [ '1.0.9', '1.0.8' ],
+18 silly audit   '@types/hast': [ '3.0.4' ],
+18 silly audit   '@types/mdast': [ '4.0.4' ],
+18 silly audit   '@types/ms': [ '2.1.0' ],
+18 silly audit   '@types/nlcst': [ '2.0.3' ],
+18 silly audit   '@types/node': [ '24.12.3' ],
+18 silly audit   '@types/sax': [ '1.2.7' ],
+18 silly audit   '@types/unist': [ '3.0.3' ],
+18 silly audit   '@ungap/structured-clone': [ '1.3.1' ],
+18 silly audit   acorn: [ '8.16.0' ],
+18 silly audit   'ansi-align': [ '3.0.1' ],
+18 silly audit   'ansi-regex': [ '5.0.1', '6.2.2' ],
+18 silly audit   'emoji-regex': [ '8.0.0', '10.6.0' ],
+18 silly audit   'string-width': [ '4.2.3', '7.2.0' ],
+18 silly audit   'strip-ansi': [ '6.0.1', '7.2.0' ],
+18 silly audit   'ansi-styles': [ '6.2.3' ],
+18 silly audit   anymatch: [ '3.1.3' ],
+18 silly audit   picomatch: [ '2.3.2', '4.0.4' ],
+18 silly audit   arg: [ '5.0.2' ],
+18 silly audit   argparse: [ '2.0.1' ],
+18 silly audit   'aria-query': [ '5.3.2' ],
+18 silly audit   'array-iterate': [ '2.0.1' ],
+18 silly audit   astro: [ '5.18.1' ],
+18 silly audit   fsevents: [ '2.3.3', '2.3.2' ],
+18 silly audit   vite: [ '6.4.2', '8.0.11' ],
+18 silly audit   esbuild: [ '0.25.12', '0.27.7' ],
+18 silly audit   zod: [ '3.25.76', '4.4.3' ],
+18 silly audit   'zod-to-ts': [ '1.2.0' ],
+18 silly audit   'axobject-query': [ '4.1.0' ],
+18 silly audit   bail: [ '2.0.2' ],
+18 silly audit   'base-64': [ '1.0.0' ],
+18 silly audit   boolbase: [ '1.0.0' ],
+18 silly audit   boxen: [ '8.0.1' ],
+18 silly audit   camelcase: [ '8.0.0' ],
+18 silly audit   ccount: [ '2.0.1' ],
+18 silly audit   chalk: [ '5.6.2' ],
+18 silly audit   'character-entities': [ '2.0.2' ],
+18 silly audit   'character-entities-html4': [ '2.1.0' ],
+18 silly audit   'character-entities-legacy': [ '3.0.0' ],
+18 silly audit   chokidar: [ '5.0.0' ],
+18 silly audit   'ci-info': [ '4.4.0' ],
+18 silly audit   'cli-boxes': [ '3.0.0' ],
+18 silly audit   clsx: [ '2.1.1' ],
+18 silly audit   'comma-separated-tokens': [ '2.0.3' ],
+18 silly audit   commander: [ '11.1.0' ],
+18 silly audit   'common-ancestor-path': [ '1.0.1' ],
+18 silly audit   cookie: [ '1.1.1' ],
+18 silly audit   'cookie-es': [ '1.2.3' ],
+18 silly audit   crossws: [ '0.3.5' ],
+18 silly audit   'css-select': [ '5.2.2' ],
+18 silly audit   'css-tree': [ '3.2.1', '2.2.1' ],
+18 silly audit   'css-what': [ '6.2.2' ],
+18 silly audit   cssesc: [ '3.0.0' ],
+18 silly audit   csso: [ '5.0.5' ],
+18 silly audit   'mdn-data': [ '2.0.28', '2.27.1' ],
+18 silly audit   debug: [ '4.4.3' ],
+18 silly audit   'decode-named-character-reference': [ '1.3.0' ],
+18 silly audit   defu: [ '6.1.7' ],
+18 silly audit   dequal: [ '2.0.3' ],
+18 silly audit   destr: [ '2.0.5' ],
+18 silly audit   'detect-libc': [ '2.1.2' ],
+18 silly audit   'deterministic-object-hash': [ '2.0.2' ],
+18 silly audit   devalue: [ '5.8.0' ],
+18 silly audit   devlop: [ '1.1.0' ],
+18 silly audit   diff: [ '8.0.4' ],
+18 silly audit   dlv: [ '1.1.3' ],
+18 silly audit   'dom-serializer': [ '2.0.0' ],
+18 silly audit   entities: [ '4.5.0', '6.0.1' ],
+18 silly audit   domelementtype: [ '2.3.0' ],
+18 silly audit   domhandler: [ '5.0.3' ],
+18 silly audit   domutils: [ '3.2.2' ],
+18 silly audit   dset: [ '3.1.4' ],
+18 silly audit   'enhanced-resolve': [ '5.21.2' ],
+18 silly audit   'es-module-lexer': [ '1.7.0' ],
+18 silly audit   'escape-string-regexp': [ '5.0.0' ],
+18 silly audit   eventemitter3: [ '5.0.4' ],
+18 silly audit   extend: [ '3.0.2' ],
+18 silly audit   fdir: [ '6.5.0' ],
+18 silly audit   flattie: [ '1.1.1' ],
+18 silly audit   fontace: [ '0.4.1' ],
+18 silly audit   fontkitten: [ '1.0.3' ],
+18 silly audit   'get-east-asian-width': [ '1.6.0' ],
+18 silly audit   'github-slugger': [ '2.0.0' ],
+18 silly audit   'graceful-fs': [ '4.2.11' ],
+18 silly audit   h3: [ '1.15.11' ],
+18 silly audit   'hast-util-from-html': [ '2.0.3' ],
+18 silly audit   'hast-util-from-parse5': [ '8.0.3' ],
+18 silly audit   'hast-util-is-element': [ '3.0.0' ],
+18 silly audit   'hast-util-parse-selector': [ '4.0.0' ],
+18 silly audit   'hast-util-raw': [ '9.1.0' ],
+18 silly audit   'hast-util-to-html': [ '9.0.5' ],
+18 silly audit   'hast-util-to-parse5': [ '8.0.1' ],
+18 silly audit   'hast-util-to-text': [ '4.0.2' ],
+18 silly audit   'hast-util-whitespace': [ '3.0.0' ],
+18 silly audit   hastscript: [ '9.0.1' ],
+18 silly audit   'html-escaper': [ '3.0.3' ],
+18 silly audit   'html-void-elements': [ '3.0.0' ],
+18 silly audit   'http-cache-semantics': [ '4.2.0' ],
+18 silly audit   'import-meta-resolve': [ '4.2.0' ],
+18 silly audit   'iron-webcrypto': [ '1.2.1' ],
+18 silly audit   'is-docker': [ '3.0.0' ],
+18 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+18 silly audit   'is-inside-container': [ '1.0.0' ],
+18 silly audit   'is-plain-obj': [ '4.1.0' ],
+18 silly audit   'is-wsl': [ '3.1.1' ],
+18 silly audit   jiti: [ '2.7.0' ],
+18 silly audit   'js-yaml': [ '4.1.1' ],
+18 silly audit   kleur: [ '3.0.3' ],
+18 silly audit   lightningcss: [ '1.32.0' ],
+18 silly audit   'lightningcss-android-arm64': [ '1.32.0' ],
+18 silly audit   'lightningcss-darwin-arm64': [ '1.32.0' ],
+18 silly audit   'lightningcss-darwin-x64': [ '1.32.0' ],
+18 silly audit   'lightningcss-freebsd-x64': [ '1.32.0' ],
+18 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.32.0' ],
+18 silly audit   'lightningcss-linux-arm64-gnu': [ '1.32.0' ],
+18 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0' ],
+18 silly audit   'lightningcss-linux-x64-gnu': [ '1.32.0' ],
+18 silly audit   'lightningcss-linux-x64-musl': [ '1.32.0' ],
+18 silly audit   'lightningcss-win32-arm64-msvc': [ '1.32.0' ],
+18 silly audit   'lightningcss-win32-x64-msvc': [ '1.32.0' ],
+18 silly audit   'longest-streak': [ '3.1.0' ],
+18 silly audit   'lru-cache': [ '11.3.6' ],
+18 silly audit   'magic-string': [ '0.30.21' ],
+18 silly audit   magicast: [ '0.5.2' ],
+18 silly audit   'markdown-table': [ '3.0.4' ],
+18 silly audit   'mdast-util-definitions': [ '6.0.0' ],
+18 silly audit   'mdast-util-find-and-replace': [ '3.0.2' ],
+18 silly audit   'mdast-util-from-markdown': [ '2.0.3' ],
+18 silly audit   'mdast-util-gfm': [ '3.1.0' ],
+18 silly audit   'mdast-util-gfm-autolink-literal': [ '2.0.1' ],
+18 silly audit   'mdast-util-gfm-footnote': [ '2.1.0' ],
+18 silly audit   'mdast-util-gfm-strikethrough': [ '2.0.0' ],
+18 silly audit   'mdast-util-gfm-table': [ '2.0.0' ],
+18 silly audit   'mdast-util-gfm-task-list-item': [ '2.0.0' ],
+18 silly audit   'mdast-util-phrasing': [ '4.1.0' ],
+18 silly audit   'mdast-util-to-hast': [ '13.2.1' ],
+18 silly audit   'mdast-util-to-markdown': [ '2.1.2' ],
+18 silly audit   'mdast-util-to-string': [ '4.0.0' ],
+18 silly audit   micromark: [ '4.0.2' ],
+18 silly audit   'micromark-core-commonmark': [ '2.0.3' ],
+18 silly audit   'micromark-extension-gfm': [ '3.0.0' ],
+18 silly audit   'micromark-extension-gfm-autolink-literal': [ '2.1.0' ],
+18 silly audit   'micromark-extension-gfm-footnote': [ '2.1.0' ],
+18 silly audit   'micromark-extension-gfm-strikethrough': [ '2.1.0' ],
+18 silly audit   'micromark-extension-gfm-table': [ '2.1.1' ],
+18 silly audit   'micromark-extension-gfm-tagfilter': [ '2.0.0' ],
+18 silly audit   'micromark-extension-gfm-task-list-item': [ '2.1.0' ],
+18 silly audit   'micromark-factory-destination': [ '2.0.1' ],
+18 silly audit   'micromark-factory-label': [ '2.0.1' ],
+18 silly audit   'micromark-factory-space': [ '2.0.1' ],
+18 silly audit   'micromark-factory-title': [ '2.0.1' ],
+18 silly audit   'micromark-factory-whitespace': [ '2.0.1' ],
+18 silly audit   'micromark-util-character': [ '2.1.1' ],
+18 silly audit   'micromark-util-chunked': [ '2.0.1' ],
+18 silly audit   'micromark-util-classify-character': [ '2.0.1' ],
+18 silly audit   'micromark-util-combine-extensions': [ '2.0.1' ],
+18 silly audit   'micromark-util-decode-numeric-character-reference': [ '2.0.2' ],
+18 silly audit   'micromark-util-decode-string': [ '2.0.1' ],
+18 silly audit   'micromark-util-encode': [ '2.0.1' ],
+18 silly audit   'micromark-util-html-tag-name': [ '2.0.1' ],
+18 silly audit   'micromark-util-normalize-identifier': [ '2.0.1' ],
+18 silly audit   'micromark-util-resolve-all': [ '2.0.1' ],
+18 silly audit   'micromark-util-sanitize-uri': [ '2.0.1' ],
+18 silly audit   'micromark-util-subtokenize': [ '2.1.0' ],
+18 silly audit   'micromark-util-symbol': [ '2.0.1' ],
+18 silly audit   'micromark-util-types': [ '2.0.2' ],
+18 silly audit   mrmime: [ '2.0.1' ],
+18 silly audit   ms: [ '2.1.3' ],
+18 silly audit   nanoid: [ '3.3.12' ],
+18 silly audit   neotraverse: [ '0.6.18' ],
+18 silly audit   'nlcst-to-string': [ '4.0.0' ],
+18 silly audit   'node-fetch-native': [ '1.6.7' ],
+18 silly audit   'node-mock-http': [ '1.0.4' ],
+18 silly audit   'normalize-path': [ '3.0.0' ],
+18 silly audit   'nth-check': [ '2.1.1' ],
+18 silly audit   ofetch: [ '1.5.1' ],
+18 silly audit   ohash: [ '2.0.11' ],
+18 silly audit   'oniguruma-parser': [ '0.12.2' ],
+18 silly audit   'oniguruma-to-es': [ '4.3.6' ],
+18 silly audit   'p-limit': [ '6.2.0' ],
+18 silly audit   'p-queue': [ '8.1.1' ],
+18 silly audit   'p-timeout': [ '6.1.4' ],
+18 silly audit   'package-manager-detector': [ '1.6.0' ],
+18 silly audit   'parse-latin': [ '7.0.0' ],
+18 silly audit   parse5: [ '7.3.0' ],
+18 silly audit   piccolore: [ '0.1.3' ],
+18 silly audit   picocolors: [ '1.1.1' ],
+18 silly audit   playwright: [ '1.59.1' ],
+18 silly audit   'playwright-core': [ '1.59.1' ],
+18 silly audit   postcss: [ '8.5.14' ],
+18 silly audit   prismjs: [ '1.30.0' ],
+18 silly audit   prompts: [ '2.4.2' ],
+18 silly audit   'property-information': [ '7.1.0' ],
+18 silly audit   radix3: [ '1.1.2' ],
+18 silly audit   readdirp: [ '5.0.0' ],
+18 silly audit   regex: [ '6.1.0' ],
+18 silly audit   'regex-recursion': [ '6.0.2' ],
+18 silly audit   'regex-utilities': [ '2.3.0' ],
+18 silly audit   rehype: [ '13.0.2' ],
+18 silly audit   'rehype-parse': [ '9.0.1' ],
+18 silly audit   'rehype-raw': [ '7.0.0' ],
+18 silly audit   'rehype-stringify': [ '10.0.1' ],
+18 silly audit   'remark-gfm': [ '4.0.1' ],
+18 silly audit   'remark-parse': [ '11.0.0' ],
+18 silly audit   'remark-rehype': [ '11.1.2' ],
+18 silly audit   'remark-smartypants': [ '3.0.2' ],
+18 silly audit   'remark-stringify': [ '11.0.0' ],
+18 silly audit   retext: [ '9.0.0' ],
+18 silly audit   'retext-latin': [ '4.0.0' ],
+18 silly audit   'retext-smartypants': [ '6.2.0' ],
+18 silly audit   'retext-stringify': [ '4.0.0' ],
+18 silly audit   rolldown: [ '1.0.0-rc.18' ],
+18 silly audit   rollup: [ '4.60.3' ],
+18 silly audit   sax: [ '1.6.0' ],
+18 silly audit   semver: [ '7.8.0' ],
+18 silly audit   sharp: [ '0.34.5' ],
+18 silly audit   shiki: [ '3.23.0' ],
+18 silly audit   sisteransi: [ '1.0.5' ],
+18 silly audit   sitemap: [ '9.0.1' ],
+18 silly audit   'smol-toml': [ '1.6.1' ],
+18 silly audit   'source-map-js': [ '1.2.1' ],
+18 silly audit   'space-separated-tokens': [ '2.0.2' ],
+18 silly audit   'stream-replace-string': [ '2.0.0' ],
+18 silly audit   'stringify-entities': [ '4.0.4' ],
+18 silly audit   svgo: [ '4.0.1' ],
+18 silly audit   tailwindcss: [ '4.3.0' ],
+18 silly audit   tapable: [ '2.3.3' ],
+18 silly audit   'tiny-inflate': [ '1.0.3' ],
+18 silly audit   tinyexec: [ '1.1.2' ],
+18 silly audit   tinyglobby: [ '0.2.16' ],
+18 silly audit   'trim-lines': [ '3.0.1' ],
+18 silly audit   trough: [ '2.2.0' ],
+18 silly audit   tsconfck: [ '3.1.6' ],
+18 silly audit   tslib: [ '2.8.1' ],
+18 silly audit   'type-fest': [ '4.41.0' ],
+18 silly audit   typescript: [ '5.9.3' ],
+18 silly audit   ufo: [ '1.6.4' ],
+18 silly audit   ultrahtml: [ '1.6.0' ],
+18 silly audit   uncrypto: [ '0.1.3' ],
+18 silly audit   'undici-types': [ '7.16.0' ],
+18 silly audit   unified: [ '11.0.5' ],
+18 silly audit   unifont: [ '0.7.4' ],
+18 silly audit   'unist-util-find-after': [ '5.0.0' ],
+18 silly audit   'unist-util-is': [ '6.0.1' ],
+18 silly audit   'unist-util-modify-children': [ '4.0.0' ],
+18 silly audit   'unist-util-position': [ '5.0.0' ],
+18 silly audit   'unist-util-remove-position': [ '5.0.0' ],
+18 silly audit   'unist-util-stringify-position': [ '4.0.0' ],
+18 silly audit   'unist-util-visit': [ '5.1.0' ],
+18 silly audit   'unist-util-visit-children': [ '3.0.0' ],
+18 silly audit   'unist-util-visit-parents': [ '6.0.2' ],
+18 silly audit   unstorage: [ '1.17.5' ],
+18 silly audit   vfile: [ '6.0.3' ],
+18 silly audit   'vfile-location': [ '5.0.3' ],
+18 silly audit   'vfile-message': [ '4.0.3' ],
+18 silly audit   vitefu: [ '1.1.3' ],
+18 silly audit   'web-namespaces': [ '2.0.1' ],
+18 silly audit   'which-pm-runs': [ '1.1.0' ],
+18 silly audit   'widest-line': [ '5.0.0' ],
+18 silly audit   'wrap-ansi': [ '9.0.2' ],
+18 silly audit   'xxhash-wasm': [ '1.1.0' ],
+18 silly audit   'yargs-parser': [ '21.1.1' ],
+18 silly audit   'yocto-queue': [ '1.2.2' ],
+18 silly audit   'yocto-spinner': [ '0.2.3' ],
+18 silly audit   yoctocolors: [ '2.1.2' ],
+18 silly audit   'zod-to-json-schema': [ '3.25.2' ],
+18 silly audit   zwitch: [ '2.0.4' ],
+18 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.3.0' ]
+18 silly audit }
+19 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-win32-arm64-msvc
+20 silly reify mark deleted [
+20 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-win32-arm64-msvc'
+20 silly reify ]
+21 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-linux-x64-musl
+22 silly reify mark deleted [
+22 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-linux-x64-musl'
+22 silly reify ]
+23 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-linux-x64-gnu
+24 silly reify mark deleted [
+24 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-linux-x64-gnu'
+24 silly reify ]
+25 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-linux-arm64-musl
+26 silly reify mark deleted [
+26 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-linux-arm64-musl'
+26 silly reify ]
+27 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-linux-arm64-gnu
+28 silly reify mark deleted [
+28 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-linux-arm64-gnu'
+28 silly reify ]
+29 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-linux-arm-gnueabihf
+30 silly reify mark deleted [
+30 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-linux-arm-gnueabihf'
+30 silly reify ]
+31 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-freebsd-x64
+32 silly reify mark deleted [
+32 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-freebsd-x64'
+32 silly reify ]
+33 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-darwin-x64
+34 silly reify mark deleted [
+34 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-darwin-x64'
+34 silly reify ]
+35 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-darwin-arm64
+36 silly reify mark deleted [
+36 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-darwin-arm64'
+36 silly reify ]
+37 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\lightningcss-android-arm64
+38 silly reify mark deleted [
+38 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\lightningcss-android-arm64'
+38 silly reify ]
+39 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\fsevents
+40 silly reify mark deleted [
+40 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\fsevents'
+40 silly reify ]
+41 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-win32-arm64-msvc
+42 silly reify mark deleted [
+42 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-win32-arm64-msvc'
+42 silly reify ]
+43 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-linux-x64-musl
+44 silly reify mark deleted [
+44 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-linux-x64-musl'
+44 silly reify ]
+45 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-linux-x64-gnu
+46 silly reify mark deleted [
+46 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-linux-x64-gnu'
+46 silly reify ]
+47 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-linux-arm64-musl
+48 silly reify mark deleted [
+48 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-linux-arm64-musl'
+48 silly reify ]
+49 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-linux-arm64-gnu
+50 silly reify mark deleted [
+50 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-linux-arm64-gnu'
+50 silly reify ]
+51 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-linux-arm-gnueabihf
+52 silly reify mark deleted [
+52 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-linux-arm-gnueabihf'
+52 silly reify ]
+53 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-freebsd-x64
+54 silly reify mark deleted [
+54 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-freebsd-x64'
+54 silly reify ]
+55 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-darwin-x64
+56 silly reify mark deleted [
+56 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-darwin-x64'
+56 silly reify ]
+57 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-darwin-arm64
+58 silly reify mark deleted [
+58 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-darwin-arm64'
+58 silly reify ]
+59 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@tailwindcss\oxide-android-arm64
+60 silly reify mark deleted [
+60 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@tailwindcss\\oxide-android-arm64'
+60 silly reify ]
+61 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-win32-ia32-msvc
+62 silly reify mark deleted [
+62 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-win32-ia32-msvc'
+62 silly reify ]
+63 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-win32-arm64-msvc
+64 silly reify mark deleted [
+64 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-win32-arm64-msvc'
+64 silly reify ]
+65 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-openharmony-arm64
+66 silly reify mark deleted [
+66 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-openharmony-arm64'
+66 silly reify ]
+67 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-openbsd-x64
+68 silly reify mark deleted [
+68 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-openbsd-x64'
+68 silly reify ]
+69 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-x64-musl
+70 silly reify mark deleted [
+70 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-x64-musl'
+70 silly reify ]
+71 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-x64-gnu
+72 silly reify mark deleted [
+72 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-x64-gnu'
+72 silly reify ]
+73 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-s390x-gnu
+74 silly reify mark deleted [
+74 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-s390x-gnu'
+74 silly reify ]
+75 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-riscv64-musl
+76 silly reify mark deleted [
+76 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-riscv64-musl'
+76 silly reify ]
+77 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-riscv64-gnu
+78 silly reify mark deleted [
+78 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-riscv64-gnu'
+78 silly reify ]
+79 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-ppc64-musl
+80 silly reify mark deleted [
+80 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-ppc64-musl'
+80 silly reify ]
+81 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-ppc64-gnu
+82 silly reify mark deleted [
+82 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-ppc64-gnu'
+82 silly reify ]
+83 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-loong64-musl
+84 silly reify mark deleted [
+84 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-loong64-musl'
+84 silly reify ]
+85 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-loong64-gnu
+86 silly reify mark deleted [
+86 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-loong64-gnu'
+86 silly reify ]
+87 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-arm64-musl
+88 silly reify mark deleted [
+88 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-arm64-musl'
+88 silly reify ]
+89 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-arm64-gnu
+90 silly reify mark deleted [
+90 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-arm64-gnu'
+90 silly reify ]
+91 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-arm-musleabihf
+92 silly reify mark deleted [
+92 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-arm-musleabihf'
+92 silly reify ]
+93 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-linux-arm-gnueabihf
+94 silly reify mark deleted [
+94 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-linux-arm-gnueabihf'
+94 silly reify ]
+95 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-freebsd-x64
+96 silly reify mark deleted [
+96 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-freebsd-x64'
+96 silly reify ]
+97 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-freebsd-arm64
+98 silly reify mark deleted [
+98 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-freebsd-arm64'
+98 silly reify ]
+99 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-darwin-x64
+100 silly reify mark deleted [
+100 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-darwin-x64'
+100 silly reify ]
+101 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-darwin-arm64
+102 silly reify mark deleted [
+102 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-darwin-arm64'
+102 silly reify ]
+103 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-android-arm64
+104 silly reify mark deleted [
+104 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-android-arm64'
+104 silly reify ]
+105 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rollup\rollup-android-arm-eabi
+106 silly reify mark deleted [
+106 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rollup\\rollup-android-arm-eabi'
+106 silly reify ]
+107 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-win32-arm64-msvc
+108 silly reify mark deleted [
+108 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-win32-arm64-msvc'
+108 silly reify ]
+109 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-wasm32-wasi
+110 silly reify mark deleted [
+110 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-wasm32-wasi'
+110 silly reify ]
+111 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-openharmony-arm64
+112 silly reify mark deleted [
+112 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-openharmony-arm64'
+112 silly reify ]
+113 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-linux-x64-musl
+114 silly reify mark deleted [
+114 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-linux-x64-musl'
+114 silly reify ]
+115 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-linux-x64-gnu
+116 silly reify mark deleted [
+116 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-linux-x64-gnu'
+116 silly reify ]
+117 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-linux-s390x-gnu
+118 silly reify mark deleted [
+118 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-linux-s390x-gnu'
+118 silly reify ]
+119 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-linux-ppc64-gnu
+120 silly reify mark deleted [
+120 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-linux-ppc64-gnu'
+120 silly reify ]
+121 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-linux-arm64-musl
+122 silly reify mark deleted [
+122 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-linux-arm64-musl'
+122 silly reify ]
+123 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-linux-arm64-gnu
+124 silly reify mark deleted [
+124 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-linux-arm64-gnu'
+124 silly reify ]
+125 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-linux-arm-gnueabihf
+126 silly reify mark deleted [
+126 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-linux-arm-gnueabihf'
+126 silly reify ]
+127 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-freebsd-x64
+128 silly reify mark deleted [
+128 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-freebsd-x64'
+128 silly reify ]
+129 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-darwin-x64
+130 silly reify mark deleted [
+130 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-darwin-x64'
+130 silly reify ]
+131 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-darwin-arm64
+132 silly reify mark deleted [
+132 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-darwin-arm64'
+132 silly reify ]
+133 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@rolldown\binding-android-arm64
+134 silly reify mark deleted [
+134 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@rolldown\\binding-android-arm64'
+134 silly reify ]
+135 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-win32-ia32
+136 silly reify mark deleted [
+136 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-win32-ia32'
+136 silly reify ]
+137 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-win32-arm64
+138 silly reify mark deleted [
+138 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-win32-arm64'
+138 silly reify ]
+139 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-wasm32
+140 silly reify mark deleted [
+140 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-wasm32'
+140 silly reify ]
+141 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linuxmusl-x64
+142 silly reify mark deleted [
+142 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linuxmusl-x64'
+142 silly reify ]
+143 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linuxmusl-arm64
+144 silly reify mark deleted [
+144 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linuxmusl-arm64'
+144 silly reify ]
+145 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linux-x64
+146 silly reify mark deleted [
+146 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linux-x64'
+146 silly reify ]
+147 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linux-s390x
+148 silly reify mark deleted [
+148 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linux-s390x'
+148 silly reify ]
+149 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linux-riscv64
+150 silly reify mark deleted [
+150 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linux-riscv64'
+150 silly reify ]
+151 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linux-ppc64
+152 silly reify mark deleted [
+152 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linux-ppc64'
+152 silly reify ]
+153 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linux-arm64
+154 silly reify mark deleted [
+154 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linux-arm64'
+154 silly reify ]
+155 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-linux-arm
+156 silly reify mark deleted [
+156 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-linux-arm'
+156 silly reify ]
+157 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linuxmusl-x64
+158 silly reify mark deleted [
+158 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linuxmusl-x64'
+158 silly reify ]
+159 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linuxmusl-arm64
+160 silly reify mark deleted [
+160 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linuxmusl-arm64'
+160 silly reify ]
+161 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linux-x64
+162 silly reify mark deleted [
+162 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linux-x64'
+162 silly reify ]
+163 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linux-s390x
+164 silly reify mark deleted [
+164 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linux-s390x'
+164 silly reify ]
+165 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linux-riscv64
+166 silly reify mark deleted [
+166 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linux-riscv64'
+166 silly reify ]
+167 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linux-ppc64
+168 silly reify mark deleted [
+168 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linux-ppc64'
+168 silly reify ]
+169 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linux-arm64
+170 silly reify mark deleted [
+170 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linux-arm64'
+170 silly reify ]
+171 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-linux-arm
+172 silly reify mark deleted [
+172 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-linux-arm'
+172 silly reify ]
+173 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-darwin-x64
+174 silly reify mark deleted [
+174 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-darwin-x64'
+174 silly reify ]
+175 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-libvips-darwin-arm64
+176 silly reify mark deleted [
+176 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-libvips-darwin-arm64'
+176 silly reify ]
+177 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-darwin-x64
+178 silly reify mark deleted [
+178 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-darwin-x64'
+178 silly reify ]
+179 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@img\sharp-darwin-arm64
+180 silly reify mark deleted [
+180 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@img\\sharp-darwin-arm64'
+180 silly reify ]
+181 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\win32-ia32
+182 silly reify mark deleted [
+182 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\win32-ia32'
+182 silly reify ]
+183 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\win32-arm64
+184 silly reify mark deleted [
+184 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\win32-arm64'
+184 silly reify ]
+185 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\sunos-x64
+186 silly reify mark deleted [
+186 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\sunos-x64'
+186 silly reify ]
+187 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\openharmony-arm64
+188 silly reify mark deleted [
+188 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\openharmony-arm64'
+188 silly reify ]
+189 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\openbsd-x64
+190 silly reify mark deleted [
+190 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\openbsd-x64'
+190 silly reify ]
+191 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\openbsd-arm64
+192 silly reify mark deleted [
+192 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\openbsd-arm64'
+192 silly reify ]
+193 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\netbsd-x64
+194 silly reify mark deleted [
+194 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\netbsd-x64'
+194 silly reify ]
+195 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\netbsd-arm64
+196 silly reify mark deleted [
+196 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\netbsd-arm64'
+196 silly reify ]
+197 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-x64
+198 silly reify mark deleted [
+198 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-x64'
+198 silly reify ]
+199 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-s390x
+200 silly reify mark deleted [
+200 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-s390x'
+200 silly reify ]
+201 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-riscv64
+202 silly reify mark deleted [
+202 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-riscv64'
+202 silly reify ]
+203 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-ppc64
+204 silly reify mark deleted [
+204 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-ppc64'
+204 silly reify ]
+205 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-mips64el
+206 silly reify mark deleted [
+206 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-mips64el'
+206 silly reify ]
+207 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-loong64
+208 silly reify mark deleted [
+208 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-loong64'
+208 silly reify ]
+209 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-ia32
+210 silly reify mark deleted [
+210 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-ia32'
+210 silly reify ]
+211 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-arm64
+212 silly reify mark deleted [
+212 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-arm64'
+212 silly reify ]
+213 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\linux-arm
+214 silly reify mark deleted [
+214 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\linux-arm'
+214 silly reify ]
+215 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\freebsd-x64
+216 silly reify mark deleted [
+216 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\freebsd-x64'
+216 silly reify ]
+217 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\freebsd-arm64
+218 silly reify mark deleted [
+218 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\freebsd-arm64'
+218 silly reify ]
+219 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\darwin-x64
+220 silly reify mark deleted [
+220 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\darwin-x64'
+220 silly reify ]
+221 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\darwin-arm64
+222 silly reify mark deleted [
+222 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\darwin-arm64'
+222 silly reify ]
+223 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\android-x64
+224 silly reify mark deleted [
+224 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\android-x64'
+224 silly reify ]
+225 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\android-arm64
+226 silly reify mark deleted [
+226 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\android-arm64'
+226 silly reify ]
+227 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\android-arm
+228 silly reify mark deleted [
+228 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\android-arm'
+228 silly reify ]
+229 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\@esbuild\aix-ppc64
+230 silly reify mark deleted [
+230 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\@esbuild\\aix-ppc64'
+230 silly reify ]
+231 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\vite\node_modules\fsevents
+232 silly reify mark deleted [
+232 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\vite\\node_modules\\fsevents'
+232 silly reify ]
+233 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\fsevents
+234 silly reify mark deleted [
+234 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\fsevents'
+234 silly reify ]
+235 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\win32-ia32
+236 silly reify mark deleted [
+236 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\win32-ia32'
+236 silly reify ]
+237 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\win32-arm64
+238 silly reify mark deleted [
+238 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\win32-arm64'
+238 silly reify ]
+239 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\sunos-x64
+240 silly reify mark deleted [
+240 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\sunos-x64'
+240 silly reify ]
+241 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\openharmony-arm64
+242 silly reify mark deleted [
+242 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\openharmony-arm64'
+242 silly reify ]
+243 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\openbsd-x64
+244 silly reify mark deleted [
+244 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\openbsd-x64'
+244 silly reify ]
+245 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\openbsd-arm64
+246 silly reify mark deleted [
+246 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\openbsd-arm64'
+246 silly reify ]
+247 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\netbsd-x64
+248 silly reify mark deleted [
+248 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\netbsd-x64'
+248 silly reify ]
+249 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\netbsd-arm64
+250 silly reify mark deleted [
+250 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\netbsd-arm64'
+250 silly reify ]
+251 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-x64
+252 silly reify mark deleted [
+252 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-x64'
+252 silly reify ]
+253 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-s390x
+254 silly reify mark deleted [
+254 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-s390x'
+254 silly reify ]
+255 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-riscv64
+256 silly reify mark deleted [
+256 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-riscv64'
+256 silly reify ]
+257 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-ppc64
+258 silly reify mark deleted [
+258 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-ppc64'
+258 silly reify ]
+259 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-mips64el
+260 silly reify mark deleted [
+260 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-mips64el'
+260 silly reify ]
+261 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-loong64
+262 silly reify mark deleted [
+262 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-loong64'
+262 silly reify ]
+263 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-ia32
+264 silly reify mark deleted [
+264 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-ia32'
+264 silly reify ]
+265 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-arm64
+266 silly reify mark deleted [
+266 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-arm64'
+266 silly reify ]
+267 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\linux-arm
+268 silly reify mark deleted [
+268 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\linux-arm'
+268 silly reify ]
+269 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\freebsd-x64
+270 silly reify mark deleted [
+270 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\freebsd-x64'
+270 silly reify ]
+271 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\freebsd-arm64
+272 silly reify mark deleted [
+272 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\freebsd-arm64'
+272 silly reify ]
+273 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\darwin-x64
+274 silly reify mark deleted [
+274 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\darwin-x64'
+274 silly reify ]
+275 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\darwin-arm64
+276 silly reify mark deleted [
+276 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\darwin-arm64'
+276 silly reify ]
+277 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\android-x64
+278 silly reify mark deleted [
+278 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\android-x64'
+278 silly reify ]
+279 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\android-arm64
+280 silly reify mark deleted [
+280 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\android-arm64'
+280 silly reify ]
+281 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\android-arm
+282 silly reify mark deleted [
+282 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\android-arm'
+282 silly reify ]
+283 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck\node_modules\astro\node_modules\@esbuild\aix-ppc64
+284 silly reify mark deleted [
+284 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\tmp-lockcheck\\node_modules\\astro\\node_modules\\@esbuild\\aix-ppc64'
+284 silly reify ]
+285 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 230ms
+286 silly audit report {
+286 silly audit report   astro: [
+286 silly audit report     {
+286 silly audit report       id: 1117141,
+286 silly audit report       url: 'https://github.com/advisories/GHSA-j687-52p2-xcff',
+286 silly audit report       title: 'Astro: XSS in define:vars via incomplete </script> tag sanitization',
+286 silly audit report       severity: 'moderate',
+286 silly audit report       vulnerable_versions: '<6.1.6',
+286 silly audit report       cwe: [Array],
+286 silly audit report       cvss: [Object]
+286 silly audit report     }
+286 silly audit report   ]
+286 silly audit report }
+287 silly packumentCache corgi:https://registry.npmjs.org/astro cache-miss
+288 http cache https://registry.npmjs.org/astro 13ms (cache hit)
+289 silly packumentCache corgi:https://registry.npmjs.org/astro set size:4371718 disposed:false
+290 silly ADD
+291 silly ADD
+292 silly ADD
+293 silly ADD
+294 silly ADD
+295 silly ADD
+296 silly ADD
+297 silly ADD
+298 silly ADD
+299 silly ADD
+300 silly ADD
+301 silly ADD
+302 silly ADD
+303 silly ADD
+304 silly ADD
+305 silly ADD
+306 silly ADD
+307 silly ADD
+308 silly ADD
+309 silly ADD
+310 silly ADD
+311 silly ADD
+312 silly ADD
+313 silly ADD
+314 silly ADD
+315 silly ADD
+316 silly ADD
+317 silly ADD
+318 silly ADD
+319 silly ADD
+320 silly ADD
+321 silly ADD
+322 silly ADD
+323 silly ADD
+324 silly ADD
+325 silly ADD
+326 silly ADD
+327 silly ADD
+328 silly ADD
+329 silly ADD
+330 silly ADD
+331 silly ADD
+332 silly ADD
+333 silly ADD
+334 silly ADD
+335 silly ADD
+336 silly ADD
+337 silly ADD
+338 silly ADD
+339 silly ADD
+340 silly ADD
+341 silly ADD
+342 silly ADD
+343 silly ADD
+344 silly ADD
+345 silly ADD
+346 silly ADD
+347 silly ADD
+348 silly ADD
+349 silly ADD
+350 silly ADD
+351 silly ADD
+352 silly ADD
+353 silly ADD
+354 silly ADD
+355 silly ADD
+356 silly ADD
+357 silly ADD
+358 silly ADD
+359 silly ADD
+360 silly ADD
+361 silly ADD
+362 silly ADD
+363 silly ADD
+364 silly ADD
+365 silly ADD
+366 silly ADD
+367 silly ADD
+368 silly ADD
+369 silly ADD
+370 silly ADD
+371 silly ADD
+372 silly ADD
+373 silly ADD
+374 silly ADD
+375 silly ADD
+376 silly ADD
+377 silly ADD
+378 silly ADD
+379 silly ADD
+380 silly ADD
+381 silly ADD
+382 silly ADD
+383 silly ADD
+384 silly ADD
+385 silly ADD
+386 silly ADD
+387 silly ADD
+388 silly ADD
+389 silly ADD
+390 silly ADD
+391 silly ADD
+392 silly ADD
+393 silly ADD
+394 silly ADD
+395 silly ADD
+396 silly ADD
+397 silly ADD
+398 silly ADD
+399 silly ADD
+400 silly ADD
+401 silly ADD
+402 silly ADD
+403 silly ADD
+404 silly ADD
+405 silly ADD
+406 silly ADD
+407 silly ADD
+408 silly ADD
+409 silly ADD
+410 silly ADD
+411 silly ADD
+412 silly ADD
+413 silly ADD
+414 silly ADD
+415 silly ADD
+416 silly ADD
+417 silly ADD
+418 silly ADD
+419 silly ADD
+420 silly ADD
+421 silly ADD
+422 silly ADD
+423 silly ADD
+424 verbose cwd C:\Users\Risix\Desktop\Projects\RamirezLandscaping\tmp-lockcheck
+425 verbose os Windows_NT 10.0.26200
+426 verbose node v24.13.0
+427 verbose npm  v10.9.2
+428 verbose exit 0
+429 info ok

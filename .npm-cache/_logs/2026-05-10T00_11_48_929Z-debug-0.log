@@ -1,0 +1,1253 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v24.13.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npmrc
+5 silly config load:file:C:\Users\Risix\.npmrc
+6 silly config load:file:C:\Users\Risix\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_11_48_929Z-
+10 verbose logfile C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_11_48_929Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 silly audit bulk request {
+15 silly audit   '@astrojs/compiler': [ '2.13.1' ],
+15 silly audit   '@astrojs/internal-helpers': [ '0.7.6' ],
+15 silly audit   '@astrojs/markdown-remark': [ '6.3.11' ],
+15 silly audit   '@astrojs/prism': [ '3.3.0' ],
+15 silly audit   '@astrojs/sitemap': [ '3.7.2' ],
+15 silly audit   '@astrojs/telemetry': [ '3.3.0' ],
+15 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+15 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+15 silly audit   '@babel/parser': [ '7.29.3' ],
+15 silly audit   '@babel/types': [ '7.29.0' ],
+15 silly audit   '@capsizecss/unpack': [ '4.0.0' ],
+15 silly audit   '@emnapi/wasi-threads': [ '1.2.1' ],
+15 silly audit   '@esbuild/aix-ppc64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/android-arm': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/android-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/android-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/darwin-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/darwin-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/freebsd-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/freebsd-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-arm': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-ia32': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-loong64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-mips64el': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-ppc64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-riscv64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-s390x': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/linux-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/netbsd-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/netbsd-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/openbsd-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/openbsd-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/openharmony-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/sunos-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/win32-arm64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/win32-ia32': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@esbuild/win32-x64': [ '0.27.7', '0.25.12' ],
+15 silly audit   '@img/colour': [ '1.1.0' ],
+15 silly audit   '@img/sharp-darwin-arm64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-darwin-x64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.4' ],
+15 silly audit   '@img/sharp-linux-arm': [ '0.34.5' ],
+15 silly audit   '@img/sharp-linux-arm64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-linux-ppc64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-linux-riscv64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-linux-s390x': [ '0.34.5' ],
+15 silly audit   '@img/sharp-linux-x64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-wasm32': [ '0.34.5' ],
+15 silly audit   '@img/sharp-win32-arm64': [ '0.34.5' ],
+15 silly audit   '@img/sharp-win32-ia32': [ '0.34.5' ],
+15 silly audit   '@img/sharp-win32-x64': [ '0.34.5' ],
+15 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+15 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+15 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+15 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+15 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+15 silly audit   '@napi-rs/wasm-runtime': [ '1.1.4' ],
+15 silly audit   '@oslojs/encoding': [ '1.1.0' ],
+15 silly audit   '@oxc-project/types': [ '0.128.0' ],
+15 silly audit   '@rolldown/binding-android-arm64': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-darwin-arm64': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-darwin-x64': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-freebsd-x64': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-linux-arm-gnueabihf': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-linux-arm64-gnu': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-linux-arm64-musl': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-linux-ppc64-gnu': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-linux-s390x-gnu': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-linux-x64-gnu': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-linux-x64-musl': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-openharmony-arm64': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-wasm32-wasi': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-win32-arm64-msvc': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/binding-win32-x64-msvc': [ '1.0.0-rc.18' ],
+15 silly audit   '@rolldown/pluginutils': [ '1.0.0-rc.18' ],
+15 silly audit   '@rollup/pluginutils': [ '5.3.0' ],
+15 silly audit   'estree-walker': [ '2.0.2', '3.0.3' ],
+15 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-android-arm64': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-darwin-arm64': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-darwin-x64': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-freebsd-x64': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-loong64-musl': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-ppc64-musl': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-openbsd-x64': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.60.3' ],
+15 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.60.3' ],
+15 silly audit   '@shikijs/core': [ '3.23.0' ],
+15 silly audit   '@shikijs/engine-javascript': [ '3.23.0' ],
+15 silly audit   '@shikijs/engine-oniguruma': [ '3.23.0' ],
+15 silly audit   '@shikijs/langs': [ '3.23.0' ],
+15 silly audit   '@shikijs/themes': [ '3.23.0' ],
+15 silly audit   '@shikijs/types': [ '3.23.0' ],
+15 silly audit   '@shikijs/vscode-textmate': [ '10.0.2' ],
+15 silly audit   '@tailwindcss/node': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.3.0' ],
+15 silly audit   '@tailwindcss/vite': [ '4.3.0' ],
+15 silly audit   '@tybys/wasm-util': [ '0.10.2' ],
+15 silly audit   '@types/debug': [ '4.1.13' ],
+15 silly audit   '@types/estree': [ '1.0.9', '1.0.8' ],
+15 silly audit   '@types/hast': [ '3.0.4' ],
+15 silly audit   '@types/mdast': [ '4.0.4' ],
+15 silly audit   '@types/ms': [ '2.1.0' ],
+15 silly audit   '@types/nlcst': [ '2.0.3' ],
+15 silly audit   '@types/node': [ '24.12.3' ],
+15 silly audit   '@types/sax': [ '1.2.7' ],
+15 silly audit   '@types/unist': [ '3.0.3' ],
+15 silly audit   '@ungap/structured-clone': [ '1.3.1' ],
+15 silly audit   acorn: [ '8.16.0' ],
+15 silly audit   'ansi-align': [ '3.0.1' ],
+15 silly audit   'ansi-regex': [ '5.0.1', '6.2.2' ],
+15 silly audit   'emoji-regex': [ '8.0.0', '10.6.0' ],
+15 silly audit   'string-width': [ '4.2.3', '7.2.0' ],
+15 silly audit   'strip-ansi': [ '6.0.1', '7.2.0' ],
+15 silly audit   'ansi-styles': [ '6.2.3' ],
+15 silly audit   anymatch: [ '3.1.3' ],
+15 silly audit   picomatch: [ '2.3.2', '4.0.4' ],
+15 silly audit   arg: [ '5.0.2' ],
+15 silly audit   argparse: [ '2.0.1' ],
+15 silly audit   'aria-query': [ '5.3.2' ],
+15 silly audit   'array-iterate': [ '2.0.1' ],
+15 silly audit   astro: [ '5.18.1' ],
+15 silly audit   vite: [ '6.4.2', '8.0.11' ],
+15 silly audit   esbuild: [ '0.25.12', '0.27.7' ],
+15 silly audit   zod: [ '3.25.76', '4.4.3' ],
+15 silly audit   'zod-to-ts': [ '1.2.0' ],
+15 silly audit   'axobject-query': [ '4.1.0' ],
+15 silly audit   bail: [ '2.0.2' ],
+15 silly audit   'base-64': [ '1.0.0' ],
+15 silly audit   boolbase: [ '1.0.0' ],
+15 silly audit   boxen: [ '8.0.1' ],
+15 silly audit   camelcase: [ '8.0.0' ],
+15 silly audit   ccount: [ '2.0.1' ],
+15 silly audit   chalk: [ '5.6.2' ],
+15 silly audit   'character-entities': [ '2.0.2' ],
+15 silly audit   'character-entities-html4': [ '2.1.0' ],
+15 silly audit   'character-entities-legacy': [ '3.0.0' ],
+15 silly audit   chokidar: [ '5.0.0' ],
+15 silly audit   'ci-info': [ '4.4.0' ],
+15 silly audit   'cli-boxes': [ '3.0.0' ],
+15 silly audit   clsx: [ '2.1.1' ],
+15 silly audit   'comma-separated-tokens': [ '2.0.3' ],
+15 silly audit   commander: [ '11.1.0' ],
+15 silly audit   'common-ancestor-path': [ '1.0.1' ],
+15 silly audit   cookie: [ '1.1.1' ],
+15 silly audit   'cookie-es': [ '1.2.3' ],
+15 silly audit   crossws: [ '0.3.5' ],
+15 silly audit   'css-select': [ '5.2.2' ],
+15 silly audit   'css-tree': [ '3.2.1', '2.2.1' ],
+15 silly audit   'css-what': [ '6.2.2' ],
+15 silly audit   cssesc: [ '3.0.0' ],
+15 silly audit   csso: [ '5.0.5' ],
+15 silly audit   'mdn-data': [ '2.0.28', '2.27.1' ],
+15 silly audit   debug: [ '4.4.3' ],
+15 silly audit   'decode-named-character-reference': [ '1.3.0' ],
+15 silly audit   defu: [ '6.1.7' ],
+15 silly audit   dequal: [ '2.0.3' ],
+15 silly audit   destr: [ '2.0.5' ],
+15 silly audit   'detect-libc': [ '2.1.2' ],
+15 silly audit   'deterministic-object-hash': [ '2.0.2' ],
+15 silly audit   devalue: [ '5.8.0' ],
+15 silly audit   devlop: [ '1.1.0' ],
+15 silly audit   diff: [ '8.0.4' ],
+15 silly audit   dlv: [ '1.1.3' ],
+15 silly audit   'dom-serializer': [ '2.0.0' ],
+15 silly audit   entities: [ '4.5.0', '6.0.1' ],
+15 silly audit   domelementtype: [ '2.3.0' ],
+15 silly audit   domhandler: [ '5.0.3' ],
+15 silly audit   domutils: [ '3.2.2' ],
+15 silly audit   dset: [ '3.1.4' ],
+15 silly audit   'enhanced-resolve': [ '5.21.2' ],
+15 silly audit   'es-module-lexer': [ '1.7.0' ],
+15 silly audit   'escape-string-regexp': [ '5.0.0' ],
+15 silly audit   eventemitter3: [ '5.0.4' ],
+15 silly audit   extend: [ '3.0.2' ],
+15 silly audit   fdir: [ '6.5.0' ],
+15 silly audit   flattie: [ '1.1.1' ],
+15 silly audit   fontace: [ '0.4.1' ],
+15 silly audit   fontkitten: [ '1.0.3' ],
+15 silly audit   fsevents: [ '2.3.3', '2.3.2' ],
+15 silly audit   'get-east-asian-width': [ '1.6.0' ],
+15 silly audit   'github-slugger': [ '2.0.0' ],
+15 silly audit   'graceful-fs': [ '4.2.11' ],
+15 silly audit   h3: [ '1.15.11' ],
+15 silly audit   'hast-util-from-html': [ '2.0.3' ],
+15 silly audit   'hast-util-from-parse5': [ '8.0.3' ],
+15 silly audit   'hast-util-is-element': [ '3.0.0' ],
+15 silly audit   'hast-util-parse-selector': [ '4.0.0' ],
+15 silly audit   'hast-util-raw': [ '9.1.0' ],
+15 silly audit   'hast-util-to-html': [ '9.0.5' ],
+15 silly audit   'hast-util-to-parse5': [ '8.0.1' ],
+15 silly audit   'hast-util-to-text': [ '4.0.2' ],
+15 silly audit   'hast-util-whitespace': [ '3.0.0' ],
+15 silly audit   hastscript: [ '9.0.1' ],
+15 silly audit   'html-escaper': [ '3.0.3' ],
+15 silly audit   'html-void-elements': [ '3.0.0' ],
+15 silly audit   'http-cache-semantics': [ '4.2.0' ],
+15 silly audit   'import-meta-resolve': [ '4.2.0' ],
+15 silly audit   'iron-webcrypto': [ '1.2.1' ],
+15 silly audit   'is-docker': [ '3.0.0' ],
+15 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+15 silly audit   'is-inside-container': [ '1.0.0' ],
+15 silly audit   'is-plain-obj': [ '4.1.0' ],
+15 silly audit   'is-wsl': [ '3.1.1' ],
+15 silly audit   jiti: [ '2.7.0' ],
+15 silly audit   'js-yaml': [ '4.1.1' ],
+15 silly audit   kleur: [ '3.0.3' ],
+15 silly audit   lightningcss: [ '1.32.0' ],
+15 silly audit   'lightningcss-android-arm64': [ '1.32.0' ],
+15 silly audit   'lightningcss-darwin-arm64': [ '1.32.0' ],
+15 silly audit   'lightningcss-darwin-x64': [ '1.32.0' ],
+15 silly audit   'lightningcss-freebsd-x64': [ '1.32.0' ],
+15 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.32.0' ],
+15 silly audit   'lightningcss-linux-arm64-gnu': [ '1.32.0' ],
+15 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0' ],
+15 silly audit   'lightningcss-linux-x64-gnu': [ '1.32.0' ],
+15 silly audit   'lightningcss-linux-x64-musl': [ '1.32.0' ],
+15 silly audit   'lightningcss-win32-arm64-msvc': [ '1.32.0' ],
+15 silly audit   'lightningcss-win32-x64-msvc': [ '1.32.0' ],
+15 silly audit   'longest-streak': [ '3.1.0' ],
+15 silly audit   'lru-cache': [ '11.3.6' ],
+15 silly audit   'magic-string': [ '0.30.21' ],
+15 silly audit   magicast: [ '0.5.2' ],
+15 silly audit   'markdown-table': [ '3.0.4' ],
+15 silly audit   'mdast-util-definitions': [ '6.0.0' ],
+15 silly audit   'mdast-util-find-and-replace': [ '3.0.2' ],
+15 silly audit   'mdast-util-from-markdown': [ '2.0.3' ],
+15 silly audit   'mdast-util-gfm': [ '3.1.0' ],
+15 silly audit   'mdast-util-gfm-autolink-literal': [ '2.0.1' ],
+15 silly audit   'mdast-util-gfm-footnote': [ '2.1.0' ],
+15 silly audit   'mdast-util-gfm-strikethrough': [ '2.0.0' ],
+15 silly audit   'mdast-util-gfm-table': [ '2.0.0' ],
+15 silly audit   'mdast-util-gfm-task-list-item': [ '2.0.0' ],
+15 silly audit   'mdast-util-phrasing': [ '4.1.0' ],
+15 silly audit   'mdast-util-to-hast': [ '13.2.1' ],
+15 silly audit   'mdast-util-to-markdown': [ '2.1.2' ],
+15 silly audit   'mdast-util-to-string': [ '4.0.0' ],
+15 silly audit   micromark: [ '4.0.2' ],
+15 silly audit   'micromark-core-commonmark': [ '2.0.3' ],
+15 silly audit   'micromark-extension-gfm': [ '3.0.0' ],
+15 silly audit   'micromark-extension-gfm-autolink-literal': [ '2.1.0' ],
+15 silly audit   'micromark-extension-gfm-footnote': [ '2.1.0' ],
+15 silly audit   'micromark-extension-gfm-strikethrough': [ '2.1.0' ],
+15 silly audit   'micromark-extension-gfm-table': [ '2.1.1' ],
+15 silly audit   'micromark-extension-gfm-tagfilter': [ '2.0.0' ],
+15 silly audit   'micromark-extension-gfm-task-list-item': [ '2.1.0' ],
+15 silly audit   'micromark-factory-destination': [ '2.0.1' ],
+15 silly audit   'micromark-factory-label': [ '2.0.1' ],
+15 silly audit   'micromark-factory-space': [ '2.0.1' ],
+15 silly audit   'micromark-factory-title': [ '2.0.1' ],
+15 silly audit   'micromark-factory-whitespace': [ '2.0.1' ],
+15 silly audit   'micromark-util-character': [ '2.1.1' ],
+15 silly audit   'micromark-util-chunked': [ '2.0.1' ],
+15 silly audit   'micromark-util-classify-character': [ '2.0.1' ],
+15 silly audit   'micromark-util-combine-extensions': [ '2.0.1' ],
+15 silly audit   'micromark-util-decode-numeric-character-reference': [ '2.0.2' ],
+15 silly audit   'micromark-util-decode-string': [ '2.0.1' ],
+15 silly audit   'micromark-util-encode': [ '2.0.1' ],
+15 silly audit   'micromark-util-html-tag-name': [ '2.0.1' ],
+15 silly audit   'micromark-util-normalize-identifier': [ '2.0.1' ],
+15 silly audit   'micromark-util-resolve-all': [ '2.0.1' ],
+15 silly audit   'micromark-util-sanitize-uri': [ '2.0.1' ],
+15 silly audit   'micromark-util-subtokenize': [ '2.1.0' ],
+15 silly audit   'micromark-util-symbol': [ '2.0.1' ],
+15 silly audit   'micromark-util-types': [ '2.0.2' ],
+15 silly audit   mrmime: [ '2.0.1' ],
+15 silly audit   ms: [ '2.1.3' ],
+15 silly audit   nanoid: [ '3.3.12' ],
+15 silly audit   neotraverse: [ '0.6.18' ],
+15 silly audit   'nlcst-to-string': [ '4.0.0' ],
+15 silly audit   'node-fetch-native': [ '1.6.7' ],
+15 silly audit   'node-mock-http': [ '1.0.4' ],
+15 silly audit   'normalize-path': [ '3.0.0' ],
+15 silly audit   'nth-check': [ '2.1.1' ],
+15 silly audit   ofetch: [ '1.5.1' ],
+15 silly audit   ohash: [ '2.0.11' ],
+15 silly audit   'oniguruma-parser': [ '0.12.2' ],
+15 silly audit   'oniguruma-to-es': [ '4.3.6' ],
+15 silly audit   'p-limit': [ '6.2.0' ],
+15 silly audit   'p-queue': [ '8.1.1' ],
+15 silly audit   'p-timeout': [ '6.1.4' ],
+15 silly audit   'package-manager-detector': [ '1.6.0' ],
+15 silly audit   'parse-latin': [ '7.0.0' ],
+15 silly audit   parse5: [ '7.3.0' ],
+15 silly audit   piccolore: [ '0.1.3' ],
+15 silly audit   picocolors: [ '1.1.1' ],
+15 silly audit   playwright: [ '1.59.1' ],
+15 silly audit   'playwright-core': [ '1.59.1' ],
+15 silly audit   postcss: [ '8.5.14' ],
+15 silly audit   prismjs: [ '1.30.0' ],
+15 silly audit   prompts: [ '2.4.2' ],
+15 silly audit   'property-information': [ '7.1.0' ],
+15 silly audit   radix3: [ '1.1.2' ],
+15 silly audit   readdirp: [ '5.0.0' ],
+15 silly audit   regex: [ '6.1.0' ],
+15 silly audit   'regex-recursion': [ '6.0.2' ],
+15 silly audit   'regex-utilities': [ '2.3.0' ],
+15 silly audit   rehype: [ '13.0.2' ],
+15 silly audit   'rehype-parse': [ '9.0.1' ],
+15 silly audit   'rehype-raw': [ '7.0.0' ],
+15 silly audit   'rehype-stringify': [ '10.0.1' ],
+15 silly audit   'remark-gfm': [ '4.0.1' ],
+15 silly audit   'remark-parse': [ '11.0.0' ],
+15 silly audit   'remark-rehype': [ '11.1.2' ],
+15 silly audit   'remark-smartypants': [ '3.0.2' ],
+15 silly audit   'remark-stringify': [ '11.0.0' ],
+15 silly audit   retext: [ '9.0.0' ],
+15 silly audit   'retext-latin': [ '4.0.0' ],
+15 silly audit   'retext-smartypants': [ '6.2.0' ],
+15 silly audit   'retext-stringify': [ '4.0.0' ],
+15 silly audit   rolldown: [ '1.0.0-rc.18' ],
+15 silly audit   rollup: [ '4.60.3' ],
+15 silly audit   sax: [ '1.6.0' ],
+15 silly audit   semver: [ '7.8.0' ],
+15 silly audit   sharp: [ '0.34.5' ],
+15 silly audit   shiki: [ '3.23.0' ],
+15 silly audit   sisteransi: [ '1.0.5' ],
+15 silly audit   sitemap: [ '9.0.1' ],
+15 silly audit   'smol-toml': [ '1.6.1' ],
+15 silly audit   'source-map-js': [ '1.2.1' ],
+15 silly audit   'space-separated-tokens': [ '2.0.2' ],
+15 silly audit   'stream-replace-string': [ '2.0.0' ],
+15 silly audit   'stringify-entities': [ '4.0.4' ],
+15 silly audit   svgo: [ '4.0.1' ],
+15 silly audit   tailwindcss: [ '4.3.0' ],
+15 silly audit   tapable: [ '2.3.3' ],
+15 silly audit   'tiny-inflate': [ '1.0.3' ],
+15 silly audit   tinyexec: [ '1.1.2' ],
+15 silly audit   tinyglobby: [ '0.2.16' ],
+15 silly audit   'trim-lines': [ '3.0.1' ],
+15 silly audit   trough: [ '2.2.0' ],
+15 silly audit   tsconfck: [ '3.1.6' ],
+15 silly audit   tslib: [ '2.8.1' ],
+15 silly audit   'type-fest': [ '4.41.0' ],
+15 silly audit   typescript: [ '5.9.3' ],
+15 silly audit   ufo: [ '1.6.4' ],
+15 silly audit   ultrahtml: [ '1.6.0' ],
+15 silly audit   uncrypto: [ '0.1.3' ],
+15 silly audit   'undici-types': [ '7.16.0' ],
+15 silly audit   unified: [ '11.0.5' ],
+15 silly audit   unifont: [ '0.7.4' ],
+15 silly audit   'unist-util-find-after': [ '5.0.0' ],
+15 silly audit   'unist-util-is': [ '6.0.1' ],
+15 silly audit   'unist-util-modify-children': [ '4.0.0' ],
+15 silly audit   'unist-util-position': [ '5.0.0' ],
+15 silly audit   'unist-util-remove-position': [ '5.0.0' ],
+15 silly audit   'unist-util-stringify-position': [ '4.0.0' ],
+15 silly audit   'unist-util-visit': [ '5.1.0' ],
+15 silly audit   'unist-util-visit-children': [ '3.0.0' ],
+15 silly audit   'unist-util-visit-parents': [ '6.0.2' ],
+15 silly audit   unstorage: [ '1.17.5' ],
+15 silly audit   vfile: [ '6.0.3' ],
+15 silly audit   'vfile-location': [ '5.0.3' ],
+15 silly audit   'vfile-message': [ '4.0.3' ],
+15 silly audit   vitefu: [ '1.1.3' ],
+15 silly audit   'web-namespaces': [ '2.0.1' ],
+15 silly audit   'which-pm-runs': [ '1.1.0' ],
+15 silly audit   'widest-line': [ '5.0.0' ],
+15 silly audit   'wrap-ansi': [ '9.0.2' ],
+15 silly audit   'xxhash-wasm': [ '1.1.0' ],
+15 silly audit   'yargs-parser': [ '21.1.1' ],
+15 silly audit   'yocto-queue': [ '1.2.2' ],
+15 silly audit   'yocto-spinner': [ '0.2.3' ],
+15 silly audit   yoctocolors: [ '2.1.2' ],
+15 silly audit   'zod-to-json-schema': [ '3.25.2' ],
+15 silly audit   zwitch: [ '2.0.4' ]
+15 silly audit }
+16 http cache zwitch@https://registry.npmjs.org/zwitch/-/zwitch-2.0.4.tgz 0ms (cache hit)
+17 http cache zod-to-json-schema@https://registry.npmjs.org/zod-to-json-schema/-/zod-to-json-schema-3.25.2.tgz 0ms (cache hit)
+18 http cache yoctocolors@https://registry.npmjs.org/yoctocolors/-/yoctocolors-2.1.2.tgz 0ms (cache hit)
+19 http cache yocto-spinner@https://registry.npmjs.org/yocto-spinner/-/yocto-spinner-0.2.3.tgz 0ms (cache hit)
+20 http cache zod@https://registry.npmjs.org/zod/-/zod-4.4.3.tgz 0ms (cache hit)
+21 http cache xxhash-wasm@https://registry.npmjs.org/xxhash-wasm/-/xxhash-wasm-1.1.0.tgz 0ms (cache hit)
+22 http cache wrap-ansi@https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-9.0.2.tgz 0ms (cache hit)
+23 http cache widest-line@https://registry.npmjs.org/widest-line/-/widest-line-5.0.0.tgz 0ms (cache hit)
+24 http cache which-pm-runs@https://registry.npmjs.org/which-pm-runs/-/which-pm-runs-1.1.0.tgz 0ms (cache hit)
+25 http cache yargs-parser@https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.1.1.tgz 0ms (cache hit)
+26 http cache vitefu@https://registry.npmjs.org/vitefu/-/vitefu-1.1.3.tgz 0ms (cache hit)
+27 http cache vite@https://registry.npmjs.org/vite/-/vite-8.0.11.tgz 0ms (cache hit)
+28 http cache yocto-queue@https://registry.npmjs.org/yocto-queue/-/yocto-queue-1.2.2.tgz 0ms (cache hit)
+29 http cache vfile-message@https://registry.npmjs.org/vfile-message/-/vfile-message-4.0.3.tgz 0ms (cache hit)
+30 http cache vfile-location@https://registry.npmjs.org/vfile-location/-/vfile-location-5.0.3.tgz 0ms (cache hit)
+31 http cache vfile@https://registry.npmjs.org/vfile/-/vfile-6.0.3.tgz 0ms (cache hit)
+32 http cache unstorage@https://registry.npmjs.org/unstorage/-/unstorage-1.17.5.tgz 0ms (cache hit)
+33 http cache unist-util-visit-parents@https://registry.npmjs.org/unist-util-visit-parents/-/unist-util-visit-parents-6.0.2.tgz 0ms (cache hit)
+34 http cache web-namespaces@https://registry.npmjs.org/web-namespaces/-/web-namespaces-2.0.1.tgz 0ms (cache hit)
+35 http cache unist-util-position@https://registry.npmjs.org/unist-util-position/-/unist-util-position-5.0.0.tgz 0ms (cache hit)
+36 http cache unist-util-stringify-position@https://registry.npmjs.org/unist-util-stringify-position/-/unist-util-stringify-position-4.0.0.tgz 0ms (cache hit)
+37 http cache unist-util-visit@https://registry.npmjs.org/unist-util-visit/-/unist-util-visit-5.1.0.tgz 0ms (cache hit)
+38 http cache unist-util-modify-children@https://registry.npmjs.org/unist-util-modify-children/-/unist-util-modify-children-4.0.0.tgz 0ms (cache hit)
+39 http cache unist-util-visit-children@https://registry.npmjs.org/unist-util-visit-children/-/unist-util-visit-children-3.0.0.tgz 0ms (cache hit)
+40 http cache unist-util-find-after@https://registry.npmjs.org/unist-util-find-after/-/unist-util-find-after-5.0.0.tgz 0ms (cache hit)
+41 http cache unifont@https://registry.npmjs.org/unifont/-/unifont-0.7.4.tgz 0ms (cache hit)
+42 http cache unist-util-is@https://registry.npmjs.org/unist-util-is/-/unist-util-is-6.0.1.tgz 0ms (cache hit)
+43 http cache unified@https://registry.npmjs.org/unified/-/unified-11.0.5.tgz 0ms (cache hit)
+44 http cache undici-types@https://registry.npmjs.org/undici-types/-/undici-types-7.16.0.tgz 0ms (cache hit)
+45 http cache uncrypto@https://registry.npmjs.org/uncrypto/-/uncrypto-0.1.3.tgz 0ms (cache hit)
+46 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz 0ms (cache hit)
+47 http cache ufo@https://registry.npmjs.org/ufo/-/ufo-1.6.4.tgz 0ms (cache hit)
+48 http cache tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 0ms (cache hit)
+49 http cache tsconfck@https://registry.npmjs.org/tsconfck/-/tsconfck-3.1.6.tgz 0ms (cache hit)
+50 http cache unist-util-remove-position@https://registry.npmjs.org/unist-util-remove-position/-/unist-util-remove-position-5.0.0.tgz 0ms (cache hit)
+51 http cache ultrahtml@https://registry.npmjs.org/ultrahtml/-/ultrahtml-1.6.0.tgz 0ms (cache hit)
+52 http cache type-fest@https://registry.npmjs.org/type-fest/-/type-fest-4.41.0.tgz 0ms (cache hit)
+53 http cache tinyglobby@https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.16.tgz 0ms (cache hit)
+54 http cache trim-lines@https://registry.npmjs.org/trim-lines/-/trim-lines-3.0.1.tgz 0ms (cache hit)
+55 http cache tinyexec@https://registry.npmjs.org/tinyexec/-/tinyexec-1.1.2.tgz 0ms (cache hit)
+56 http cache tiny-inflate@https://registry.npmjs.org/tiny-inflate/-/tiny-inflate-1.0.3.tgz 0ms (cache hit)
+57 http cache svgo@https://registry.npmjs.org/svgo/-/svgo-4.0.1.tgz 0ms (cache hit)
+58 http cache strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-7.2.0.tgz 0ms (cache hit)
+59 http cache tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.0.tgz 0ms (cache hit)
+60 http cache tapable@https://registry.npmjs.org/tapable/-/tapable-2.3.3.tgz 0ms (cache hit)
+61 http cache stream-replace-string@https://registry.npmjs.org/stream-replace-string/-/stream-replace-string-2.0.0.tgz 0ms (cache hit)
+62 http cache stringify-entities@https://registry.npmjs.org/stringify-entities/-/stringify-entities-4.0.4.tgz 0ms (cache hit)
+63 http cache space-separated-tokens@https://registry.npmjs.org/space-separated-tokens/-/space-separated-tokens-2.0.2.tgz 0ms (cache hit)
+64 http cache source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 0ms (cache hit)
+65 http cache string-width@https://registry.npmjs.org/string-width/-/string-width-7.2.0.tgz 0ms (cache hit)
+66 http cache smol-toml@https://registry.npmjs.org/smol-toml/-/smol-toml-1.6.1.tgz 0ms (cache hit)
+67 http cache shiki@https://registry.npmjs.org/shiki/-/shiki-3.23.0.tgz 0ms (cache hit)
+68 http cache sisteransi@https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz 0ms (cache hit)
+69 http cache trough@https://registry.npmjs.org/trough/-/trough-2.2.0.tgz 0ms (cache hit)
+70 http cache semver@https://registry.npmjs.org/semver/-/semver-7.8.0.tgz 0ms (cache hit)
+71 http cache rollup@https://registry.npmjs.org/rollup/-/rollup-4.60.3.tgz 0ms (cache hit)
+72 http cache sitemap@https://registry.npmjs.org/sitemap/-/sitemap-9.0.1.tgz 0ms (cache hit)
+73 http cache sharp@https://registry.npmjs.org/sharp/-/sharp-0.34.5.tgz 1ms (cache hit)
+74 http cache rolldown@https://registry.npmjs.org/rolldown/-/rolldown-1.0.0-rc.18.tgz 0ms (cache hit)
+75 http cache retext-smartypants@https://registry.npmjs.org/retext-smartypants/-/retext-smartypants-6.2.0.tgz 0ms (cache hit)
+76 http cache retext-latin@https://registry.npmjs.org/retext-latin/-/retext-latin-4.0.0.tgz 0ms (cache hit)
+77 http cache retext-stringify@https://registry.npmjs.org/retext-stringify/-/retext-stringify-4.0.0.tgz 0ms (cache hit)
+78 http cache remark-stringify@https://registry.npmjs.org/remark-stringify/-/remark-stringify-11.0.0.tgz 0ms (cache hit)
+79 http cache sax@https://registry.npmjs.org/sax/-/sax-1.6.0.tgz 0ms (cache hit)
+80 http cache retext@https://registry.npmjs.org/retext/-/retext-9.0.0.tgz 0ms (cache hit)
+81 http cache remark-smartypants@https://registry.npmjs.org/remark-smartypants/-/remark-smartypants-3.0.2.tgz 0ms (cache hit)
+82 http cache remark-rehype@https://registry.npmjs.org/remark-rehype/-/remark-rehype-11.1.2.tgz 0ms (cache hit)
+83 http cache remark-gfm@https://registry.npmjs.org/remark-gfm/-/remark-gfm-4.0.1.tgz 0ms (cache hit)
+84 http cache rehype-raw@https://registry.npmjs.org/rehype-raw/-/rehype-raw-7.0.0.tgz 0ms (cache hit)
+85 http cache rehype@https://registry.npmjs.org/rehype/-/rehype-13.0.2.tgz 0ms (cache hit)
+86 http cache rehype-parse@https://registry.npmjs.org/rehype-parse/-/rehype-parse-9.0.1.tgz 0ms (cache hit)
+87 http cache rehype-stringify@https://registry.npmjs.org/rehype-stringify/-/rehype-stringify-10.0.1.tgz 0ms (cache hit)
+88 http cache regex-utilities@https://registry.npmjs.org/regex-utilities/-/regex-utilities-2.3.0.tgz 0ms (cache hit)
+89 http cache remark-parse@https://registry.npmjs.org/remark-parse/-/remark-parse-11.0.0.tgz 0ms (cache hit)
+90 http cache regex-recursion@https://registry.npmjs.org/regex-recursion/-/regex-recursion-6.0.2.tgz 0ms (cache hit)
+91 http cache regex@https://registry.npmjs.org/regex/-/regex-6.1.0.tgz 0ms (cache hit)
+92 http cache readdirp@https://registry.npmjs.org/readdirp/-/readdirp-5.0.0.tgz 0ms (cache hit)
+93 http cache property-information@https://registry.npmjs.org/property-information/-/property-information-7.1.0.tgz 0ms (cache hit)
+94 http cache prismjs@https://registry.npmjs.org/prismjs/-/prismjs-1.30.0.tgz 0ms (cache hit)
+95 http cache prompts@https://registry.npmjs.org/prompts/-/prompts-2.4.2.tgz 0ms (cache hit)
+96 http cache radix3@https://registry.npmjs.org/radix3/-/radix3-1.1.2.tgz 0ms (cache hit)
+97 http cache playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.59.1.tgz 0ms (cache hit)
+98 http cache picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 0ms (cache hit)
+99 http cache picomatch@https://registry.npmjs.org/picomatch/-/picomatch-4.0.4.tgz 0ms (cache hit)
+100 http cache piccolore@https://registry.npmjs.org/piccolore/-/piccolore-0.1.3.tgz 0ms (cache hit)
+101 http cache parse5@https://registry.npmjs.org/parse5/-/parse5-7.3.0.tgz 0ms (cache hit)
+102 http cache parse-latin@https://registry.npmjs.org/parse-latin/-/parse-latin-7.0.0.tgz 0ms (cache hit)
+103 http cache playwright@https://registry.npmjs.org/playwright/-/playwright-1.59.1.tgz 0ms (cache hit)
+104 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.14.tgz 0ms (cache hit)
+105 http cache package-manager-detector@https://registry.npmjs.org/package-manager-detector/-/package-manager-detector-1.6.0.tgz 0ms (cache hit)
+106 http cache p-queue@https://registry.npmjs.org/p-queue/-/p-queue-8.1.1.tgz 0ms (cache hit)
+107 http cache oniguruma-to-es@https://registry.npmjs.org/oniguruma-to-es/-/oniguruma-to-es-4.3.6.tgz 0ms (cache hit)
+108 http cache p-limit@https://registry.npmjs.org/p-limit/-/p-limit-6.2.0.tgz 0ms (cache hit)
+109 http cache oniguruma-parser@https://registry.npmjs.org/oniguruma-parser/-/oniguruma-parser-0.12.2.tgz 0ms (cache hit)
+110 http cache p-timeout@https://registry.npmjs.org/p-timeout/-/p-timeout-6.1.4.tgz 0ms (cache hit)
+111 http cache ofetch@https://registry.npmjs.org/ofetch/-/ofetch-1.5.1.tgz 0ms (cache hit)
+112 http cache ohash@https://registry.npmjs.org/ohash/-/ohash-2.0.11.tgz 0ms (cache hit)
+113 http cache nth-check@https://registry.npmjs.org/nth-check/-/nth-check-2.1.1.tgz 0ms (cache hit)
+114 http cache node-fetch-native@https://registry.npmjs.org/node-fetch-native/-/node-fetch-native-1.6.7.tgz 0ms (cache hit)
+115 http cache nlcst-to-string@https://registry.npmjs.org/nlcst-to-string/-/nlcst-to-string-4.0.0.tgz 0ms (cache hit)
+116 http cache node-mock-http@https://registry.npmjs.org/node-mock-http/-/node-mock-http-1.0.4.tgz 0ms (cache hit)
+117 http cache neotraverse@https://registry.npmjs.org/neotraverse/-/neotraverse-0.6.18.tgz 0ms (cache hit)
+118 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.12.tgz 0ms (cache hit)
+119 http cache normalize-path@https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz 0ms (cache hit)
+120 http cache mrmime@https://registry.npmjs.org/mrmime/-/mrmime-2.0.1.tgz 0ms (cache hit)
+121 http cache ms@https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 0ms (cache hit)
+122 http cache micromark-util-types@https://registry.npmjs.org/micromark-util-types/-/micromark-util-types-2.0.2.tgz 0ms (cache hit)
+123 http cache micromark-util-symbol@https://registry.npmjs.org/micromark-util-symbol/-/micromark-util-symbol-2.0.1.tgz 0ms (cache hit)
+124 http cache micromark-util-resolve-all@https://registry.npmjs.org/micromark-util-resolve-all/-/micromark-util-resolve-all-2.0.1.tgz 0ms (cache hit)
+125 http cache micromark-util-subtokenize@https://registry.npmjs.org/micromark-util-subtokenize/-/micromark-util-subtokenize-2.1.0.tgz 0ms (cache hit)
+126 http cache micromark-util-normalize-identifier@https://registry.npmjs.org/micromark-util-normalize-identifier/-/micromark-util-normalize-identifier-2.0.1.tgz 0ms (cache hit)
+127 http cache micromark-util-sanitize-uri@https://registry.npmjs.org/micromark-util-sanitize-uri/-/micromark-util-sanitize-uri-2.0.1.tgz 0ms (cache hit)
+128 http cache micromark-util-html-tag-name@https://registry.npmjs.org/micromark-util-html-tag-name/-/micromark-util-html-tag-name-2.0.1.tgz 0ms (cache hit)
+129 http cache micromark-util-decode-string@https://registry.npmjs.org/micromark-util-decode-string/-/micromark-util-decode-string-2.0.1.tgz 0ms (cache hit)
+130 http cache micromark-util-classify-character@https://registry.npmjs.org/micromark-util-classify-character/-/micromark-util-classify-character-2.0.1.tgz 0ms (cache hit)
+131 http cache micromark-util-encode@https://registry.npmjs.org/micromark-util-encode/-/micromark-util-encode-2.0.1.tgz 0ms (cache hit)
+132 http cache micromark-util-decode-numeric-character-reference@https://registry.npmjs.org/micromark-util-decode-numeric-character-reference/-/micromark-util-decode-numeric-character-reference-2.0.2.tgz 0ms (cache hit)
+133 http cache micromark-util-chunked@https://registry.npmjs.org/micromark-util-chunked/-/micromark-util-chunked-2.0.1.tgz 0ms (cache hit)
+134 http cache micromark-util-combine-extensions@https://registry.npmjs.org/micromark-util-combine-extensions/-/micromark-util-combine-extensions-2.0.1.tgz 0ms (cache hit)
+135 http cache micromark-factory-whitespace@https://registry.npmjs.org/micromark-factory-whitespace/-/micromark-factory-whitespace-2.0.1.tgz 0ms (cache hit)
+136 http cache micromark-factory-title@https://registry.npmjs.org/micromark-factory-title/-/micromark-factory-title-2.0.1.tgz 0ms (cache hit)
+137 http cache micromark-factory-label@https://registry.npmjs.org/micromark-factory-label/-/micromark-factory-label-2.0.1.tgz 0ms (cache hit)
+138 http cache micromark-util-character@https://registry.npmjs.org/micromark-util-character/-/micromark-util-character-2.1.1.tgz 0ms (cache hit)
+139 http cache micromark-extension-gfm-task-list-item@https://registry.npmjs.org/micromark-extension-gfm-task-list-item/-/micromark-extension-gfm-task-list-item-2.1.0.tgz 0ms (cache hit)
+140 http cache micromark-factory-destination@https://registry.npmjs.org/micromark-factory-destination/-/micromark-factory-destination-2.0.1.tgz 0ms (cache hit)
+141 http cache micromark-extension-gfm-strikethrough@https://registry.npmjs.org/micromark-extension-gfm-strikethrough/-/micromark-extension-gfm-strikethrough-2.1.0.tgz 0ms (cache hit)
+142 http cache micromark-extension-gfm-table@https://registry.npmjs.org/micromark-extension-gfm-table/-/micromark-extension-gfm-table-2.1.1.tgz 0ms (cache hit)
+143 http cache micromark-extension-gfm-footnote@https://registry.npmjs.org/micromark-extension-gfm-footnote/-/micromark-extension-gfm-footnote-2.1.0.tgz 0ms (cache hit)
+144 http cache micromark-extension-gfm-tagfilter@https://registry.npmjs.org/micromark-extension-gfm-tagfilter/-/micromark-extension-gfm-tagfilter-2.0.0.tgz 0ms (cache hit)
+145 http cache micromark-extension-gfm-autolink-literal@https://registry.npmjs.org/micromark-extension-gfm-autolink-literal/-/micromark-extension-gfm-autolink-literal-2.1.0.tgz 0ms (cache hit)
+146 http cache micromark-core-commonmark@https://registry.npmjs.org/micromark-core-commonmark/-/micromark-core-commonmark-2.0.3.tgz 0ms (cache hit)
+147 http cache micromark-factory-space@https://registry.npmjs.org/micromark-factory-space/-/micromark-factory-space-2.0.1.tgz 0ms (cache hit)
+148 http cache mdn-data@https://registry.npmjs.org/mdn-data/-/mdn-data-2.27.1.tgz 0ms (cache hit)
+149 http cache micromark@https://registry.npmjs.org/micromark/-/micromark-4.0.2.tgz 0ms (cache hit)
+150 http cache mdast-util-to-markdown@https://registry.npmjs.org/mdast-util-to-markdown/-/mdast-util-to-markdown-2.1.2.tgz 0ms (cache hit)
+151 http cache micromark-extension-gfm@https://registry.npmjs.org/micromark-extension-gfm/-/micromark-extension-gfm-3.0.0.tgz 0ms (cache hit)
+152 http cache mdast-util-phrasing@https://registry.npmjs.org/mdast-util-phrasing/-/mdast-util-phrasing-4.1.0.tgz 0ms (cache hit)
+153 http cache mdast-util-gfm-strikethrough@https://registry.npmjs.org/mdast-util-gfm-strikethrough/-/mdast-util-gfm-strikethrough-2.0.0.tgz 0ms (cache hit)
+154 http cache mdast-util-gfm-task-list-item@https://registry.npmjs.org/mdast-util-gfm-task-list-item/-/mdast-util-gfm-task-list-item-2.0.0.tgz 0ms (cache hit)
+155 http cache mdast-util-gfm-table@https://registry.npmjs.org/mdast-util-gfm-table/-/mdast-util-gfm-table-2.0.0.tgz 0ms (cache hit)
+156 http cache mdast-util-to-string@https://registry.npmjs.org/mdast-util-to-string/-/mdast-util-to-string-4.0.0.tgz 0ms (cache hit)
+157 http cache mdast-util-to-hast@https://registry.npmjs.org/mdast-util-to-hast/-/mdast-util-to-hast-13.2.1.tgz 0ms (cache hit)
+158 http cache mdast-util-gfm-autolink-literal@https://registry.npmjs.org/mdast-util-gfm-autolink-literal/-/mdast-util-gfm-autolink-literal-2.0.1.tgz 0ms (cache hit)
+159 http cache mdast-util-gfm-footnote@https://registry.npmjs.org/mdast-util-gfm-footnote/-/mdast-util-gfm-footnote-2.1.0.tgz 0ms (cache hit)
+160 http cache mdast-util-gfm@https://registry.npmjs.org/mdast-util-gfm/-/mdast-util-gfm-3.1.0.tgz 0ms (cache hit)
+161 http cache mdast-util-definitions@https://registry.npmjs.org/mdast-util-definitions/-/mdast-util-definitions-6.0.0.tgz 0ms (cache hit)
+162 http cache mdast-util-find-and-replace@https://registry.npmjs.org/mdast-util-find-and-replace/-/mdast-util-find-and-replace-3.0.2.tgz 0ms (cache hit)
+163 http cache markdown-table@https://registry.npmjs.org/markdown-table/-/markdown-table-3.0.4.tgz 0ms (cache hit)
+164 http cache mdast-util-from-markdown@https://registry.npmjs.org/mdast-util-from-markdown/-/mdast-util-from-markdown-2.0.3.tgz 0ms (cache hit)
+165 http cache magic-string@https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz 0ms (cache hit)
+166 http cache lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-11.3.6.tgz 0ms (cache hit)
+167 http cache magicast@https://registry.npmjs.org/magicast/-/magicast-0.5.2.tgz 0ms (cache hit)
+168 http cache lightningcss-win32-x64-msvc@https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz 0ms (cache hit)
+169 http cache js-yaml@https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz 0ms (cache hit)
+170 http cache kleur@https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz 0ms (cache hit)
+171 http cache lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.32.0.tgz 0ms (cache hit)
+172 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz 0ms (cache hit)
+173 http cache longest-streak@https://registry.npmjs.org/longest-streak/-/longest-streak-3.1.0.tgz 0ms (cache hit)
+174 http cache is-wsl@https://registry.npmjs.org/is-wsl/-/is-wsl-3.1.1.tgz 0ms (cache hit)
+175 http cache is-inside-container@https://registry.npmjs.org/is-inside-container/-/is-inside-container-1.0.0.tgz 0ms (cache hit)
+176 http cache is-plain-obj@https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-4.1.0.tgz 0ms (cache hit)
+177 http cache is-docker@https://registry.npmjs.org/is-docker/-/is-docker-3.0.0.tgz 0ms (cache hit)
+178 http cache iron-webcrypto@https://registry.npmjs.org/iron-webcrypto/-/iron-webcrypto-1.2.1.tgz 0ms (cache hit)
+179 http cache import-meta-resolve@https://registry.npmjs.org/import-meta-resolve/-/import-meta-resolve-4.2.0.tgz 0ms (cache hit)
+180 http cache http-cache-semantics@https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.2.0.tgz 0ms (cache hit)
+181 http cache html-void-elements@https://registry.npmjs.org/html-void-elements/-/html-void-elements-3.0.0.tgz 0ms (cache hit)
+182 http cache is-fullwidth-code-point@https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz 0ms (cache hit)
+183 http cache hast-util-whitespace@https://registry.npmjs.org/hast-util-whitespace/-/hast-util-whitespace-3.0.0.tgz 0ms (cache hit)
+184 http cache hast-util-to-text@https://registry.npmjs.org/hast-util-to-text/-/hast-util-to-text-4.0.2.tgz 0ms (cache hit)
+185 http cache hastscript@https://registry.npmjs.org/hastscript/-/hastscript-9.0.1.tgz 0ms (cache hit)
+186 http cache hast-util-to-html@https://registry.npmjs.org/hast-util-to-html/-/hast-util-to-html-9.0.5.tgz 1ms (cache hit)
+187 http cache html-escaper@https://registry.npmjs.org/html-escaper/-/html-escaper-3.0.3.tgz 0ms (cache hit)
+188 http cache hast-util-parse-selector@https://registry.npmjs.org/hast-util-parse-selector/-/hast-util-parse-selector-4.0.0.tgz 0ms (cache hit)
+189 http cache hast-util-raw@https://registry.npmjs.org/hast-util-raw/-/hast-util-raw-9.1.0.tgz 0ms (cache hit)
+190 http cache hast-util-from-parse5@https://registry.npmjs.org/hast-util-from-parse5/-/hast-util-from-parse5-8.0.3.tgz 0ms (cache hit)
+191 http cache hast-util-to-parse5@https://registry.npmjs.org/hast-util-to-parse5/-/hast-util-to-parse5-8.0.1.tgz 0ms (cache hit)
+192 http cache h3@https://registry.npmjs.org/h3/-/h3-1.15.11.tgz 0ms (cache hit)
+193 http cache graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 0ms (cache hit)
+194 http cache hast-util-from-html@https://registry.npmjs.org/hast-util-from-html/-/hast-util-from-html-2.0.3.tgz 0ms (cache hit)
+195 http cache hast-util-is-element@https://registry.npmjs.org/hast-util-is-element/-/hast-util-is-element-3.0.0.tgz 0ms (cache hit)
+196 http cache fontkitten@https://registry.npmjs.org/fontkitten/-/fontkitten-1.0.3.tgz 0ms (cache hit)
+197 http cache fontace@https://registry.npmjs.org/fontace/-/fontace-0.4.1.tgz 0ms (cache hit)
+198 http cache flattie@https://registry.npmjs.org/flattie/-/flattie-1.1.1.tgz 0ms (cache hit)
+199 http cache github-slugger@https://registry.npmjs.org/github-slugger/-/github-slugger-2.0.0.tgz 0ms (cache hit)
+200 http cache fdir@https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz 0ms (cache hit)
+201 http cache get-east-asian-width@https://registry.npmjs.org/get-east-asian-width/-/get-east-asian-width-1.6.0.tgz 0ms (cache hit)
+202 http cache extend@https://registry.npmjs.org/extend/-/extend-3.0.2.tgz 0ms (cache hit)
+203 http cache estree-walker@https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz 0ms (cache hit)
+204 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.27.7.tgz 0ms (cache hit)
+205 http cache escape-string-regexp@https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz 0ms (cache hit)
+206 http cache es-module-lexer@https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-1.7.0.tgz 0ms (cache hit)
+207 http cache emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-10.6.0.tgz 0ms (cache hit)
+208 http cache eventemitter3@https://registry.npmjs.org/eventemitter3/-/eventemitter3-5.0.4.tgz 0ms (cache hit)
+209 http cache enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.21.2.tgz 0ms (cache hit)
+210 http cache entities@https://registry.npmjs.org/entities/-/entities-6.0.1.tgz 0ms (cache hit)
+211 http cache dset@https://registry.npmjs.org/dset/-/dset-3.1.4.tgz 0ms (cache hit)
+212 http cache domutils@https://registry.npmjs.org/domutils/-/domutils-3.2.2.tgz 0ms (cache hit)
+213 http cache domelementtype@https://registry.npmjs.org/domelementtype/-/domelementtype-2.3.0.tgz 0ms (cache hit)
+214 http cache dom-serializer@https://registry.npmjs.org/dom-serializer/-/dom-serializer-2.0.0.tgz 0ms (cache hit)
+215 http cache dlv@https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz 0ms (cache hit)
+216 http cache domhandler@https://registry.npmjs.org/domhandler/-/domhandler-5.0.3.tgz 0ms (cache hit)
+217 http cache diff@https://registry.npmjs.org/diff/-/diff-8.0.4.tgz 0ms (cache hit)
+218 http cache devlop@https://registry.npmjs.org/devlop/-/devlop-1.1.0.tgz 0ms (cache hit)
+219 http cache deterministic-object-hash@https://registry.npmjs.org/deterministic-object-hash/-/deterministic-object-hash-2.0.2.tgz 0ms (cache hit)
+220 http cache destr@https://registry.npmjs.org/destr/-/destr-2.0.5.tgz 0ms (cache hit)
+221 http cache detect-libc@https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz 0ms (cache hit)
+222 http cache devalue@https://registry.npmjs.org/devalue/-/devalue-5.8.0.tgz 0ms (cache hit)
+223 http cache dequal@https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz 0ms (cache hit)
+224 http cache defu@https://registry.npmjs.org/defu/-/defu-6.1.7.tgz 0ms (cache hit)
+225 http cache csso@https://registry.npmjs.org/csso/-/csso-5.0.5.tgz 0ms (cache hit)
+226 http cache decode-named-character-reference@https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.3.0.tgz 0ms (cache hit)
+227 http cache cssesc@https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz 1ms (cache hit)
+228 http cache css-what@https://registry.npmjs.org/css-what/-/css-what-6.2.2.tgz 0ms (cache hit)
+229 http cache css-tree@https://registry.npmjs.org/css-tree/-/css-tree-3.2.1.tgz 0ms (cache hit)
+230 http cache css-select@https://registry.npmjs.org/css-select/-/css-select-5.2.2.tgz 0ms (cache hit)
+231 http cache crossws@https://registry.npmjs.org/crossws/-/crossws-0.3.5.tgz 0ms (cache hit)
+232 http cache cookie-es@https://registry.npmjs.org/cookie-es/-/cookie-es-1.2.3.tgz 0ms (cache hit)
+233 http cache debug@https://registry.npmjs.org/debug/-/debug-4.4.3.tgz 0ms (cache hit)
+234 http cache commander@https://registry.npmjs.org/commander/-/commander-11.1.0.tgz 0ms (cache hit)
+235 http cache common-ancestor-path@https://registry.npmjs.org/common-ancestor-path/-/common-ancestor-path-1.0.1.tgz 0ms (cache hit)
+236 http cache cli-boxes@https://registry.npmjs.org/cli-boxes/-/cli-boxes-3.0.0.tgz 0ms (cache hit)
+237 http cache chokidar@https://registry.npmjs.org/chokidar/-/chokidar-5.0.0.tgz 0ms (cache hit)
+238 http cache cookie@https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz 0ms (cache hit)
+239 http cache clsx@https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz 0ms (cache hit)
+240 http cache character-entities-legacy@https://registry.npmjs.org/character-entities-legacy/-/character-entities-legacy-3.0.0.tgz 0ms (cache hit)
+241 http cache comma-separated-tokens@https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz 0ms (cache hit)
+242 http cache character-entities@https://registry.npmjs.org/character-entities/-/character-entities-2.0.2.tgz 0ms (cache hit)
+243 http cache ci-info@https://registry.npmjs.org/ci-info/-/ci-info-4.4.0.tgz 0ms (cache hit)
+244 http cache chalk@https://registry.npmjs.org/chalk/-/chalk-5.6.2.tgz 0ms (cache hit)
+245 http cache camelcase@https://registry.npmjs.org/camelcase/-/camelcase-8.0.0.tgz 0ms (cache hit)
+246 http cache boxen@https://registry.npmjs.org/boxen/-/boxen-8.0.1.tgz 0ms (cache hit)
+247 http cache character-entities-html4@https://registry.npmjs.org/character-entities-html4/-/character-entities-html4-2.1.0.tgz 0ms (cache hit)
+248 http cache ccount@https://registry.npmjs.org/ccount/-/ccount-2.0.1.tgz 0ms (cache hit)
+249 http cache base-64@https://registry.npmjs.org/base-64/-/base-64-1.0.0.tgz 0ms (cache hit)
+250 http cache bail@https://registry.npmjs.org/bail/-/bail-2.0.2.tgz 0ms (cache hit)
+251 http cache boolbase@https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz 0ms (cache hit)
+252 http cache array-iterate@https://registry.npmjs.org/array-iterate/-/array-iterate-2.0.1.tgz 0ms (cache hit)
+253 http cache arg@https://registry.npmjs.org/arg/-/arg-5.0.2.tgz 0ms (cache hit)
+254 http cache aria-query@https://registry.npmjs.org/aria-query/-/aria-query-5.3.2.tgz 0ms (cache hit)
+255 http cache astro@https://registry.npmjs.org/astro/-/astro-5.18.1.tgz 0ms (cache hit)
+256 http cache axobject-query@https://registry.npmjs.org/axobject-query/-/axobject-query-4.1.0.tgz 0ms (cache hit)
+257 http cache anymatch@https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz 0ms (cache hit)
+258 http cache @ungap/structured-clone@https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.3.1.tgz 0ms (cache hit)
+259 http cache ansi-styles@https://registry.npmjs.org/ansi-styles/-/ansi-styles-6.2.3.tgz 0ms (cache hit)
+260 http cache ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-6.2.2.tgz 0ms (cache hit)
+261 http cache ansi-align@https://registry.npmjs.org/ansi-align/-/ansi-align-3.0.1.tgz 0ms (cache hit)
+262 http cache acorn@https://registry.npmjs.org/acorn/-/acorn-8.16.0.tgz 0ms (cache hit)
+263 http cache @types/sax@https://registry.npmjs.org/@types/sax/-/sax-1.2.7.tgz 0ms (cache hit)
+264 http cache @types/node@https://registry.npmjs.org/@types/node/-/node-24.12.3.tgz 0ms (cache hit)
+265 http cache @types/unist@https://registry.npmjs.org/@types/unist/-/unist-3.0.3.tgz 0ms (cache hit)
+266 http cache argparse@https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz 0ms (cache hit)
+267 http cache @types/ms@https://registry.npmjs.org/@types/ms/-/ms-2.1.0.tgz 0ms (cache hit)
+268 http cache @types/mdast@https://registry.npmjs.org/@types/mdast/-/mdast-4.0.4.tgz 0ms (cache hit)
+269 http cache @tailwindcss/vite@https://registry.npmjs.org/@tailwindcss/vite/-/vite-4.3.0.tgz 0ms (cache hit)
+270 http cache @types/nlcst@https://registry.npmjs.org/@types/nlcst/-/nlcst-2.0.3.tgz 0ms (cache hit)
+271 http cache @tailwindcss/oxide-win32-x64-msvc@https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.3.0.tgz 0ms (cache hit)
+272 http cache @tybys/wasm-util@https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.2.tgz 0ms (cache hit)
+273 http cache @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.0.tgz 0ms (cache hit)
+274 http cache @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.0.tgz 0ms (cache hit)
+275 http cache @types/debug@https://registry.npmjs.org/@types/debug/-/debug-4.1.13.tgz 0ms (cache hit)
+276 http cache @shikijs/vscode-textmate@https://registry.npmjs.org/@shikijs/vscode-textmate/-/vscode-textmate-10.0.2.tgz 0ms (cache hit)
+277 http cache @shikijs/types@https://registry.npmjs.org/@shikijs/types/-/types-3.23.0.tgz 0ms (cache hit)
+278 http cache @types/estree@https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz 0ms (cache hit)
+279 http cache @shikijs/langs@https://registry.npmjs.org/@shikijs/langs/-/langs-3.23.0.tgz 0ms (cache hit)
+280 http cache @shikijs/themes@https://registry.npmjs.org/@shikijs/themes/-/themes-3.23.0.tgz 0ms (cache hit)
+281 http cache @shikijs/engine-oniguruma@https://registry.npmjs.org/@shikijs/engine-oniguruma/-/engine-oniguruma-3.23.0.tgz 0ms (cache hit)
+282 http cache @shikijs/engine-javascript@https://registry.npmjs.org/@shikijs/engine-javascript/-/engine-javascript-3.23.0.tgz 0ms (cache hit)
+283 http cache @rollup/rollup-win32-x64-msvc@https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.60.3.tgz 0ms (cache hit)
+284 http cache @types/hast@https://registry.npmjs.org/@types/hast/-/hast-3.0.4.tgz 0ms (cache hit)
+285 http cache @rollup/rollup-win32-x64-gnu@https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.60.3.tgz 0ms (cache hit)
+286 http cache @rollup/pluginutils@https://registry.npmjs.org/@rollup/pluginutils/-/pluginutils-5.3.0.tgz 0ms (cache hit)
+287 http cache @rolldown/binding-win32-x64-msvc@https://registry.npmjs.org/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.0.0-rc.18.tgz 0ms (cache hit)
+288 http cache @rolldown/pluginutils@https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-rc.18.tgz 0ms (cache hit)
+289 http cache @napi-rs/wasm-runtime@https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-1.1.4.tgz 0ms (cache hit)
+290 http cache @oslojs/encoding@https://registry.npmjs.org/@oslojs/encoding/-/encoding-1.1.0.tgz 0ms (cache hit)
+291 http cache @oxc-project/types@https://registry.npmjs.org/@oxc-project/types/-/types-0.128.0.tgz 0ms (cache hit)
+292 http cache @jridgewell/sourcemap-codec@https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz 0ms (cache hit)
+293 http cache @jridgewell/trace-mapping@https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz 0ms (cache hit)
+294 http cache @img/sharp-win32-x64@https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.34.5.tgz 0ms (cache hit)
+295 http cache @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 0ms (cache hit)
+296 http cache @capsizecss/unpack@https://registry.npmjs.org/@capsizecss/unpack/-/unpack-4.0.0.tgz 0ms (cache hit)
+297 http cache @jridgewell/resolve-uri@https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 0ms (cache hit)
+298 http cache @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.27.7.tgz 0ms (cache hit)
+299 http cache @img/colour@https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz 0ms (cache hit)
+300 http cache @babel/helper-string-parser@https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.27.1.tgz 0ms (cache hit)
+301 http cache @babel/types@https://registry.npmjs.org/@babel/types/-/types-7.29.0.tgz 0ms (cache hit)
+302 http cache @babel/parser@https://registry.npmjs.org/@babel/parser/-/parser-7.29.3.tgz 0ms (cache hit)
+303 http cache @astrojs/telemetry@https://registry.npmjs.org/@astrojs/telemetry/-/telemetry-3.3.0.tgz 0ms (cache hit)
+304 http cache @babel/helper-validator-identifier@https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.28.5.tgz 0ms (cache hit)
+305 http cache @astrojs/sitemap@https://registry.npmjs.org/@astrojs/sitemap/-/sitemap-3.7.2.tgz 0ms (cache hit)
+306 http cache @astrojs/markdown-remark@https://registry.npmjs.org/@astrojs/markdown-remark/-/markdown-remark-6.3.11.tgz 0ms (cache hit)
+307 http cache @shikijs/core@https://registry.npmjs.org/@shikijs/core/-/core-3.23.0.tgz 0ms (cache hit)
+308 http cache @astrojs/compiler@https://registry.npmjs.org/@astrojs/compiler/-/compiler-2.13.1.tgz 0ms (cache hit)
+309 http cache @jridgewell/gen-mapping@https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz 0ms (cache hit)
+310 http cache @astrojs/internal-helpers@https://registry.npmjs.org/@astrojs/internal-helpers/-/internal-helpers-0.7.6.tgz 0ms (cache hit)
+311 http cache css-tree@https://registry.npmjs.org/css-tree/-/css-tree-2.2.1.tgz 0ms (cache hit)
+312 http cache @types/estree@https://registry.npmjs.org/@types/estree/-/estree-1.0.8.tgz 0ms (cache hit)
+313 http cache mdn-data@https://registry.npmjs.org/mdn-data/-/mdn-data-2.0.28.tgz 0ms (cache hit)
+314 http cache zod-to-ts@https://registry.npmjs.org/zod-to-ts/-/zod-to-ts-1.2.0.tgz 0ms (cache hit)
+315 http cache vite@https://registry.npmjs.org/vite/-/vite-6.4.2.tgz 0ms (cache hit)
+316 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz 0ms (cache hit)
+317 http cache picomatch@https://registry.npmjs.org/picomatch/-/picomatch-2.3.2.tgz 0ms (cache hit)
+318 http cache zod@https://registry.npmjs.org/zod/-/zod-3.25.76.tgz 0ms (cache hit)
+319 http cache strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz 0ms (cache hit)
+320 http cache emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz 0ms (cache hit)
+321 http cache @astrojs/prism@https://registry.npmjs.org/@astrojs/prism/-/prism-3.3.0.tgz 0ms (cache hit)
+322 http cache estree-walker@https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz 0ms (cache hit)
+323 http cache @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.12.tgz 0ms (cache hit)
+324 http cache entities@https://registry.npmjs.org/entities/-/entities-4.5.0.tgz 0ms (cache hit)
+325 http cache ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz 0ms (cache hit)
+326 http cache string-width@https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz 0ms (cache hit)
+327 warn tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\rollup\dist\bin\rollup'
+328 silly tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\rollup\dist\bin\rollup' [Error: UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\rollup\dist\bin\rollup'] {
+328 silly tar   errno: -4094,
+328 silly tar   code: 'UNKNOWN',
+328 silly tar   syscall: 'open',
+328 silly tar   path: 'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\rollup\\dist\\bin\\rollup',
+328 silly tar   entry: ReadEntry {
+328 silly tar     _events: [Object: null prototype] { end: [Array] },
+328 silly tar     _eventsCount: 1,
+328 silly tar     _maxListeners: undefined,
+328 silly tar     writable: false,
+328 silly tar     readable: true,
+328 silly tar     extended: undefined,
+328 silly tar     globalExtended: undefined,
+328 silly tar     header: Header {
+328 silly tar       cksumValid: true,
+328 silly tar       needPax: false,
+328 silly tar       nullBlock: false,
+328 silly tar       block: undefined,
+328 silly tar       path: 'package/dist/bin/rollup',
+328 silly tar       mode: 493,
+328 silly tar       uid: undefined,
+328 silly tar       gid: undefined,
+328 silly tar       size: 82269,
+328 silly tar       cksum: 5287,
+328 silly tar       linkpath: '',
+328 silly tar       uname: '',
+328 silly tar       gname: '',
+328 silly tar       devmaj: 0,
+328 silly tar       devmin: 0,
+328 silly tar       atime: undefined,
+328 silly tar       ctime: undefined,
+328 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+328 silly tar       charset: undefined,
+328 silly tar       comment: undefined
+328 silly tar     },
+328 silly tar     startBlockSize: 82432,
+328 silly tar     blockRemain: 0,
+328 silly tar     remain: 0,
+328 silly tar     type: 'File',
+328 silly tar     meta: false,
+328 silly tar     ignore: false,
+328 silly tar     path: 'dist/bin/rollup',
+328 silly tar     mode: 511,
+328 silly tar     uid: undefined,
+328 silly tar     gid: undefined,
+328 silly tar     uname: '',
+328 silly tar     gname: '',
+328 silly tar     size: 82269,
+328 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+328 silly tar     atime: undefined,
+328 silly tar     ctime: undefined,
+328 silly tar     linkpath: undefined,
+328 silly tar     dev: undefined,
+328 silly tar     ino: undefined,
+328 silly tar     nlink: undefined,
+328 silly tar     invalid: false,
+328 silly tar     absolute: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/rollup/dist/bin/rollup',
+328 silly tar     unsupported: false,
+328 silly tar     Symbol(shapeMode): false,
+328 silly tar     Symbol(kCapture): false,
+328 silly tar     Symbol(flowing): false,
+328 silly tar     Symbol(paused): true,
+328 silly tar     Symbol(pipes): [ [Pipe] ],
+328 silly tar     Symbol(buffer): [
+328 silly tar       <Buffer 61 73 73 69 67 6e 6d 65 6e 74 5d 5b 6b 65 79 5d 20 3d 20 74 72 75 65 3b 0a 20 20 20 20 20 20 20 20 20 20 20 20 7d 0a 20 20 20 20 20 20 20 20 20 20 20 ... 16334 more bytes>,
+328 silly tar       <Buffer 20 26 26 20 2f 5e 2d 2f 2e 74 65 73 74 28 6e 65 78 74 29 20 26 26 20 21 6e 65 67 61 74 69 76 65 2e 74 65 73 74 28 6e 65 78 74 29 20 26 26 20 21 69 73 ... 16334 more bytes>,
+328 silly tar       <Buffer 73 74 20 77 69 74 68 20 69 6e 66 65 72 72 65 64 20 61 6c 69 61 73 65 73 2e 0a 20 20 20 20 20 20 20 20 66 75 6e 63 74 69 6f 6e 20 65 78 74 65 6e 64 41 ... 16334 more bytes>,
+328 silly tar       <Buffer 09 62 72 65 61 6b 3b 0a 09 09 7d 0a 0a 09 09 63 61 73 65 20 27 62 69 67 69 6e 74 27 3a 20 7b 0a 09 09 09 72 65 74 75 72 6e 20 70 61 72 73 65 42 69 67 ... 16334 more bytes>,
+328 silly tar       <Buffer 29 3b 0a 7d 0a 0a 63 6f 6e 73 74 20 63 6f 6d 6d 61 6e 64 20 3d 20 79 61 72 67 73 50 61 72 73 65 72 28 70 72 6f 63 65 73 73 24 31 2e 61 72 67 76 2e 73 ... 811 more bytes>
+328 silly tar     ],
+328 silly tar     Symbol(objectMode): false,
+328 silly tar     Symbol(encoding): null,
+328 silly tar     Symbol(async): false,
+328 silly tar     Symbol(decoder): null,
+328 silly tar     Symbol(EOF): true,
+328 silly tar     Symbol(emittedEnd): false,
+328 silly tar     Symbol(emittingEnd): false,
+328 silly tar     Symbol(closed): false,
+328 silly tar     Symbol(emittedError): null,
+328 silly tar     Symbol(bufferLength): 66397,
+328 silly tar     Symbol(destroyed): false,
+328 silly tar     Symbol(signal): undefined,
+328 silly tar     Symbol(aborted): false,
+328 silly tar     Symbol(dataListeners): 0,
+328 silly tar     Symbol(discarded): false
+328 silly tar   },
+328 silly tar   cwd: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/rollup',
+328 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+328 silly tar }
+329 warn tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@tybys\wasm-util\lib\cjs\asyncify.js'
+330 silly tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@tybys\wasm-util\lib\cjs\asyncify.js' [Error: UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@tybys\wasm-util\lib\cjs\asyncify.js'] {
+330 silly tar   errno: -4094,
+330 silly tar   code: 'UNKNOWN',
+330 silly tar   syscall: 'open',
+330 silly tar   path: 'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@tybys\\wasm-util\\lib\\cjs\\asyncify.js',
+330 silly tar   entry: ReadEntry {
+330 silly tar     _events: [Object: null prototype] {},
+330 silly tar     _eventsCount: 0,
+330 silly tar     _maxListeners: undefined,
+330 silly tar     writable: false,
+330 silly tar     readable: false,
+330 silly tar     extended: undefined,
+330 silly tar     globalExtended: undefined,
+330 silly tar     header: Header {
+330 silly tar       cksumValid: true,
+330 silly tar       needPax: false,
+330 silly tar       nullBlock: false,
+330 silly tar       block: undefined,
+330 silly tar       path: 'package/lib/cjs/asyncify.js',
+330 silly tar       mode: 420,
+330 silly tar       uid: undefined,
+330 silly tar       gid: undefined,
+330 silly tar       size: 6028,
+330 silly tar       cksum: 5629,
+330 silly tar       linkpath: '',
+330 silly tar       uname: '',
+330 silly tar       gname: '',
+330 silly tar       devmaj: 0,
+330 silly tar       devmin: 0,
+330 silly tar       atime: undefined,
+330 silly tar       ctime: undefined,
+330 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+330 silly tar       charset: undefined,
+330 silly tar       comment: undefined
+330 silly tar     },
+330 silly tar     startBlockSize: 6144,
+330 silly tar     blockRemain: 0,
+330 silly tar     remain: 0,
+330 silly tar     type: 'File',
+330 silly tar     meta: false,
+330 silly tar     ignore: false,
+330 silly tar     path: 'lib/cjs/asyncify.js',
+330 silly tar     mode: 438,
+330 silly tar     uid: undefined,
+330 silly tar     gid: undefined,
+330 silly tar     uname: '',
+330 silly tar     gname: '',
+330 silly tar     size: 6028,
+330 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+330 silly tar     atime: undefined,
+330 silly tar     ctime: undefined,
+330 silly tar     linkpath: undefined,
+330 silly tar     dev: undefined,
+330 silly tar     ino: undefined,
+330 silly tar     nlink: undefined,
+330 silly tar     invalid: false,
+330 silly tar     absolute: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/@tybys/wasm-util/lib/cjs/asyncify.js',
+330 silly tar     unsupported: false,
+330 silly tar     Symbol(shapeMode): false,
+330 silly tar     Symbol(kCapture): false,
+330 silly tar     Symbol(flowing): false,
+330 silly tar     Symbol(paused): true,
+330 silly tar     Symbol(pipes): [ [Pipe] ],
+330 silly tar     Symbol(buffer): [],
+330 silly tar     Symbol(objectMode): false,
+330 silly tar     Symbol(encoding): null,
+330 silly tar     Symbol(async): false,
+330 silly tar     Symbol(decoder): null,
+330 silly tar     Symbol(EOF): true,
+330 silly tar     Symbol(emittedEnd): true,
+330 silly tar     Symbol(emittingEnd): false,
+330 silly tar     Symbol(closed): false,
+330 silly tar     Symbol(emittedError): null,
+330 silly tar     Symbol(bufferLength): 0,
+330 silly tar     Symbol(destroyed): false,
+330 silly tar     Symbol(signal): undefined,
+330 silly tar     Symbol(aborted): false,
+330 silly tar     Symbol(dataListeners): 0,
+330 silly tar     Symbol(discarded): false
+330 silly tar   },
+330 silly tar   cwd: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/@tybys/wasm-util',
+330 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+330 silly tar }
+331 warn tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@rollup\pluginutils\dist\cjs\index.js'
+332 silly tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@rollup\pluginutils\dist\cjs\index.js' [Error: UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@rollup\pluginutils\dist\cjs\index.js'] {
+332 silly tar   errno: -4094,
+332 silly tar   code: 'UNKNOWN',
+332 silly tar   syscall: 'open',
+332 silly tar   path: 'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@rollup\\pluginutils\\dist\\cjs\\index.js',
+332 silly tar   entry: ReadEntry {
+332 silly tar     _events: [Object: null prototype] {},
+332 silly tar     _eventsCount: 0,
+332 silly tar     _maxListeners: undefined,
+332 silly tar     writable: false,
+332 silly tar     readable: false,
+332 silly tar     extended: undefined,
+332 silly tar     globalExtended: undefined,
+332 silly tar     header: Header {
+332 silly tar       cksumValid: true,
+332 silly tar       needPax: false,
+332 silly tar       nullBlock: false,
+332 silly tar       block: undefined,
+332 silly tar       path: 'package/./dist/cjs/index.js',
+332 silly tar       mode: 420,
+332 silly tar       uid: 0,
+332 silly tar       gid: 0,
+332 silly tar       size: 15827,
+332 silly tar       cksum: 6255,
+332 silly tar       linkpath: '',
+332 silly tar       uname: '',
+332 silly tar       gname: '',
+332 silly tar       devmaj: 0,
+332 silly tar       devmin: 0,
+332 silly tar       atime: undefined,
+332 silly tar       ctime: undefined,
+332 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+332 silly tar       charset: undefined,
+332 silly tar       comment: undefined
+332 silly tar     },
+332 silly tar     startBlockSize: 15872,
+332 silly tar     blockRemain: 0,
+332 silly tar     remain: 0,
+332 silly tar     type: 'File',
+332 silly tar     meta: false,
+332 silly tar     ignore: false,
+332 silly tar     path: './dist/cjs/index.js',
+332 silly tar     mode: 438,
+332 silly tar     uid: 0,
+332 silly tar     gid: 0,
+332 silly tar     uname: '',
+332 silly tar     gname: '',
+332 silly tar     size: 15827,
+332 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+332 silly tar     atime: undefined,
+332 silly tar     ctime: undefined,
+332 silly tar     linkpath: undefined,
+332 silly tar     dev: undefined,
+332 silly tar     ino: undefined,
+332 silly tar     nlink: undefined,
+332 silly tar     invalid: false,
+332 silly tar     absolute: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/@rollup/pluginutils/dist/cjs/index.js',
+332 silly tar     unsupported: false,
+332 silly tar     Symbol(shapeMode): false,
+332 silly tar     Symbol(kCapture): false,
+332 silly tar     Symbol(flowing): false,
+332 silly tar     Symbol(paused): true,
+332 silly tar     Symbol(pipes): [ [Pipe] ],
+332 silly tar     Symbol(buffer): [],
+332 silly tar     Symbol(objectMode): false,
+332 silly tar     Symbol(encoding): null,
+332 silly tar     Symbol(async): false,
+332 silly tar     Symbol(decoder): null,
+332 silly tar     Symbol(EOF): true,
+332 silly tar     Symbol(emittedEnd): true,
+332 silly tar     Symbol(emittingEnd): false,
+332 silly tar     Symbol(closed): false,
+332 silly tar     Symbol(emittedError): null,
+332 silly tar     Symbol(bufferLength): 0,
+332 silly tar     Symbol(destroyed): false,
+332 silly tar     Symbol(signal): undefined,
+332 silly tar     Symbol(aborted): false,
+332 silly tar     Symbol(dataListeners): 0,
+332 silly tar     Symbol(discarded): false
+332 silly tar   },
+332 silly tar   cwd: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/@rollup/pluginutils',
+332 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+332 silly tar }
+333 warn tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@astrojs\compiler\dist\shared\ast.cjs'
+334 silly tar TAR_ENTRY_ERROR UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@astrojs\compiler\dist\shared\ast.cjs' [Error: UNKNOWN: unknown error, open 'C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@astrojs\compiler\dist\shared\ast.cjs'] {
+334 silly tar   errno: -4094,
+334 silly tar   code: 'UNKNOWN',
+334 silly tar   syscall: 'open',
+334 silly tar   path: 'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@astrojs\\compiler\\dist\\shared\\ast.cjs',
+334 silly tar   entry: ReadEntry {
+334 silly tar     _events: [Object: null prototype] {},
+334 silly tar     _eventsCount: 0,
+334 silly tar     _maxListeners: undefined,
+334 silly tar     writable: false,
+334 silly tar     readable: false,
+334 silly tar     extended: undefined,
+334 silly tar     globalExtended: undefined,
+334 silly tar     header: Header {
+334 silly tar       cksumValid: true,
+334 silly tar       needPax: false,
+334 silly tar       nullBlock: false,
+334 silly tar       block: undefined,
+334 silly tar       path: 'package/dist/shared/ast.cjs',
+334 silly tar       mode: 420,
+334 silly tar       uid: 0,
+334 silly tar       gid: 0,
+334 silly tar       size: 397,
+334 silly tar       cksum: 6355,
+334 silly tar       linkpath: '',
+334 silly tar       uname: '',
+334 silly tar       gname: '',
+334 silly tar       devmaj: 0,
+334 silly tar       devmin: 0,
+334 silly tar       atime: undefined,
+334 silly tar       ctime: undefined,
+334 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+334 silly tar       charset: undefined,
+334 silly tar       comment: undefined
+334 silly tar     },
+334 silly tar     startBlockSize: 512,
+334 silly tar     blockRemain: 0,
+334 silly tar     remain: 0,
+334 silly tar     type: 'File',
+334 silly tar     meta: false,
+334 silly tar     ignore: false,
+334 silly tar     path: 'dist/shared/ast.cjs',
+334 silly tar     mode: 438,
+334 silly tar     uid: 0,
+334 silly tar     gid: 0,
+334 silly tar     uname: '',
+334 silly tar     gname: '',
+334 silly tar     size: 397,
+334 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+334 silly tar     atime: undefined,
+334 silly tar     ctime: undefined,
+334 silly tar     linkpath: undefined,
+334 silly tar     dev: undefined,
+334 silly tar     ino: undefined,
+334 silly tar     nlink: undefined,
+334 silly tar     invalid: false,
+334 silly tar     absolute: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/@astrojs/compiler/dist/shared/ast.cjs',
+334 silly tar     unsupported: false,
+334 silly tar     Symbol(shapeMode): false,
+334 silly tar     Symbol(kCapture): false,
+334 silly tar     Symbol(flowing): false,
+334 silly tar     Symbol(paused): true,
+334 silly tar     Symbol(pipes): [ [Pipe] ],
+334 silly tar     Symbol(buffer): [],
+334 silly tar     Symbol(objectMode): false,
+334 silly tar     Symbol(encoding): null,
+334 silly tar     Symbol(async): false,
+334 silly tar     Symbol(decoder): null,
+334 silly tar     Symbol(EOF): true,
+334 silly tar     Symbol(emittedEnd): true,
+334 silly tar     Symbol(emittingEnd): false,
+334 silly tar     Symbol(closed): false,
+334 silly tar     Symbol(emittedError): null,
+334 silly tar     Symbol(bufferLength): 0,
+334 silly tar     Symbol(destroyed): false,
+334 silly tar     Symbol(signal): undefined,
+334 silly tar     Symbol(aborted): false,
+334 silly tar     Symbol(dataListeners): 0,
+334 silly tar     Symbol(discarded): false
+334 silly tar   },
+334 silly tar   cwd: 'C:/Users/Risix/Desktop/Projects/RamirezLandscaping/node_modules/@astrojs/compiler',
+334 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+334 silly tar }
+335 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 914ms
+336 silly audit report {
+336 silly audit report   astro: [
+336 silly audit report     {
+336 silly audit report       id: 1117141,
+336 silly audit report       url: 'https://github.com/advisories/GHSA-j687-52p2-xcff',
+336 silly audit report       title: 'Astro: XSS in define:vars via incomplete </script> tag sanitization',
+336 silly audit report       severity: 'moderate',
+336 silly audit report       vulnerable_versions: '<6.1.6',
+336 silly audit report       cwe: [Array],
+336 silly audit report       cvss: [Object]
+336 silly audit report     }
+336 silly audit report   ]
+336 silly audit report }
+337 silly packumentCache corgi:https://registry.npmjs.org/astro cache-miss
+338 http cache https://registry.npmjs.org/astro 287ms (cache hit)
+339 silly packumentCache corgi:https://registry.npmjs.org/astro set size:4371718 disposed:false
+340 info run sharp@0.34.5 install node_modules/sharp node install/check.js || npm run build
+341 info run sharp@0.34.5 install { code: 'EPERM', signal: undefined }
+342 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\sharp
+343 silly reify mark deleted [
+343 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\sharp'
+343 silly reify ]
+344 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\colour
+345 silly reify mark deleted [
+345 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\colour'
+345 silly reify ]
+346 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-darwin-arm64
+347 silly reify mark deleted [
+347 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-darwin-arm64'
+347 silly reify ]
+348 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-darwin-x64
+349 silly reify mark deleted [
+349 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-darwin-x64'
+349 silly reify ]
+350 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-darwin-arm64
+351 silly reify mark deleted [
+351 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-darwin-arm64'
+351 silly reify ]
+352 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-darwin-x64
+353 silly reify mark deleted [
+353 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-darwin-x64'
+353 silly reify ]
+354 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linux-arm
+355 silly reify mark deleted [
+355 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linux-arm'
+355 silly reify ]
+356 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linux-arm64
+357 silly reify mark deleted [
+357 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linux-arm64'
+357 silly reify ]
+358 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linux-ppc64
+359 silly reify mark deleted [
+359 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linux-ppc64'
+359 silly reify ]
+360 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linux-riscv64
+361 silly reify mark deleted [
+361 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linux-riscv64'
+361 silly reify ]
+362 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linux-s390x
+363 silly reify mark deleted [
+363 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linux-s390x'
+363 silly reify ]
+364 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linux-x64
+365 silly reify mark deleted [
+365 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linux-x64'
+365 silly reify ]
+366 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linuxmusl-arm64
+367 silly reify mark deleted [
+367 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linuxmusl-arm64'
+367 silly reify ]
+368 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-libvips-linuxmusl-x64
+369 silly reify mark deleted [
+369 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-libvips-linuxmusl-x64'
+369 silly reify ]
+370 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linux-arm
+371 silly reify mark deleted [
+371 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linux-arm'
+371 silly reify ]
+372 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linux-arm64
+373 silly reify mark deleted [
+373 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linux-arm64'
+373 silly reify ]
+374 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linux-ppc64
+375 silly reify mark deleted [
+375 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linux-ppc64'
+375 silly reify ]
+376 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linux-riscv64
+377 silly reify mark deleted [
+377 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linux-riscv64'
+377 silly reify ]
+378 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linux-s390x
+379 silly reify mark deleted [
+379 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linux-s390x'
+379 silly reify ]
+380 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linux-x64
+381 silly reify mark deleted [
+381 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linux-x64'
+381 silly reify ]
+382 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linuxmusl-arm64
+383 silly reify mark deleted [
+383 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linuxmusl-arm64'
+383 silly reify ]
+384 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-linuxmusl-x64
+385 silly reify mark deleted [
+385 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-linuxmusl-x64'
+385 silly reify ]
+386 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-wasm32
+387 silly reify mark deleted [
+387 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-wasm32'
+387 silly reify ]
+388 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-win32-arm64
+389 silly reify mark deleted [
+389 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-win32-arm64'
+389 silly reify ]
+390 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-win32-ia32
+391 silly reify mark deleted [
+391 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-win32-ia32'
+391 silly reify ]
+392 verbose reify failed optional dependency C:\Users\Risix\Desktop\Projects\RamirezLandscaping\node_modules\@img\sharp-win32-x64
+393 silly reify mark deleted [
+393 silly reify   'C:\\Users\\Risix\\Desktop\\Projects\\RamirezLandscaping\\node_modules\\@img\\sharp-win32-x64'
+393 silly reify ]
+394 info run esbuild@0.27.7 postinstall node_modules/esbuild node install.js
+395 info run esbuild@0.25.12 postinstall node_modules/astro/node_modules/vite/node_modules/esbuild node install.js
+396 info run esbuild@0.27.7 postinstall { code: 'EPERM', signal: undefined }
+397 info run esbuild@0.25.12 postinstall { code: 'EPERM', signal: undefined }
+398 verbose stack Error: spawn EPERM
+398 verbose stack     at ChildProcess.spawn (node:internal/child_process:421:11)
+398 verbose stack     at spawn (node:child_process:796:9)
+398 verbose stack     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:39:16)
+398 verbose stack     at spawnWithShell (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:124:10)
+398 verbose stack     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:12:12)
+398 verbose stack     at runScriptPkg (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script-pkg.js:79:13)
+398 verbose stack     at runScript (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:9:12)
+398 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\rebuild.js:332:17
+398 verbose stack     at run (C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:67:22)
+398 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:84:9
+399 error code EPERM
+400 error syscall spawn
+401 error errno -4048
+402 error Error: spawn EPERM
+402 error     at ChildProcess.spawn (node:internal/child_process:421:11)
+402 error     at spawn (node:child_process:796:9)
+402 error     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:39:16)
+402 error     at spawnWithShell (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:124:10)
+402 error     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:12:12)
+402 error     at runScriptPkg (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script-pkg.js:79:13)
+402 error     at runScript (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:9:12)
+402 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\rebuild.js:332:17
+402 error     at run (C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:67:22)
+402 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:84:9 {
+402 error   errno: -4048,
+402 error   code: 'EPERM',
+402 error   syscall: 'spawn'
+402 error }
+403 error
+403 error The operation was rejected by your operating system.
+403 error It's possible that the file was already in use (by a text editor or antivirus),
+403 error or that you lack permissions to access it.
+403 error
+403 error If you believe this might be a permissions issue, please double-check the
+403 error permissions of the file and its containing directories, or try running
+403 error the command again as root/Administrator.
+404 silly unfinished npm timer reify 1778371909286
+405 silly unfinished npm timer reify:build 1778371914958
+406 silly unfinished npm timer build 1778371914959
+407 silly unfinished npm timer build:deps 1778371914959
+408 silly unfinished npm timer build:run:postinstall 1778371915015
+409 silly unfinished npm timer build:run:postinstall:node_modules/esbuild 1778371915015
+410 silly unfinished npm timer build:run:postinstall:node_modules/astro/node_modules/vite/node_modules/esbuild 1778371915026
+411 verbose cwd C:\Users\Risix\Desktop\Projects\RamirezLandscaping
+412 verbose os Windows_NT 10.0.26200
+413 verbose node v24.13.0
+414 verbose npm  v11.6.2
+415 verbose exit -4048
+416 verbose code -4048
+417 error A complete log of this run can be found in: C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_11_48_929Z-debug-0.log

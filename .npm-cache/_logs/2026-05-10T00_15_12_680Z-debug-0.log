@@ -1,0 +1,82 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v24.13.0
+3 silly config load:file:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npmrc
+5 silly config load:file:C:\Users\Risix\.npmrc
+6 silly config load:file:C:\Users\Risix\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm ci
+8 verbose argv "ci"
+9 verbose logfile logs-max:10 dir:C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_15_12_680Z-
+10 verbose logfile C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_15_12_680Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest @emnapi/runtime@^1.7.0
+15 silly packumentCache full:https://registry.npmjs.org/@emnapi%2fruntime cache-miss
+16 http cache https://registry.npmjs.org/@emnapi%2fruntime 8ms (cache hit)
+17 silly packumentCache full:https://registry.npmjs.org/@emnapi%2fruntime set size:108129 disposed:false
+18 silly placeDep ROOT @emnapi/runtime@1.10.0 OK for: @img/sharp-wasm32@0.34.5 want: ^1.7.0
+19 silly fetch manifest @emnapi/core@^1.7.1
+20 silly packumentCache full:https://registry.npmjs.org/@emnapi%2fcore cache-miss
+21 http cache https://registry.npmjs.org/@emnapi%2fcore 3ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/@emnapi%2fcore set size:105841 disposed:false
+23 silly placeDep ROOT @emnapi/core@1.10.0 OK for: @napi-rs/wasm-runtime@1.1.4 want: ^1.7.1
+24 verbose stack Error: 
+24 verbose stack `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+24 verbose stack
+24 verbose stack Missing: @emnapi/runtime@1.10.0 from lock file
+24 verbose stack Missing: @emnapi/core@1.10.0 from lock file
+24 verbose stack
+24 verbose stack Clean install a project
+24 verbose stack
+24 verbose stack Usage:
+24 verbose stack npm ci
+24 verbose stack
+24 verbose stack Options:
+24 verbose stack [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+24 verbose stack [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+24 verbose stack [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+24 verbose stack [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+24 verbose stack [--no-bin-links] [--no-fund] [--dry-run]
+24 verbose stack [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+24 verbose stack [-ws|--workspaces] [--include-workspace-root] [--install-links]
+24 verbose stack
+24 verbose stack aliases: clean-install, ic, install-clean, isntall-clean
+24 verbose stack
+24 verbose stack Run "npm help ci" for more info
+24 verbose stack     at CI.usageError (C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\lib\base-cmd.js:111:26)
+24 verbose stack     at CI.exec (C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\lib\commands\ci.js:70:18)
+24 verbose stack     at async Npm.exec (C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\lib\npm.js:207:9)
+24 verbose stack     at async module.exports (C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_npx\753985bec210f4c7\node_modules\npm\lib\cli\entry.js:74:5)
+25 error code EUSAGE
+26 error
+26 error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+26 error
+26 error Missing: @emnapi/runtime@1.10.0 from lock file
+26 error Missing: @emnapi/core@1.10.0 from lock file
+26 error
+26 error Clean install a project
+26 error
+26 error Usage:
+26 error npm ci
+26 error
+26 error Options:
+26 error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+26 error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+26 error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+26 error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+26 error [--no-bin-links] [--no-fund] [--dry-run]
+26 error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+26 error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+26 error
+26 error aliases: clean-install, ic, install-clean, isntall-clean
+26 error
+26 error Run "npm help ci" for more info
+27 verbose cwd C:\Users\Risix\Desktop\Projects\RamirezLandscaping
+28 verbose os Windows_NT 10.0.26200
+29 verbose node v24.13.0
+30 verbose npm  v10.9.2
+31 verbose exit 1
+32 verbose code 1
+33 error A complete log of this run can be found in: C:\Users\Risix\Desktop\Projects\RamirezLandscaping\.npm-cache\_logs\2026-05-10T00_15_12_680Z-debug-0.log

@@ -15,16 +15,14 @@ const { images, columns = 4 } = Astro.props;
     images.map((image, index) => (
       <button
         type="button"
-        class="group relative overflow-hidden rounded-[1.3rem]"
+        class="group relative block w-full overflow-hidden rounded-[1.3rem]"
         data-lightbox-open
         data-lightbox-index={index}
       >
-        <Image
-          src={image}
+        <img
+          src={image.src}
           alt={`Gallery image ${index + 1}`}
           class="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
-          widths={[420, 720]}
-          format="webp"
           loading="eager"
         />
       </button>
