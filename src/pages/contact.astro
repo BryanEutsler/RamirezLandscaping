@@ -4,14 +4,14 @@ import PageHero from "@/components/PageHero.astro";
 import EstimateForm from "@/components/EstimateForm.astro";
 import Icon from "@/components/Icon.astro";
 import { siteConfig } from "@/data/site";
-import heroEstate from "@/assets/photos/hero-estate.png";
+import lawnMaintenance from "@/assets/photos/lawn-maintenance.png";
 
 const contactSchema = [
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contact Ramirez Landscaping",
-    description: "Request a quote and contact Ramirez Landscaping.",
+    name: "Contact Ramirez Yard Maintenance",
+    description: "Request a quote and contact Ramirez Yard Maintenance.",
   },
   {
     "@context": "https://schema.org",
@@ -21,18 +21,18 @@ const contactSchema = [
 ];
 ---
 
-<BaseLayout title="Contact | Ramirez Landscaping" description="Request a free estimate or contact Ramirez Landscaping directly." schema={contactSchema}>
+<BaseLayout title="Contact | Ramirez Yard Maintenance" description="Request a free estimate or contact Ramirez Yard Maintenance directly." schema={contactSchema}>
   <PageHero
-    title="Let's Build Something Extraordinary"
-    description="Share your vision and we will bring it to life with expertise, care, and attention to every detail."
-    image={heroEstate}
+    title="Request Yard Service"
+    description="Tell us what needs mowing, edging, trimming, cleanup, or recurring maintenance."
+    image={lawnMaintenance}
     crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
   />
 
   <section class="paper-panel section-pad">
     <div class="container-shell grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
       <div class="space-y-6">
-        <article class="rounded-[1.7rem] border border-black/8 bg-white p-7 shadow-[0_18px_36px_rgba(0,0,0,0.06)]">
+        <article class="rounded-lg border border-black/8 bg-white p-7 shadow-[0_18px_36px_rgba(0,0,0,0.06)]">
           <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">Get in Touch</p>
           <div class="mt-6 space-y-5">
             <div class="flex items-start gap-4">
@@ -60,7 +60,7 @@ const contactSchema = [
             </div>
           </div>
         </article>
-        <div class="overflow-hidden rounded-[1.8rem] border border-black/8 bg-white shadow-[0_18px_36px_rgba(0,0,0,0.06)]">
+        <div class="overflow-hidden rounded-lg border border-black/8 bg-white shadow-[0_18px_36px_rgba(0,0,0,0.06)]">
           <iframe
             title="Service area map"
             class="h-[24rem] w-full border-0"
@@ -69,17 +69,17 @@ const contactSchema = [
           ></iframe>
         </div>
         <div class="grid gap-4 md:grid-cols-3">
-          <article class="rounded-[1.5rem] border border-black/8 bg-white p-5 text-center shadow-[0_12px_24px_rgba(0,0,0,0.04)]">
-            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">BBB</p>
-            <p class="mt-3 font-[var(--font-heading)] text-2xl text-midnight">A+ Rated</p>
+          <article class="rounded-lg border border-black/8 bg-white p-5 text-center shadow-[0_12px_24px_rgba(0,0,0,0.04)]">
+            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">Pricing</p>
+            <p class="mt-3 font-[var(--font-heading)] text-2xl text-midnight">Free Estimates</p>
           </article>
-          <article class="rounded-[1.5rem] border border-black/8 bg-white p-5 text-center shadow-[0_12px_24px_rgba(0,0,0,0.04)]">
-            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">Licensed</p>
-            <p class="mt-3 font-[var(--font-heading)] text-2xl text-midnight">Contractor Ready</p>
+          <article class="rounded-lg border border-black/8 bg-white p-5 text-center shadow-[0_12px_24px_rgba(0,0,0,0.04)]">
+            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">Routes</p>
+            <p class="mt-3 font-[var(--font-heading)] text-2xl text-midnight">Weekly or Biweekly</p>
           </article>
-          <article class="rounded-[1.5rem] border border-black/8 bg-white p-5 text-center shadow-[0_12px_24px_rgba(0,0,0,0.04)]">
-            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">Guarantee</p>
-            <p class="mt-3 font-[var(--font-heading)] text-2xl text-midnight">Satisfaction Focused</p>
+          <article class="rounded-lg border border-black/8 bg-white p-5 text-center shadow-[0_12px_24px_rgba(0,0,0,0.04)]">
+            <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-deep-gold">Focus</p>
+            <p class="mt-3 font-[var(--font-heading)] text-2xl text-midnight">Basic Yard Care</p>
           </article>
         </div>
       </div>

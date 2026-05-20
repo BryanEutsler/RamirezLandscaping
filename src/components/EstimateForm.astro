@@ -9,7 +9,7 @@ const formAction = import.meta.env.PUBLIC_FORMSPARK_ENDPOINT || "";
 
 <form
   class:list={[
-    "rounded-[1.8rem] border border-black/8 bg-white p-6 shadow-[0_22px_42px_rgba(0,0,0,0.08)] md:p-8",
+    "rounded-lg border border-black/8 bg-white p-6 shadow-[0_22px_42px_rgba(0,0,0,0.08)] md:p-8",
     compact && "bg-transparent shadow-none border-white/10 text-white",
   ]}
   id="estimate-form"
@@ -32,14 +32,11 @@ const formAction = import.meta.env.PUBLIC_FORMSPARK_ENDPOINT || "";
       <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Service Type</span>
       <select class="rounded-xl border border-black/10 px-4 py-3" name="serviceType" required>
         <option value="">Select a service</option>
-        <option>Landscape Design & Installation</option>
-        <option>Lawn Care & Maintenance Programs</option>
-        <option>Hardscape & Outdoor Living Spaces</option>
-        <option>Irrigation Systems & Water Management</option>
-        <option>Seasonal Color & Planting</option>
-        <option>Commercial Landscape Services</option>
-        <option>Tree & Shrub Services</option>
-        <option>Outdoor Lighting Design</option>
+        <option>Weekly Yard Maintenance</option>
+        <option>Mowing & Edging</option>
+        <option>Hedge & Shrub Trimming</option>
+        <option>Seasonal Yard Cleanup</option>
+        <option>Weed, Leaf & Debris Removal</option>
       </select>
     </label>
     <label class="grid gap-2 text-sm md:col-span-2">
@@ -47,7 +44,7 @@ const formAction = import.meta.env.PUBLIC_FORMSPARK_ENDPOINT || "";
       <input class="rounded-xl border border-black/10 px-4 py-3" name="propertyAddress" required />
     </label>
     <label class="grid gap-2 text-sm md:col-span-2">
-      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Project Description</span>
+      <span class:list={[compact ? "text-white/78" : "text-charcoal/80"]}>Yard Details</span>
       <textarea
         class="min-h-36 rounded-xl border border-black/10 px-4 py-3"
         name="projectDescription"
@@ -61,7 +58,7 @@ const formAction = import.meta.env.PUBLIC_FORMSPARK_ENDPOINT || "";
         <option>Referral</option>
         <option>Google Search</option>
         <option>Instagram</option>
-        <option>Builder or Architect</option>
+        <option>Neighbor</option>
         <option>Drive-by Signage</option>
       </select>
     </label>

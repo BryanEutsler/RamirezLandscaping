@@ -36,7 +36,7 @@ export type Project = {
   location: string;
   category: string;
   propertyType: "Residential" | "Commercial";
-  scale: "Estate" | "Signature" | "Boutique" | "Campus";
+  scale: "Small" | "Standard" | "Large" | "Route";
   clientBrief: string;
   scope: string[];
   timeline: string;
@@ -81,571 +81,346 @@ export type BlogPost = {
 
 export const valuePillars = [
   {
-    title: "Precision Craftsmanship",
+    title: "Reliable Weekly Visits",
     description:
-      "Meticulous attention to detail in every cut, stone line, irrigation zone, and planting composition.",
-    icon: "sprout",
+      "Consistent mowing, edging, trimming, and cleanup so the yard stays presentable without you chasing it.",
+    icon: "clock",
   },
   {
-    title: "White-Glove Service",
+    title: "Straightforward Pricing",
     description:
-      "Responsive communication, proactive planning, and polished jobsite standards from first visit through ongoing care.",
+      "Clear estimates for regular service, seasonal cleanups, and one-time jobs before work begins.",
+    icon: "shield",
+  },
+  {
+    title: "Clean Finish",
+    description:
+      "Crews leave hard surfaces blown off, edges sharp, and green waste hauled or staged as agreed.",
     icon: "glove",
   },
   {
-    title: "Award-Winning Design",
+    title: "Local Yard Know-How",
     description:
-      "Timeless outdoor environments shaped by proportion, material discipline, and a deep respect for the architecture.",
-    icon: "trophy",
-  },
-  {
-    title: "Guaranteed Satisfaction",
-    description:
-      "Every project closes with a detailed walkthrough, care guidance, and a clear plan for long-term success.",
-    icon: "shield",
+      "Practical care for everyday lawns, hedges, weeds, leaves, and overgrown areas in our service area.",
+    icon: "sprout",
   },
 ];
 
 export const services: Service[] = [
   {
-    slug: "landscape-design-installation",
-    name: "Landscape Design & Installation",
+    slug: "weekly-yard-maintenance",
+    name: "Weekly Yard Maintenance",
     shortDescription:
-      "Custom outdoor environments designed around architecture, lifestyle, and long-term beauty.",
+      "Recurring mowing, edging, trimming, and cleanup for homes that need steady, dependable care.",
     overview: [
-      "Ramirez Landscaping approaches design and installation as one continuous craft discipline. Each project begins with a site reading and a conversation about how the property should feel, function, and mature over time. From there, planting palettes, circulation, grading, lighting, and material transitions are composed into a unified outdoor experience.",
-      "Our installation crews execute every layer with precision, from soil preparation and drainage to final planting and detail carpentry. The result is a landscape that feels inevitable rather than assembled: elegant, durable, and deeply connected to the home it surrounds.",
+      "Ramirez Yard Maintenance keeps everyday yards looking clean and under control. Our weekly and biweekly visits focus on the essentials: mowing, line trimming, edging, light debris pickup, and a tidy final blow-off.",
+      "This is simple, dependable yard care for busy homeowners, renters, and property managers who want the outside of the property handled without a complicated contract.",
     ],
     includes: [
-      "Landscape concept planning and site analysis",
-      "Planting design with premium specimen selection",
-      "Grading, drainage, and soil conditioning",
-      "Installation of trees, shrubs, groundcovers, and seasonal accents",
-      "Mulch, decorative rock, and finishing details",
-      "Walkthrough, punch list completion, and care guidance",
+      "Lawn mowing at the right height for the season",
+      "Edging along sidewalks, driveways, and beds",
+      "Line trimming around fences, posts, and tight areas",
+      "Light weed touchups during regular visits",
+      "Blow-off of walkways, patios, and driveways",
+      "Weekly or biweekly scheduling options",
     ],
     process: [
       {
-        title: "Discover",
-        description:
-          "We learn your vision, priorities, and how you want to live in the space.",
+        title: "Walk",
+        description: "We review the yard, access points, green waste rules, and any areas that need special care.",
         icon: "discover",
       },
       {
-        title: "Design",
-        description:
-          "Our team creates a tailored plan balancing architecture, planting, and circulation.",
-        icon: "design",
-      },
-      {
-        title: "Build",
-        description:
-          "Installation is executed with disciplined craftsmanship and tight quality control.",
-        icon: "build",
-      },
-      {
-        title: "Care",
-        description:
-          "We finish with detailed walkthroughs and an ongoing stewardship plan if needed.",
-        icon: "care",
-      },
-    ],
-    heroImage: designInstallation,
-    cardImage: designInstallation,
-    gallery: [designInstallation, heroEstate, seasonalPlanting, hardscapeLiving],
-    accent: "Residential Signature Design",
-    faq: [
-      {
-        question: "How long does a typical design and installation project take?",
-        answer:
-          "Most residential transformations move from planning through installation in six to twelve weeks, depending on permitting, site complexity, and material lead times.",
-      },
-      {
-        question: "Can you work within an existing architectural style?",
-        answer:
-          "Yes. We tailor material selections, planting structure, and proportion so the landscape feels naturally aligned with the home rather than stylistically separate.",
-      },
-      {
-        question: "Do you manage irrigation and lighting as part of the installation?",
-        answer:
-          "We frequently integrate irrigation and lighting into the same project scope to ensure the site performs as beautifully as it looks.",
-      },
-    ],
-    relatedProjectSlugs: [
-      "montecito-courtyard-renewal",
-      "private-garden-oasis",
-      "tree-lined-driveway",
-    ],
-    testimonialIds: ["jennifer-r", "michael-s"],
-  },
-  {
-    slug: "lawn-care-maintenance-programs",
-    name: "Lawn Care & Maintenance Programs",
-    shortDescription:
-      "Estate-level maintenance programs that preserve health, cleanliness, and year-round curb appeal.",
-    overview: [
-      "Our maintenance programs are designed for homeowners and property managers who want a landscape that never looks neglected between major visits. We build service calendars around turf health, seasonal changes, irrigation performance, pruning cycles, and weekly presentation standards.",
-      "Rather than offering generic mow-and-blow service, Ramirez Landscaping provides structured care with accountable crews, property notes, and proactive recommendations. The goal is simple: your landscape should always look intentional, polished, and ready to welcome guests.",
-    ],
-    includes: [
-      "Weekly or biweekly mowing and detailing",
-      "Seasonal fertilization and lawn-health monitoring",
-      "Irrigation observation and adjustment",
-      "Shrub shaping and detail pruning",
-      "Seasonal bed cleanup and debris management",
-      "Property notes with service recommendations",
-    ],
-    process: [
-      {
-        title: "Assess",
-        description:
-          "We evaluate turf condition, irrigation habits, and the presentation standards of the property.",
-        icon: "discover",
-      },
-      {
-        title: "Plan",
-        description:
-          "A recurring maintenance calendar is built around the site’s real needs and client expectations.",
+        title: "Quote",
+        description: "You get a clear recurring-service price based on size, growth, and visit frequency.",
         icon: "design",
       },
       {
         title: "Maintain",
-        description:
-          "Crews service the property consistently with attention to detail and tidy execution.",
+        description: "The crew handles the routine cut, edge, trim, and cleanup on schedule.",
         icon: "build",
       },
       {
-        title: "Refine",
-        description:
-          "We monitor performance, adjust seasonal tasks, and recommend improvements as conditions change.",
+        title: "Adjust",
+        description: "We update the service as weather, growth, or your needs change.",
         icon: "care",
       },
     ],
     heroImage: lawnMaintenance,
     cardImage: lawnMaintenance,
     gallery: [lawnMaintenance, heroEstate, seasonalPlanting, designInstallation],
-    accent: "Estate Stewardship",
+    accent: "Routine Yard Care",
     faq: [
       {
-        question: "How often should a luxury property be maintained?",
+        question: "Do I need weekly service?",
         answer:
-          "Most properties benefit from weekly service, while select sites can be maintained every other week depending on growth rate, irrigation, and presentation expectations.",
+          "Most lawns look best with weekly service during the growing season. Biweekly visits can work for smaller or slower-growing yards.",
       },
       {
-        question: "Do you provide seasonal refresh recommendations?",
+        question: "Can you come while I am not home?",
         answer:
-          "Yes. We flag planting decline, irrigation inefficiencies, and opportunities for seasonal color or lighting updates as part of ongoing care.",
+          "Yes. As long as we have safe access to the yard and any pets are secured, we can complete regular service without you being home.",
       },
       {
-        question: "Can maintenance be paired with enhancement work?",
+        question: "Do you haul away clippings?",
         answer:
-          "Absolutely. Many clients use maintenance as a baseline and schedule phased improvements throughout the year.",
+          "We can use your green-waste bin or quote hauling when extra removal is needed.",
       },
     ],
-    relatedProjectSlugs: ["luxurious-poolscape", "irrigated-excellence", "modern-hillside-estate"],
-    testimonialIds: ["amanda-l"],
+    relatedProjectSlugs: ["front-yard-reset", "rental-property-maintenance", "corner-lot-cleanup"],
+    testimonialIds: ["amanda-l", "jennifer-r"],
   },
   {
-    slug: "hardscape-outdoor-living-spaces",
-    name: "Hardscape & Outdoor Living Spaces",
+    slug: "mowing-edging",
+    name: "Mowing & Edging",
     shortDescription:
-      "Patios, fire features, kitchens, and gathering spaces designed for elegant outdoor living.",
+      "Sharp, even cuts and clean borders for lawns, sidewalks, curbs, and driveways.",
     overview: [
-      "The best outdoor living spaces feel as gracious and usable as the interiors they extend. Ramirez Landscaping designs hardscape environments that anchor movement, dining, entertaining, and evening atmosphere while remaining visually calm and materially enduring.",
-      "From structural layout and paving patterns to integrated lighting and planting softness, every element is composed to support both hospitality and longevity. We prioritize transitions, seating comfort, circulation, and the feeling of arrival just as much as the visible finish materials.",
+      "A clean lawn starts with a consistent cut and crisp edges. We mow, edge, and trim with attention to the small details that make the whole property look cared for.",
+      "This service is available as a recurring plan or as part of a one-time cleanup when the yard has gotten ahead of you.",
     ],
     includes: [
-      "Patios, courtyards, and paving design",
-      "Fire features and lounge environments",
-      "Outdoor kitchens and bar seating zones",
-      "Integrated lighting and planting transitions",
-      "Retaining features and grade solutions",
-      "Material curation for timeless outdoor use",
+      "Front and backyard mowing",
+      "Driveway, curb, and sidewalk edging",
+      "Fence-line and planter trimming",
+      "Grass cleanup from hard surfaces",
+      "Seasonal height adjustments",
+      "Optional add-on weed touchups",
     ],
     process: [
       {
-        title: "Program",
-        description:
-          "We define how the space should be used for dining, gathering, privacy, and flow.",
+        title: "Check",
+        description: "We look for sprinkler heads, obstacles, wet areas, and uneven spots before cutting.",
         icon: "discover",
       },
       {
-        title: "Compose",
-        description:
-          "Layouts, paving geometry, materials, and plant structure are designed as one system.",
+        title: "Set",
+        description: "The mower height is matched to the yard condition and season.",
         icon: "design",
       },
       {
-        title: "Construct",
-        description:
-          "Execution emphasizes level transitions, finish quality, and durable installation methods.",
+        title: "Cut",
+        description: "We mow, edge, trim, and keep clippings controlled.",
         icon: "build",
       },
       {
-        title: "Illuminate",
-        description:
-          "Lighting and furnishing coordination give the space its final warmth and functionality.",
-        icon: "care",
-      },
-    ],
-    heroImage: hardscapeLiving,
-    cardImage: hardscapeLiving,
-    gallery: [hardscapeLiving, heroEstate, designInstallation, commercialCampus],
-    accent: "Outdoor Hospitality",
-    faq: [
-      {
-        question: "Can you integrate landscape lighting into outdoor living projects?",
-        answer:
-          "Yes. Lighting is often essential to how these spaces feel after sunset, so we plan it early rather than treating it as an afterthought.",
-      },
-      {
-        question: "What materials do you typically recommend?",
-        answer:
-          "We favor stone, architectural concrete, masonry, and high-performance finishes chosen for timelessness, climate suitability, and upkeep expectations.",
-      },
-      {
-        question: "Do you handle phased hardscape transformations?",
-        answer:
-          "We do. Many clients start with a primary gathering space and expand into kitchens, lighting, and secondary seating areas in later phases.",
-      },
-    ],
-    relatedProjectSlugs: ["hillside-estate-retreat", "silverleaf-residence", "modern-hillside-estate"],
-    testimonialIds: ["michael-s"],
-  },
-  {
-    slug: "irrigation-systems-water-management",
-    name: "Irrigation Systems & Water Management",
-    shortDescription:
-      "High-performance irrigation planning, upgrades, and troubleshooting for healthy, efficient landscapes.",
-    overview: [
-      "Water management is one of the most important invisible systems in any landscape. Our irrigation work balances plant health, conservation, and seasonal responsiveness so the landscape stays vibrant without waste.",
-      "Whether we are installing a new system, optimizing an aging property, or correcting coverage issues, we focus on zoning discipline, runoff prevention, and long-term maintainability. The outcome is a landscape that performs consistently through changing weather and usage patterns.",
-    ],
-    includes: [
-      "Irrigation design and zoning plans",
-      "Controller setup and seasonal programming",
-      "Coverage correction and leak troubleshooting",
-      "Drainage strategy and runoff mitigation",
-      "Water-use optimization recommendations",
-      "Performance walkthroughs and monitoring",
-    ],
-    process: [
-      {
-        title: "Inspect",
-        description:
-          "We identify pressure, coverage, drainage, and plant-specific watering requirements.",
-        icon: "discover",
-      },
-      {
-        title: "Engineer",
-        description:
-          "Zoning, equipment selection, and water routing are planned for performance and efficiency.",
-        icon: "design",
-      },
-      {
-        title: "Install",
-        description:
-          "Our team implements or upgrades the system with clean, traceable workmanship.",
-        icon: "build",
-      },
-      {
-        title: "Optimize",
-        description:
-          "We calibrate settings and recommend seasonal adjustments to maintain healthy growth.",
+        title: "Clean",
+        description: "Walkways, patios, and drives are blown off before we leave.",
         icon: "care",
       },
     ],
     heroImage: lawnMaintenance,
-    cardImage: lawnMaintenance,
-    gallery: [lawnMaintenance, seasonalPlanting, designInstallation, heroEstate],
-    accent: "Performance Infrastructure",
+    cardImage: heroEstate,
+    gallery: [lawnMaintenance, heroEstate, seasonalPlanting, hardscapeLiving],
+    accent: "Clean Lawn Lines",
     faq: [
       {
-        question: "Do you work on existing irrigation systems?",
+        question: "Can you fix uneven lawn edges?",
         answer:
-          "Yes. Many of our water-management projects involve diagnosing inefficiencies and modernizing systems already in place.",
+          "Yes. Overgrown edges may take one or two visits to bring back cleanly, especially along older sidewalks or curbs.",
       },
       {
-        question: "Can you help reduce water use without harming plant health?",
+        question: "Do you bag grass clippings?",
         answer:
-          "That is one of the main goals. Proper zoning, controller strategy, and drainage correction often improve both efficiency and visual quality.",
+          "We can bag when needed, though many routine cuts can mulch clippings back into the lawn if conditions are right.",
       },
       {
-        question: "Do you provide seasonal adjustments?",
+        question: "Do you service small yards?",
         answer:
-          "We can include seasonal tuning as part of recurring maintenance or as scheduled standalone visits.",
+          "Yes. Small front yards, side yards, and rental properties are a common part of our route.",
       },
     ],
-    relatedProjectSlugs: ["irrigated-excellence", "tree-lined-driveway", "private-garden-oasis"],
-    testimonialIds: ["jennifer-r"],
+    relatedProjectSlugs: ["front-yard-reset", "townhome-yard-service", "corner-lot-cleanup"],
+    testimonialIds: ["michael-s"],
   },
   {
-    slug: "seasonal-color-planting",
-    name: "Seasonal Color & Planting",
+    slug: "hedge-shrub-trimming",
+    name: "Hedge & Shrub Trimming",
     shortDescription:
-      "Refined seasonal plantings that bring texture, rhythm, and a fresh sense of arrival throughout the year.",
+      "Practical trimming for hedges, shrubs, fence lines, and overgrown entry areas.",
     overview: [
-      "Seasonal planting is most effective when it feels deliberate rather than loud. We design refreshes that complement the structure of the permanent landscape, adding color, softness, and visual lift without losing sophistication.",
-      "Selections are tailored to the architecture, existing palette, and maintenance profile of the property. The effect is a garden that feels alive and responsive to the season while remaining aligned with the overall identity of the home or commercial space.",
+      "Shrubs and hedges can quickly make a property feel messy when they block walkways, windows, gates, or curb visibility. We trim for a neat, natural, manageable shape.",
+      "This service works well as a seasonal visit or an add-on to regular yard maintenance.",
     ],
     includes: [
-      "Seasonal color planning and palette design",
-      "Premium annual and perennial selections",
-      "Planter refreshes and entry enhancements",
-      "Soil amendment and bed preparation",
-      "Layered texture and bloom sequencing",
-      "Care guidance for sustained visual impact",
+      "Hedge shaping and height control",
+      "Shrub trimming around entries and windows",
+      "Fence-line cleanup",
+      "Light branch and sucker removal",
+      "Debris collection and green-waste handling",
+      "Recommendations for recurring trim timing",
     ],
     process: [
       {
         title: "Review",
-        description:
-          "We evaluate existing plant structure, microclimates, and the visual role of seasonal color.",
+        description: "We identify what needs shaping, clearing, or reducing before trimming begins.",
         icon: "discover",
       },
       {
-        title: "Curate",
-        description:
-          "Bloom, foliage, and textural layers are selected to complement architecture and maintenance needs.",
+        title: "Plan",
+        description: "We agree on a practical finished height and shape for the space.",
         icon: "design",
       },
       {
-        title: "Install",
-        description:
-          "Beds and planters are refreshed with attention to rhythm, spacing, and finish detail.",
+        title: "Trim",
+        description: "The crew trims carefully around siding, windows, walkways, and beds.",
         icon: "build",
       },
       {
-        title: "Sustain",
-        description:
-          "We provide guidance or maintenance support to keep the display healthy and polished.",
+        title: "Remove",
+        description: "Cuttings are collected and handled according to the estimate.",
         icon: "care",
       },
     ],
     heroImage: seasonalPlanting,
     cardImage: seasonalPlanting,
     gallery: [seasonalPlanting, designInstallation, heroEstate, lawnMaintenance],
-    accent: "Seasonal Garden Styling",
+    accent: "Hedges & Shrubs",
     faq: [
       {
-        question: "How often can seasonal color be refreshed?",
+        question: "Can you trim overgrown hedges?",
         answer:
-          "Many clients schedule updates quarterly, though some properties benefit from smaller monthly rotations in key presentation zones.",
+          "Usually, yes. Very heavy reductions may need to be staged so the plants recover better and the debris can be handled efficiently.",
       },
       {
-        question: "Will seasonal plantings work with a restrained palette?",
+        question: "Do you trim trees?",
         answer:
-          "Yes. We often use subtle tonal shifts, foliage contrast, and layered texture instead of relying on bright color alone.",
+          "We handle light, reachable trimming. Larger tree work or high limbs should be handled by a licensed tree specialist.",
       },
       {
-        question: "Do you refresh containers as well as garden beds?",
+        question: "How often should shrubs be trimmed?",
         answer:
-          "We do. Entry planters and focal containers are a common part of seasonal enhancement work.",
+          "Many yards need shrub trimming every 6 to 10 weeks during active growth, with lighter touchups in cooler months.",
       },
     ],
-    relatedProjectSlugs: ["mediterranean-garden", "private-garden-oasis", "oceanfront-retreat"],
-    testimonialIds: ["amanda-l"],
+    relatedProjectSlugs: ["overgrown-side-yard", "front-yard-reset", "rental-property-maintenance"],
+    testimonialIds: ["jennifer-r"],
   },
   {
-    slug: "commercial-landscape-services",
-    name: "Commercial Landscape Services",
+    slug: "seasonal-yard-cleanups",
+    name: "Seasonal Yard Cleanups",
     shortDescription:
-      "Polished landscape environments for campuses, hospitality properties, and high-visibility commercial sites.",
+      "One-time help for leaves, weeds, overgrowth, storm debris, and yards that need a reset.",
     overview: [
-      "Commercial landscapes carry operational demands beyond aesthetics alone. They must present the property well, support circulation, and remain consistent under regular use. Ramirez Landscaping brings hospitality-level presentation standards to campuses, mixed-use sites, boutique hotels, and premium office properties.",
-      "We align maintenance, enhancement, and phased improvements with ownership goals, tenant experience, and budget priorities. The result is a site that looks managed, intentional, and worthy of the brand it represents.",
+      "Sometimes the yard needs more than a quick mow. Our cleanup visits are built for overgrowth, leaves, weeds, dead plant material, and general outdoor clutter that makes the property feel neglected.",
+      "We can reset the yard before listing a home, preparing for guests, moving in, moving out, or starting a recurring maintenance plan.",
     ],
     includes: [
-      "Commercial property maintenance plans",
-      "Entry, campus, and hospitality enhancements",
-      "Seasonal color and focal planter refreshes",
-      "Irrigation oversight and repair coordination",
-      "Tree, shrub, and planting bed management",
-      "Property manager reporting and recommendations",
+      "Leaf and debris cleanup",
+      "Tall grass and overgrowth knockdown",
+      "Weed pulling or string trimming",
+      "Shrub touchups where reachable",
+      "Patio, walkway, and driveway blow-off",
+      "Green-waste bin use or haul-away quote",
     ],
     process: [
       {
-        title: "Audit",
-        description:
-          "We assess presentation quality, maintenance consistency, and high-visibility problem areas.",
+        title: "Assess",
+        description: "We estimate the time, debris volume, and equipment needed for the cleanup.",
         icon: "discover",
       },
       {
-        title: "Align",
-        description:
-          "Service scope is tailored to ownership goals, site traffic, and budget expectations.",
+        title: "Prioritize",
+        description: "We focus first on curb appeal, walkways, entries, and the areas you use most.",
         icon: "design",
       },
       {
-        title: "Operate",
-        description:
-          "Crews and enhancement teams maintain the property with clear standards and communication.",
+        title: "Reset",
+        description: "The crew cuts back, gathers debris, trims weeds, and clears hard surfaces.",
         icon: "build",
       },
       {
-        title: "Report",
-        description:
-          "We provide recommendations for phased improvement and long-term asset stewardship.",
+        title: "Maintain",
+        description: "If you want, we can roll the yard into a routine service schedule afterward.",
+        icon: "care",
+      },
+    ],
+    heroImage: designInstallation,
+    cardImage: designInstallation,
+    gallery: [designInstallation, lawnMaintenance, seasonalPlanting, commercialCampus],
+    accent: "One-Time Cleanups",
+    faq: [
+      {
+        question: "Can you clean up a very overgrown yard?",
+        answer:
+          "Yes. We will quote it based on access, growth height, debris volume, and disposal needs.",
+      },
+      {
+        question: "Do you do move-out cleanups?",
+        answer:
+          "Yes. We help homeowners, renters, and property managers get yards presentable before turnover or inspection.",
+      },
+      {
+        question: "Is hauling included?",
+        answer:
+          "Hauling depends on the amount of debris. We can use available green-waste bins or include haul-away in the estimate.",
+      },
+    ],
+    relatedProjectSlugs: ["corner-lot-cleanup", "overgrown-side-yard", "rental-property-maintenance"],
+    testimonialIds: ["harrington-family", "michael-t"],
+  },
+  {
+    slug: "weed-leaf-debris-removal",
+    name: "Weed, Leaf & Debris Removal",
+    shortDescription:
+      "Targeted cleanup for weeds, leaves, branches, clippings, and outdoor debris.",
+    overview: [
+      "Weeds and debris make even a simple yard look unfinished. We provide focused cleanup for beds, fence lines, walkways, patios, and high-visibility areas.",
+      "This service is commonly paired with mowing, shrub trimming, or seasonal cleanup visits.",
+    ],
+    includes: [
+      "Leaf blowing and collection",
+      "Weed pulling where practical",
+      "String trimming of larger weed areas",
+      "Small branch and clipping collection",
+      "Patio, walkway, and driveway cleanup",
+      "Green-waste handling options",
+    ],
+    process: [
+      {
+        title: "Target",
+        description: "We identify the worst weed and debris areas before starting.",
+        icon: "discover",
+      },
+      {
+        title: "Clear",
+        description: "Leaves, branches, and loose debris are collected or moved to green waste.",
+        icon: "build",
+      },
+      {
+        title: "Detail",
+        description: "Edges, walkways, and beds are cleaned up so the yard reads as maintained.",
+        icon: "design",
+      },
+      {
+        title: "Prevent",
+        description: "We recommend a simple service rhythm to keep the problem from returning quickly.",
         icon: "care",
       },
     ],
     heroImage: commercialCampus,
     cardImage: commercialCampus,
-    gallery: [commercialCampus, hardscapeLiving, lawnMaintenance, heroEstate],
-    accent: "Commercial Excellence",
+    gallery: [commercialCampus, lawnMaintenance, seasonalPlanting, designInstallation],
+    accent: "Beds, Leaves & Weeds",
     faq: [
       {
-        question: "Do you work with property managers and ownership groups?",
+        question: "Do you spray weeds?",
         answer:
-          "Yes. We structure communication and reporting so managers have visibility into site condition, recommendations, and scheduling.",
+          "We focus on pulling, trimming, and cleanup. If treatment is needed, we will discuss product expectations before anything is applied.",
       },
       {
-        question: "Can you service mixed-use or hospitality properties?",
+        question: "Can this be added to my regular visit?",
         answer:
-          "We support premium commercial sites where landscape quality is part of the guest or tenant experience.",
+          "Yes. Weed and debris touchups are easy to add to recurring yard maintenance.",
       },
       {
-        question: "Are enhancement projects available alongside ongoing maintenance?",
+        question: "Do you remove junk or construction debris?",
         answer:
-          "Yes. Many commercial engagements pair recurring service with phased refreshes, entry upgrades, or irrigation improvements.",
+          "No. We handle yard debris and green waste, not household junk, hazardous materials, or construction debris.",
       },
     ],
-    relatedProjectSlugs: ["corporate-campus-enhancement", "silverleaf-residence", "hillside-estate-retreat"],
-    testimonialIds: ["michael-t"],
-  },
-  {
-    slug: "tree-shrub-services",
-    name: "Tree & Shrub Services",
-    shortDescription:
-      "Health-focused pruning, shaping, and structural care for trees, hedges, and specimen plantings.",
-    overview: [
-      "Trees and shrubs provide the architecture of the landscape, which is why they require more than routine trimming. Our care emphasizes plant health, natural form, sight lines, and long-term balance across the property.",
-      "Whether shaping specimen material at the entry or managing hedge structure throughout an estate, we work with disciplined pruning practices that preserve strength, beauty, and scale over time.",
-    ],
-    includes: [
-      "Structural and detail pruning",
-      "Specimen shaping and hedge refinement",
-      "Canopy cleaning and clearance management",
-      "Health monitoring and risk spotting",
-      "Seasonal pruning calendars",
-      "Integration with estate maintenance plans",
-    ],
-    process: [
-      {
-        title: "Survey",
-        description:
-          "We identify plant health, sight-line issues, and structural shaping priorities.",
-        icon: "discover",
-      },
-      {
-        title: "Sequence",
-        description:
-          "A pruning plan is set around species needs, timing, and the visual hierarchy of the site.",
-        icon: "design",
-      },
-      {
-        title: "Prune",
-        description:
-          "Our crews execute careful cuts that preserve natural form and long-term vigor.",
-        icon: "build",
-      },
-      {
-        title: "Monitor",
-        description:
-          "We revisit as needed and coordinate with irrigation or nutrition recommendations when appropriate.",
-        icon: "care",
-      },
-    ],
-    heroImage: seasonalPlanting,
-    cardImage: heroEstate,
-    gallery: [heroEstate, seasonalPlanting, designInstallation, lawnMaintenance],
-    accent: "Structured Garden Care",
-    faq: [
-      {
-        question: "Do you offer one-time pruning visits?",
-        answer:
-          "Yes. We provide both recurring care and standalone pruning for properties that need seasonal attention.",
-      },
-      {
-        question: "Will pruning make the landscape look harsh or overcut?",
-        answer:
-          "Our standard is controlled, natural refinement. We avoid the over-sheared look that can strip character from the garden.",
-      },
-      {
-        question: "Can you coordinate shrub care with maintenance crews?",
-        answer:
-          "Absolutely. We often build pruning into broader estate maintenance programs so the landscape reads as a unified whole.",
-      },
-    ],
-    relatedProjectSlugs: ["tree-lined-driveway", "mediterranean-garden", "luxurious-poolscape"],
-    testimonialIds: ["jennifer-r"],
-  },
-  {
-    slug: "outdoor-lighting-design",
-    name: "Outdoor Lighting Design",
-    shortDescription:
-      "Architectural and landscape lighting that extends usability and gives the property its evening identity.",
-    overview: [
-      "Lighting changes not only how a property looks at night, but how it is experienced. We design subtle systems that reveal pathways, frame architecture, and give planting depth after sunset without overwhelming the landscape.",
-      "The strongest lighting plans feel elegant rather than obvious. Our approach favors layered illumination, deliberate contrast, and careful fixture placement so the site remains welcoming, legible, and beautifully composed in the evening.",
-    ],
-    includes: [
-      "Lighting plans for pathways and entries",
-      "Architectural and specimen uplighting",
-      "Hospitality-style ambience for outdoor living spaces",
-      "Fixture selection and placement strategy",
-      "Troubleshooting and lighting refreshes",
-      "Programming guidance and seasonal tuning",
-    ],
-    process: [
-      {
-        title: "Walk the Site",
-        description:
-          "We evaluate circulation, focal points, and how the property should feel after dark.",
-        icon: "discover",
-      },
-      {
-        title: "Layer",
-        description:
-          "We compose path, architectural, and garden lighting into a balanced evening experience.",
-        icon: "design",
-      },
-      {
-        title: "Install",
-        description:
-          "Fixtures are placed and calibrated with attention to glare control and finish quality.",
-        icon: "build",
-      },
-      {
-        title: "Fine-Tune",
-        description:
-          "We adjust beam, intensity, and timing so the atmosphere feels natural and intentional.",
-        icon: "care",
-      },
-    ],
-    heroImage: heroEstate,
-    cardImage: hardscapeLiving,
-    gallery: [heroEstate, hardscapeLiving, designInstallation, commercialCampus],
-    accent: "Evening Atmosphere",
-    faq: [
-      {
-        question: "Can lighting be added to an existing landscape?",
-        answer:
-          "Yes. Many lighting projects are retrofit enhancements designed to improve safety, hospitality, and visual depth.",
-      },
-      {
-        question: "Do you prioritize subtle lighting over brightness?",
-        answer:
-          "Always. We design for mood, legibility, and focal emphasis rather than flooding the property with light.",
-      },
-      {
-        question: "Can you combine lighting with patio or planting upgrades?",
-        answer:
-          "Yes. Lighting often performs best when designed alongside hardscape or planting improvements.",
-      },
-    ],
-    relatedProjectSlugs: ["hillside-estate-retreat", "silverleaf-residence", "luxurious-poolscape"],
-    testimonialIds: ["michael-s"],
+    relatedProjectSlugs: ["overgrown-side-yard", "townhome-yard-service", "corner-lot-cleanup"],
+    testimonialIds: ["amanda-l"],
   },
 ];
 
@@ -653,480 +428,284 @@ export const testimonials: Testimonial[] = [
   {
     id: "jennifer-r",
     name: "Jennifer R.",
-    projectType: "Residential Estate",
+    projectType: "Weekly yard service",
     rating: 5,
     quote:
-      "Ramirez Landscaping transformed our entire outdoor space with patience, detail, and a level of craftsmanship that exceeded every expectation.",
-    date: "2025-09-12",
+      "They show up when they say they will, the edges are clean, and I do not have to think about the yard anymore.",
+    date: "2026-01-18",
   },
   {
     id: "michael-s",
     name: "Michael S.",
-    projectType: "Outdoor Living Installation",
+    projectType: "Mowing and edging",
     rating: 5,
     quote:
-      "Their design discipline and installation quality gave us a resort-caliber setting that still feels personal and timeless.",
-    date: "2025-05-18",
+      "Our front yard looked sharper after one visit. Simple service, fair price, and no runaround.",
+    date: "2025-11-03",
   },
   {
     id: "amanda-l",
     name: "Amanda L.",
-    projectType: "Luxury Homeowner",
+    projectType: "Biweekly maintenance",
     rating: 5,
     quote:
-      "From ongoing maintenance to seasonal enhancements, the experience has been polished, proactive, and completely reliable.",
-    date: "2026-01-20",
+      "The crew keeps our small yard clean every other week and always blows off the patio before leaving.",
+    date: "2026-03-09",
   },
   {
     id: "michael-t",
     name: "Michael T.",
-    projectType: "Commercial Property Manager",
+    projectType: "Rental property cleanup",
     rating: 5,
     quote:
-      "Their team is organized, responsive, and deeply invested in how our property presents to tenants and visitors every day.",
-    date: "2025-11-06",
+      "They helped us get a rental yard back in shape quickly between tenants. Communication was easy.",
+    date: "2025-10-21",
   },
   {
     id: "harrington-family",
     name: "The Harrington Family",
-    projectType: "Courtyard Renewal",
+    projectType: "Seasonal cleanup",
     rating: 5,
     quote:
-      "Ramirez Landscaping turned our courtyard into a living work of art. Their professionalism and dedication were second to none.",
-    date: "2025-08-07",
+      "Leaves, weeds, and overgrowth were handled in one day. The yard finally looked usable again.",
+    date: "2025-12-14",
   },
 ];
 
 export const projects: Project[] = [
   {
-    slug: "montecito-courtyard-renewal",
-    title: "Montecito Courtyard Renewal",
-    location: "Montecito, CA",
-    category: "Landscape Design",
+    slug: "front-yard-reset",
+    title: "Front Yard Reset",
+    location: "Santa Barbara, CA",
+    category: "Mowing & Edging",
     propertyType: "Residential",
-    scale: "Estate",
+    scale: "Small",
     clientBrief:
-      "The clients wanted a private arrival court that felt timeless, inviting, and better connected to the home’s Mediterranean architecture.",
-    scope: [
-      "Landscape Design & Installation",
-      "Natural Stone Hardscaping",
-      "Low-Voltage Landscape Lighting",
-      "Irrigation System Upgrade",
-      "Outdoor Living Enhancements",
-    ],
-    timeline: "10 weeks",
-    heroImage: designInstallation,
-    thumbnail: designInstallation,
-    beforeImage: seasonalPlanting,
-    afterImage: designInstallation,
-    gallery: [designInstallation, heroEstate, hardscapeLiving, seasonalPlanting],
-    resultNarrative: [
-      "The renewed courtyard now delivers a formal yet welcoming arrival sequence with layered planting, structured paving, and subtle evening illumination.",
-      "By softening the stonework with planting texture and improving circulation, the project elevated both curb presence and daily enjoyment of the property.",
-    ],
-    testimonialId: "harrington-family",
-  },
-  {
-    slug: "beverly-hills-estate-transformation",
-    title: "Beverly Hills Estate Transformation",
-    location: "Beverly Hills, CA",
-    category: "Landscape Design & Installation",
-    propertyType: "Residential",
-    scale: "Estate",
-    clientBrief:
-      "A recently renovated home needed an exterior landscape commensurate with the architecture and scale of the estate.",
-    scope: [
-      "Concept Design",
-      "Specimen Planting",
-      "Lighting Design",
-      "Entry Sequence Enhancement",
-    ],
-    timeline: "12 weeks",
-    heroImage: heroEstate,
-    thumbnail: heroEstate,
-    beforeImage: lawnMaintenance,
-    afterImage: heroEstate,
-    gallery: [heroEstate, designInstallation, seasonalPlanting, hardscapeLiving],
-    resultNarrative: [
-      "The transformation reframed the home with stronger structure, softer nighttime ambience, and a more gracious sense of arrival.",
-    ],
-    testimonialId: "jennifer-r",
-  },
-  {
-    slug: "oceanfront-retreat",
-    title: "Oceanfront Retreat",
-    location: "Laguna Beach, CA",
-    category: "Seasonal Color & Planting",
-    propertyType: "Residential",
-    scale: "Signature",
-    clientBrief:
-      "The clients wanted an elevated planting palette that could complement ocean views without competing with them.",
-    scope: [
-      "Plant Palette Refinement",
-      "Seasonal Container Program",
-      "Irrigation Optimization",
-    ],
-    timeline: "4 weeks",
-    heroImage: seasonalPlanting,
-    thumbnail: seasonalPlanting,
-    beforeImage: lawnMaintenance,
-    afterImage: seasonalPlanting,
-    gallery: [seasonalPlanting, designInstallation, heroEstate],
-    resultNarrative: [
-      "Layered foliage, restrained bloom color, and seasonal updates created a setting that feels lush yet understated.",
-    ],
-  },
-  {
-    slug: "silverleaf-residence",
-    title: "Silverleaf Residence",
-    location: "Scottsdale, AZ",
-    category: "Outdoor Living Spaces",
-    propertyType: "Residential",
-    scale: "Signature",
-    clientBrief:
-      "The outdoor entertaining areas lacked intimacy and evening warmth, despite generous square footage and strong architecture.",
-    scope: [
-      "Patio Reconfiguration",
-      "Integrated Lighting",
-      "Outdoor Kitchen Surrounds",
-      "Planting Softscape",
-    ],
-    timeline: "9 weeks",
-    heroImage: hardscapeLiving,
-    thumbnail: hardscapeLiving,
-    beforeImage: designInstallation,
-    afterImage: hardscapeLiving,
-    gallery: [hardscapeLiving, heroEstate, commercialCampus],
-    resultNarrative: [
-      "The revised layout created a sequence of outdoor rooms that now support entertaining, quiet evenings, and stronger visual connection to the home.",
-    ],
-    testimonialId: "michael-s",
-  },
-  {
-    slug: "private-garden-oasis",
-    title: "Private Garden Oasis",
-    location: "Pasadena, CA",
-    category: "Landscape Design",
-    propertyType: "Residential",
-    scale: "Signature",
-    clientBrief:
-      "A dense urban property needed more privacy, planting richness, and a calmer relationship between house and garden.",
-    scope: [
-      "Planting Design",
-      "Privacy Screening",
-      "Circulation Improvements",
-    ],
-    timeline: "8 weeks",
-    heroImage: designInstallation,
-    thumbnail: designInstallation,
-    beforeImage: lawnMaintenance,
-    afterImage: designInstallation,
-    gallery: [designInstallation, seasonalPlanting, heroEstate],
-    resultNarrative: [
-      "Layered plant structure and better-defined pathways brought quiet, enclosure, and a more luxurious sense of retreat.",
-    ],
-  },
-  {
-    slug: "corporate-campus-enhancement",
-    title: "Corporate Campus Enhancement",
-    location: "Irvine, CA",
-    category: "Commercial Landscape",
-    propertyType: "Commercial",
-    scale: "Campus",
-    clientBrief:
-      "Property management wanted a more polished first impression at the primary entry sequence and outdoor gathering zones.",
-    scope: [
-      "Commercial Enhancements",
-      "Entry Planting Refresh",
-      "Hospitality Seating Landscapes",
-    ],
-    timeline: "6 weeks",
-    heroImage: commercialCampus,
-    thumbnail: commercialCampus,
-    beforeImage: lawnMaintenance,
-    afterImage: commercialCampus,
-    gallery: [commercialCampus, hardscapeLiving, lawnMaintenance],
-    resultNarrative: [
-      "The updated planting and hardscape details improved visual quality for tenants and strengthened the site’s professional presence.",
-    ],
-    testimonialId: "michael-t",
-  },
-  {
-    slug: "mediterranean-garden",
-    title: "Mediterranean Garden",
-    location: "San Juan Capistrano, CA",
-    category: "Seasonal Color & Planting",
-    propertyType: "Residential",
-    scale: "Boutique",
-    clientBrief:
-      "The clients wanted more floral richness and layered texture while preserving a composed, old-world atmosphere.",
-    scope: [
-      "Planting Bed Renewal",
-      "Container Styling",
-      "Shrub Detailing",
-    ],
-    timeline: "3 weeks",
-    heroImage: seasonalPlanting,
-    thumbnail: seasonalPlanting,
-    beforeImage: designInstallation,
-    afterImage: seasonalPlanting,
-    gallery: [seasonalPlanting, heroEstate, designInstallation],
-    resultNarrative: [
-      "The refreshed garden now carries more depth, seasonal interest, and softness while remaining architecturally disciplined.",
-    ],
-  },
-  {
-    slug: "luxurious-poolscape",
-    title: "Luxurious Poolscape",
-    location: "Newport Coast, CA",
-    category: "Outdoor Living Spaces",
-    propertyType: "Residential",
-    scale: "Estate",
-    clientBrief:
-      "A large backyard needed a more cohesive poolside environment with stronger evening atmosphere and better lounge flow.",
-    scope: [
-      "Poolside Planting",
-      "Lighting Design",
-      "Lounge Terrace Enhancements",
-    ],
-    timeline: "7 weeks",
-    heroImage: hardscapeLiving,
-    thumbnail: hardscapeLiving,
-    beforeImage: heroEstate,
-    afterImage: hardscapeLiving,
-    gallery: [hardscapeLiving, seasonalPlanting, heroEstate],
-    resultNarrative: [
-      "A layered lighting plan and more intentional planting palette turned the pool area into a true hospitality-grade retreat.",
-    ],
-  },
-  {
-    slug: "irrigated-excellence",
-    title: "Irrigated Excellence",
-    location: "Carlsbad, CA",
-    category: "Irrigation Systems",
-    propertyType: "Residential",
-    scale: "Signature",
-    clientBrief:
-      "Dry spots, runoff, and inconsistent controller settings were undermining a mature landscape and creating unnecessary water use.",
-    scope: [
-      "Irrigation Audit",
-      "Controller Programming",
-      "Coverage Correction",
-    ],
-    timeline: "2 weeks",
+      "The homeowner needed the front yard cleaned up before family visited for the weekend.",
+    scope: ["Mowing", "Edging", "Shrub touchup", "Walkway blow-off"],
+    timeline: "1 visit",
     heroImage: lawnMaintenance,
     thumbnail: lawnMaintenance,
     beforeImage: seasonalPlanting,
     afterImage: lawnMaintenance,
-    gallery: [lawnMaintenance, designInstallation, seasonalPlanting],
+    gallery: [lawnMaintenance, heroEstate, seasonalPlanting],
     resultNarrative: [
-      "The recalibrated system restored visual consistency, reduced waste, and gave the landscape a healthier, better-tended appearance.",
+      "A clean cut, sharper edges, and light shrub touchups made the entry feel cared for again.",
+      "The yard was placed on a weekly route to keep the growth from getting ahead of the owner.",
     ],
+    testimonialId: "michael-s",
   },
   {
-    slug: "tree-lined-driveway",
-    title: "Tree-Lined Driveway",
-    location: "Ojai, CA",
-    category: "Tree & Shrub Services",
+    slug: "corner-lot-cleanup",
+    title: "Corner Lot Cleanup",
+    location: "Goleta, CA",
+    category: "Seasonal Cleanup",
     propertyType: "Residential",
-    scale: "Boutique",
+    scale: "Large",
     clientBrief:
-      "The entry drive felt overgrown and visually compressed, with specimen trees obscuring the property’s strongest features.",
-    scope: [
-      "Structural Pruning",
-      "Shrub Refinement",
-      "Entry Sequence Cleanup",
-    ],
-    timeline: "10 days",
-    heroImage: heroEstate,
-    thumbnail: heroEstate,
+      "A corner lot had visible weeds, leaves, and overgrown grass along the sidewalk and curb.",
+    scope: ["Tall grass knockdown", "Curb edging", "Weed trimming", "Debris collection"],
+    timeline: "1 day",
+    heroImage: designInstallation,
+    thumbnail: designInstallation,
     beforeImage: lawnMaintenance,
-    afterImage: heroEstate,
-    gallery: [heroEstate, seasonalPlanting, designInstallation],
+    afterImage: designInstallation,
+    gallery: [designInstallation, lawnMaintenance, commercialCampus],
     resultNarrative: [
-      "Careful pruning reopened the approach, improved light quality, and restored the sense of scale the property deserved.",
+      "The cleanup restored clear sidewalk edges and improved the view from both street fronts.",
     ],
+    testimonialId: "harrington-family",
   },
   {
-    slug: "modern-hillside-estate",
-    title: "Modern Hillside Estate",
-    location: "Encinitas, CA",
-    category: "Landscape Design & Installation",
+    slug: "rental-property-maintenance",
+    title: "Rental Property Maintenance",
+    location: "Ventura, CA",
+    category: "Recurring Maintenance",
     propertyType: "Residential",
-    scale: "Estate",
+    scale: "Route",
     clientBrief:
-      "A new-build hillside home needed outdoor spaces that felt warm, grounded, and visually integrated with the architecture.",
-    scope: [
-      "Landscape Master Planning",
-      "Outdoor Living Enhancements",
-      "Lighting and Planting",
-    ],
-    timeline: "14 weeks",
-    heroImage: hardscapeLiving,
-    thumbnail: hardscapeLiving,
-    beforeImage: designInstallation,
-    afterImage: hardscapeLiving,
-    gallery: [hardscapeLiving, heroEstate, designInstallation, seasonalPlanting],
-    resultNarrative: [
-      "The completed site balances bold architecture with layered planting and a more welcoming, livable outdoor experience.",
-    ],
-  },
-  {
-    slug: "hillside-estate-retreat",
-    title: "Hillside Estate Retreat",
-    location: "Santa Barbara, CA",
-    category: "Outdoor Lighting Design",
-    propertyType: "Residential",
-    scale: "Estate",
-    clientBrief:
-      "The owners wanted their evening landscape experience to feel more intimate, safer, and more luxurious for entertaining.",
-    scope: [
-      "Outdoor Lighting Design",
-      "Focal Tree Uplighting",
-      "Path and Terrace Illumination",
-    ],
-    timeline: "3 weeks",
+      "A property manager needed reliable exterior care between tenant turnover and inspections.",
+    scope: ["Biweekly mowing", "Light weed control", "Debris cleanup", "Photo updates"],
+    timeline: "Ongoing",
     heroImage: heroEstate,
     thumbnail: heroEstate,
-    beforeImage: designInstallation,
+    beforeImage: seasonalPlanting,
     afterImage: heroEstate,
-    gallery: [heroEstate, hardscapeLiving, commercialCampus],
+    gallery: [heroEstate, lawnMaintenance, seasonalPlanting],
     resultNarrative: [
-      "The new lighting layers added drama, wayfinding, and a richer sense of depth without overpowering the architecture or plantings.",
+      "Regular visits kept the yard inspection-ready without requiring the manager to schedule one-off cleanups.",
     ],
+    testimonialId: "michael-t",
+  },
+  {
+    slug: "overgrown-side-yard",
+    title: "Overgrown Side Yard",
+    location: "Carpinteria, CA",
+    category: "Weed & Debris Removal",
+    propertyType: "Residential",
+    scale: "Standard",
+    clientBrief:
+      "The side yard had become hard to access because of weeds, leaves, and low branches.",
+    scope: ["Weed trimming", "Leaf cleanup", "Reachable branch trimming", "Green waste staging"],
+    timeline: "1 visit",
+    heroImage: seasonalPlanting,
+    thumbnail: seasonalPlanting,
+    beforeImage: designInstallation,
+    afterImage: seasonalPlanting,
+    gallery: [seasonalPlanting, designInstallation, lawnMaintenance],
+    resultNarrative: [
+      "The walkway became usable again and the homeowner had a clear plan for monthly upkeep.",
+    ],
+  },
+  {
+    slug: "townhome-yard-service",
+    title: "Townhome Yard Service",
+    location: "Oxnard, CA",
+    category: "Small Yard Care",
+    propertyType: "Residential",
+    scale: "Small",
+    clientBrief:
+      "A compact front and back yard needed regular care without a full design or build contract.",
+    scope: ["Small lawn mowing", "Planter weed touchups", "Patio blow-off"],
+    timeline: "Biweekly",
+    heroImage: commercialCampus,
+    thumbnail: commercialCampus,
+    beforeImage: lawnMaintenance,
+    afterImage: commercialCampus,
+    gallery: [commercialCampus, lawnMaintenance, hardscapeLiving],
+    resultNarrative: [
+      "Biweekly service kept the outdoor space tidy while matching the owner’s budget and yard size.",
+    ],
+    testimonialId: "amanda-l",
   },
 ];
 
 export const teamMembers: TeamMember[] = [
   {
     name: "Carlos Ramirez",
-    title: "Founder & Owner",
+    title: "Owner & Crew Lead",
     initials: "CR",
     image: founderPortrait,
-    bio: "Carlos leads design direction, client strategy, and the quality standards that define every Ramirez Landscaping project.",
+    bio: "Carlos estimates jobs, sets the route, and makes sure every yard is left clean before the crew moves on.",
   },
   {
     name: "Maribel Ramirez",
-    title: "Design Director",
+    title: "Scheduling & Customer Care",
     initials: "MR",
-    bio: "Maribel shapes planting palettes, finish selections, and the details that give each property its lasting character.",
+    bio: "Maribel handles service reminders, estimate requests, and the details that keep regular visits simple.",
   },
   {
     name: "Luis Hernandez",
-    title: "Operations Manager",
+    title: "Maintenance Lead",
     initials: "LH",
-    bio: "Luis coordinates crews, schedules, and logistics to keep execution disciplined, efficient, and clean on site.",
+    bio: "Luis leads mowing, edging, trimming, and cleanup work for weekly and one-time service visits.",
   },
   {
     name: "Jorge Martinez",
-    title: "Lead Landscape Architect",
+    title: "Cleanup Specialist",
     initials: "JM",
-    bio: "Jorge helps translate site challenges into spatially elegant solutions that feel both practical and elevated.",
+    bio: "Jorge focuses on overgrown yards, seasonal debris, hedge touchups, and green-waste handling.",
   },
 ];
 
 export const coreValues = [
   {
-    title: "Craftsmanship",
-    description:
-      "We take pride in the details that make a lasting impression.",
+    title: "Show Up",
+    description: "Good yard care starts with arriving on the agreed day and keeping communication clear.",
   },
   {
-    title: "Integrity",
-    description:
-      "Honesty, transparency, and accountability are at the heart of everything we do.",
+    title: "Work Clean",
+    description: "We keep gates, walkways, patios, and driveways tidy while we work and when we leave.",
   },
   {
-    title: "Excellence",
-    description:
-      "We pursue the highest standards in design, service, and results.",
+    title: "Keep It Simple",
+    description: "No overbuilt plans or confusing packages. Just the yard work you actually need.",
   },
   {
-    title: "Stewardship",
-    description:
-      "We respect the land and build outdoor environments that endure.",
+    title: "Respect Property",
+    description: "We watch for pets, sprinkler heads, parked cars, windows, and neighbor boundaries.",
   },
 ];
 
 export const awards = [
-  "California Landscape Contractors Association",
-  "CLCA Member",
-  "Accredited BBB Business",
-  "California Native Plant Society Supporter",
-  "Builders Association Partner",
+  "Locally Owned",
+  "Free Estimates",
+  "Weekly Routes",
+  "Residential Service",
+  "Property Manager Friendly",
 ];
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "designing-outdoor-spaces-that-stand-the-test-of-time",
-    title: "Designing Outdoor Spaces That Stand the Test of Time",
-    category: "Design Guidance",
+    slug: "how-often-should-you-mow",
+    title: "How Often Should You Mow Your Yard?",
+    category: "Yard Care",
     published: "2026-05-05",
-    readTime: "6 min read",
+    readTime: "4 min read",
     excerpt:
-      "Timeless outdoor environments rely on proportion, restraint, and material choices that age gracefully.",
-    featuredImage: hardscapeLiving,
+      "A simple guide to weekly, biweekly, and seasonal mowing schedules for everyday lawns.",
+    featuredImage: lawnMaintenance,
     author: "Carlos Ramirez",
     seoDescription:
-      "A guide to timeless landscape design principles for luxury residential properties.",
+      "Learn how often to mow your yard and when weekly or biweekly yard maintenance makes sense.",
     body: [
-      "Timeless landscapes are rarely the loudest. They earn their staying power through proportion, durable material decisions, and planting structure that matures gracefully rather than chasing a short-term trend.",
-      "For residential clients, that often means beginning with how the architecture wants to meet the landscape. Strong entries, generous transitions, and carefully placed focal moments create a property that feels composed the day it is finished and even better a few seasons later.",
-      "The most successful projects also respect maintenance reality. A refined landscape should not depend on constant rescue work to look presentable. Thoughtful zoning, right-sized planting, and disciplined hardscape geometry make longevity possible.",
+      "Most lawns look their best with weekly mowing during active growth. That rhythm keeps grass from getting too tall, helps edges stay clean, and makes each visit faster.",
+      "Biweekly service can work well for small yards, shaded lawns, or cooler months when growth slows down. The tradeoff is that a biweekly yard may look less crisp near the end of the cycle.",
+      "The right schedule depends on watering, sun exposure, season, and how polished you want the yard to look from the street.",
     ],
   },
   {
-    slug: "spring-landscape-checklist",
-    title: "Spring Landscape Checklist",
-    category: "Seasonal Care",
+    slug: "seasonal-yard-cleanup-checklist",
+    title: "Seasonal Yard Cleanup Checklist",
+    category: "Cleanups",
     published: "2026-04-12",
     readTime: "4 min read",
     excerpt:
-      "A spring reset should prepare the property for stronger growth, cleaner edges, and a more polished presentation.",
+      "What to clear first when leaves, weeds, and overgrowth start making the yard feel messy.",
     featuredImage: seasonalPlanting,
     author: "Maribel Ramirez",
     seoDescription:
-      "A seasonal landscaping checklist for spring maintenance, planting, and irrigation readiness.",
+      "A practical seasonal yard cleanup checklist for leaves, weeds, trimming, and debris removal.",
     body: [
-      "Spring is the ideal time to address the quiet issues that can compromise a landscape later in the year: irrigation inefficiencies, pruning that was deferred through winter, and planting beds that need renewed structure.",
-      "Start with irrigation performance. Even minor misalignment can show up quickly as temperatures rise. Then move to edge detail, mulch quality, and any shrubs or perennials that need shape correction before new growth becomes harder to manage.",
-      "Finally, identify where seasonal color or container refreshes can create the strongest visual lift. Small, well-placed updates often outperform broad changes when the permanent framework of the landscape is already strong.",
+      "Start with access areas: gates, walkways, driveways, and the path to the front door. These spots create the biggest first impression and make the rest of the cleanup easier.",
+      "Next, address tall weeds and overgrown grass. Once the heavy growth is knocked down, it is easier to see what should be bagged, hauled, or added to green waste.",
+      "Finish with detail work: edging, patio blow-off, shrub touchups, and any recurring plan that keeps the yard from getting out of hand again.",
     ],
   },
   {
-    slug: "pathways-that-elevate-curb-appeal",
-    title: "Pathways That Elevate Curb Appeal",
-    category: "Outdoor Living",
+    slug: "why-edging-makes-a-yard-look-cleaner",
+    title: "Why Edging Makes a Yard Look Cleaner",
+    category: "Mowing",
     published: "2026-03-20",
-    readTime: "5 min read",
+    readTime: "3 min read",
     excerpt:
-      "Entry paths shape how a property is experienced before the front door is ever reached.",
-    featuredImage: designInstallation,
-    author: "Jorge Martinez",
+      "Clean borders along sidewalks and driveways can make a simple mow look much more finished.",
+    featuredImage: heroEstate,
+    author: "Luis Hernandez",
     seoDescription:
-      "How entry walks, paving lines, and planting improve curb appeal and the sense of arrival.",
+      "Why lawn edging improves curb appeal and helps basic yard maintenance look more complete.",
     body: [
-      "A front walk does more than connect a driveway to a door. It sets pace, frames views, and establishes the tone of the home before a guest reaches the threshold.",
-      "The best paths balance directness with ceremony. Material edges, planting softness, and nighttime lighting all influence whether the arrival feels abrupt or gracious.",
-      "When we design entry experiences, we think about what the path reveals, what it conceals, and where the landscape should create a pause. Those details are often what transform curb appeal into a genuine sense of place.",
+      "A lawn can be freshly cut and still look unfinished if the edges are fuzzy. Edging creates a clean line where grass meets concrete, curb, or planter bed.",
+      "For regular maintenance, edging also keeps grass from creeping farther onto sidewalks and driveways. That means each visit starts from a cleaner baseline.",
+      "When homeowners ask for a sharper-looking front yard, edging is usually one of the first details we recommend.",
     ],
   },
   {
-    slug: "native-plants-that-thrive-locally",
-    title: "Native Plants That Thrive Locally",
-    category: "Plant Care",
+    slug: "getting-an-overgrown-yard-back-under-control",
+    title: "Getting an Overgrown Yard Back Under Control",
+    category: "Cleanups",
     published: "2026-03-04",
     readTime: "5 min read",
     excerpt:
-      "Native and climate-adapted planting can deliver beauty, resilience, and a more grounded regional character.",
-    featuredImage: commercialCampus,
-    author: "Maribel Ramirez",
+      "A realistic approach to overgrown grass, weeds, leaves, and green-waste removal.",
+    featuredImage: designInstallation,
+    author: "Carlos Ramirez",
     seoDescription:
-      "Climate-appropriate plant guidance for luxury residential and commercial landscape projects.",
+      "How to reset an overgrown yard with mowing, trimming, debris cleanup, and recurring maintenance.",
     body: [
-      "Native and climate-appropriate plants are most compelling when they are selected for beauty as much as resilience. Texture, movement, seasonal interest, and architectural form all matter.",
-      "In refined residential work, local species often become the connective tissue that makes the landscape feel rooted to its setting. In commercial work, they support consistent performance and reduced maintenance pressure.",
-      "The key is curation. A resilient palette should still feel composed and site-specific rather than purely utilitarian.",
+      "The first step is deciding what has to be cleared for safety and access. Gates, walkways, utility areas, and entries usually come first.",
+      "Next comes the rough cut: tall grass, large weed patches, and heavy debris. This stage may not look perfect immediately, but it makes detailed work possible.",
+      "After the reset, the best move is a simple maintenance schedule. Regular visits are almost always easier and cheaper than repeated emergency cleanups.",
     ],
   },
 ];
@@ -1134,62 +713,53 @@ export const blogPosts: BlogPost[] = [
 export const generalFaqs = [
   {
     category: "Process & Pricing",
-    question: "How do I start a new project?",
-    answer:
-      "Begin with a consultation. We discuss your goals, site conditions, priorities, and timing before outlining the most appropriate next step.",
-  },
-  {
-    category: "Process & Pricing",
     question: "Do you offer free estimates?",
     answer:
-      "Yes. We provide complimentary estimate consultations for qualified projects and recurring service inquiries.",
+      "Yes. We provide free estimates for regular yard maintenance, one-time cleanups, mowing, edging, and shrub trimming.",
   },
   {
-    category: "Maintenance",
-    question: "Do you offer ongoing maintenance after installation?",
+    category: "Scheduling",
+    question: "Do you offer weekly and biweekly service?",
     answer:
-      "Yes. Many clients continue with one of our maintenance programs to protect the quality and health of the landscape long after the initial project is complete.",
+      "Yes. Weekly service is best during active growth, while biweekly service can work for smaller or slower-growing yards.",
   },
   {
-    category: "Irrigation",
-    question: "Can you troubleshoot an existing irrigation system?",
+    category: "Service",
+    question: "What is included in basic yard maintenance?",
     answer:
-      "Absolutely. We frequently diagnose inefficiencies, revise zoning, and improve controller programming on established properties.",
+      "A typical visit includes mowing, edging, trimming, light cleanup, and blowing off hard surfaces. We can add weeds, leaves, or shrub trimming as needed.",
   },
   {
-    category: "Design & Build",
-    question: "Do you handle permits and HOA coordination?",
+    category: "Cleanups",
+    question: "Can you handle an overgrown yard?",
     answer:
-      "We can coordinate with permitting or design-review requirements where project scope calls for it, and we help clients understand those needs early.",
+      "Yes. Overgrown yards are quoted based on size, access, growth height, debris volume, and hauling needs.",
+  },
+  {
+    category: "Service",
+    question: "Do you do landscape design or hardscape installation?",
+    answer:
+      "No. We focus on basic yard maintenance, mowing, edging, trimming, weeds, leaves, and cleanups.",
   },
   {
     category: "Service Area",
     question: "What areas do you serve?",
     answer:
-      "We primarily serve Southern California, including Santa Barbara, Ventura, Los Angeles, Orange, Riverside, and San Diego counties.",
+      "We serve Santa Barbara and nearby communities including Goleta, Carpinteria, Montecito, and Ventura by route availability.",
   },
 ];
 
-export const articleCategories = [
-  "All",
-  "Design Guidance",
-  "Seasonal Care",
-  "Outdoor Living",
-  "Plant Care",
-];
+export const articleCategories = ["All", "Yard Care", "Cleanups", "Mowing"];
 
 export const projectFilters = {
   services: [
     "All Services",
-    "Landscape Design",
-    "Landscape Design & Installation",
-    "Outdoor Living Spaces",
-    "Seasonal Color & Planting",
-    "Commercial Landscape",
-    "Irrigation Systems",
-    "Tree & Shrub Services",
-    "Outdoor Lighting Design",
+    "Recurring Maintenance",
+    "Mowing & Edging",
+    "Seasonal Cleanup",
+    "Weed & Debris Removal",
+    "Small Yard Care",
   ],
   propertyTypes: ["All Property Types", "Residential", "Commercial"],
-  scales: ["All Scales", "Estate", "Signature", "Boutique", "Campus"],
+  scales: ["All Job Sizes", "Small", "Standard", "Large", "Route"],
 };

@@ -1,9 +1,9 @@
 export const mainNavigation = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Portfolio", href: "/portfolio" },
+  { label: "Our Work", href: "/portfolio" },
   { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
+  { label: "Yard Tips", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

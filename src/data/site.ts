@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "Ramirez Landscaping",
-  email: "info@ramirezlandscaping.com",
+  name: "Ramirez Yard Maintenance",
+  email: "info@ramirezyardmaintenance.com",
   phone: "(714) 555-0198",
   address: "1220 Coast Garden Drive, Santa Barbara, CA 93108",
   hours: [
@@ -9,17 +9,15 @@ export const siteConfig = {
     "Sunday: Closed",
   ],
   serviceArea: [
-    "Santa Barbara County",
-    "Ventura County",
-    "Los Angeles County",
-    "Orange County",
-    "Riverside County",
-    "San Diego County",
+    "Santa Barbara",
+    "Goleta",
+    "Carpinteria",
+    "Montecito",
+    "Ventura",
+    "Nearby route areas",
   ],
   social: [
     { label: "Instagram", href: "https://www.instagram.com/" },
     { label: "Facebook", href: "https://www.facebook.com/" },
-    { label: "Pinterest", href: "https://www.pinterest.com/" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
   ],
 };

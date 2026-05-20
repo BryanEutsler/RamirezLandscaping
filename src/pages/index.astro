@@ -10,8 +10,8 @@ import Icon from "@/components/Icon.astro";
 import BlogCard from "@/components/BlogCard.astro";
 import { blogPosts, projects, services, testimonials, valuePillars } from "@/data/content";
 import { siteConfig } from "@/data/site";
-import heroEstate from "@/assets/photos/hero-estate.png";
-import founderPortrait from "@/assets/photos/founder-portrait.png";
+import lawnMaintenance from "@/assets/photos/lawn-maintenance.png";
+import seasonalPlanting from "@/assets/photos/seasonal-planting.png";
 
 const homeSchema = [
   {
@@ -30,64 +30,78 @@ const homeSchema = [
       addressCountry: "US",
     },
     areaServed: siteConfig.serviceArea,
-    url: Astro.site?.toString() ?? "https://www.ramirezlandscaping.com",
+    url: Astro.site?.toString() ?? "https://www.ramirezyardmaintenance.com",
     sameAs: siteConfig.social.map((item) => item.href),
   },
 ];
 
 const featuredServices = services.slice(0, 3);
-const featuredProjects = projects.slice(0, 6);
+const featuredProjects = projects.slice(0, 3);
 const featuredPosts = blogPosts.slice(0, 3);
 ---
 
 <BaseLayout
-  title="Ramirez Landscaping | Crafted Outdoor Environments for Homes and Estates of Distinction"
-  description="Premium landscaping design, installation, maintenance, irrigation, hardscape, and commercial landscape services for discerning clients."
+  title="Ramirez Yard Maintenance | Mowing, Edging & Yard Cleanups"
+  description="Basic yard maintenance in Santa Barbara and nearby areas: mowing, edging, trimming, weeds, leaves, and one-time cleanups."
   schema={homeSchema}
 >
-  <section class="relative min-h-screen overflow-hidden pt-28">
+  <section class="relative overflow-hidden bg-[#11150f] pt-28">
     <Image
-      src={heroEstate}
-      alt="Luxury estate landscape at golden hour"
+      src={lawnMaintenance}
+      alt="Freshly maintained yard with clean lawn lines"
       class="absolute inset-0 h-full w-full object-cover"
       widths={[960, 1280, 1600, 1920]}
       format="webp"
       priority
     />
-    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,8,8,0.82)_0%,rgba(8,8,8,0.64)_42%,rgba(8,8,8,0.28)_75%,rgba(8,8,8,0.42)_100%)]"></div>
-    <div class="container-shell relative z-10 flex min-h-[calc(100vh-7rem)] items-center">
-      <div class="max-w-4xl py-14">
-        <h1 class="hero-reveal font-[var(--font-display)] text-5xl leading-[0.92] text-champagne md:text-7xl xl:text-[7rem]">
-          Crafted Outdoor Environments for Homes and Estates of Distinction
-        </h1>
-        <p class="fade-rise mt-8 max-w-2xl text-lg leading-8 text-white/78 md:text-2xl" data-delay="1">
-          From concept to long-term care, we design, build, and maintain landscapes that elevate
-          daily life.
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,16,10,0.9)_0%,rgba(10,16,10,0.72)_48%,rgba(10,16,10,0.34)_100%)]"></div>
+    <div class="container-shell relative z-10 grid min-h-[calc(100vh-7rem)] items-center gap-10 py-14 lg:grid-cols-[1fr_24rem]">
+      <div class="max-w-3xl">
+        <p class="fade-rise font-[var(--font-label)] text-xs uppercase tracking-[0.28em] text-champagne">
+          Basic yard maintenance
         </p>
-        <div class="fade-rise mt-10 flex flex-col gap-4 sm:flex-row" data-delay="2">
-          <a href="/portfolio" class="button-outline rounded-xl px-6 py-4 text-center text-[0.78rem]">
-            View Our Work
-          </a>
-          <a href="/contact" class="button-gold rounded-xl px-6 py-4 text-center text-[0.78rem]">
+        <h1 class="hero-reveal mt-5 font-[var(--font-display)] text-5xl leading-[0.95] text-ivory md:text-7xl xl:text-[6.5rem]">
+          Mowing, edging, trimming, and cleanups.
+        </h1>
+        <p class="fade-rise mt-7 max-w-2xl text-lg leading-8 text-white/78 md:text-xl" data-delay="1">
+          Simple, reliable yard care for homes, rentals, and small properties. No landscape design,
+          no big construction pitch, just the work that keeps your yard looking handled.
+        </p>
+        <div class="fade-rise mt-9 flex flex-col gap-4 sm:flex-row" data-delay="2">
+          <a href="/contact" class="button-gold rounded-lg px-6 py-4 text-center text-[0.78rem]">
             Request a Free Estimate
           </a>
-        </div>
-        <div class="fade-rise mt-16 flex justify-center sm:justify-start" data-delay="3">
-          <div class="scroll-indicator" aria-hidden="true"></div>
+          <a href={`tel:${siteConfig.phone.replaceAll(/[^+\d]/g, "")}`} class="button-outline rounded-lg px-6 py-4 text-center text-[0.78rem]">
+            Call {siteConfig.phone}
+          </a>
         </div>
       </div>
+
+      <aside class="fade-rise rounded-lg border border-white/12 bg-black/45 p-6 backdrop-blur" data-delay="3">
+        <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/85">
+          Common visits
+        </p>
+        <div class="mt-5 grid gap-3 text-sm leading-6 text-white/78">
+          <p>Weekly and biweekly yard maintenance</p>
+          <p>One-time overgrown yard cleanups</p>
+          <p>Mowing, edging, weeds, leaves, and shrub touchups</p>
+        </div>
+        <div class="mt-6 border-t border-white/10 pt-5">
+          <p class="text-sm text-white/58">Serving Santa Barbara, Goleta, Carpinteria, Montecito, Ventura, and nearby route areas.</p>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <section class="border-y border-champagne/18 bg-[#0b0b0b]">
-    <div class="container-shell grid gap-6 py-8 md:grid-cols-2 xl:grid-cols-4 xl:py-12">
+  <section class="border-y border-champagne/18 bg-[#0b0f0a]">
+    <div class="container-shell grid gap-4 py-8 md:grid-cols-2 xl:grid-cols-4">
       {
         valuePillars.map((pillar) => (
-          <article class="gold-frame rounded-[1.6rem] bg-white/[0.02] p-6">
+          <article class="rounded-lg border border-white/10 bg-white/[0.03] p-6">
             <div class="text-champagne">
-              <Icon name={pillar.icon as "sprout" | "glove" | "trophy" | "shield"} class="h-10 w-10" />
+              <Icon name={pillar.icon as "sprout" | "glove" | "shield" | "clock"} class="h-9 w-9" />
             </div>
-            <h2 class="mt-6 font-[var(--font-heading)] text-3xl text-ivory">{pillar.title}</h2>
+            <h2 class="mt-5 font-[var(--font-heading)] text-2xl text-ivory">{pillar.title}</h2>
             <p class="mt-3 text-sm leading-7 text-white/66">{pillar.description}</p>
           </article>
         ))
@@ -95,107 +109,98 @@ const featuredPosts = blogPosts.slice(0, 3);
     </div>
   </section>
 
-  <section class="section-pad">
-    <div class="container-shell">
-      <SectionHeading
-        title="Our Expertise"
-        description="A full-service approach to landscape design, installation, stewardship, and long-term property presentation."
-        align="center"
-      />
-      <div class="mt-14 grid gap-6 xl:grid-cols-3">
-        {featuredServices.map((service) => <ServiceCard service={service} />)}
-      </div>
-    </div>
-  </section>
-
   <section class="paper-panel section-pad">
     <div class="container-shell">
       <SectionHeading
-        title="Featured Projects"
-        description="A first look at the range of work Ramirez Landscaping delivers across private estates, gardens, and premium commercial properties."
+        title="Yard Services"
+        description="The everyday work most homeowners actually need: clean lines, controlled growth, and a yard that does not look neglected."
         theme="light"
         align="center"
       />
-      <div class="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {featuredProjects.map((project) => <ProjectCard project={project} compact />)}
+      <div class="mt-12 grid gap-6 xl:grid-cols-3">
+        {featuredServices.map((service) => <ServiceCard service={service} />)}
       </div>
       <div class="mt-10 flex justify-center">
-        <a href="/portfolio" class="button-gold rounded-xl px-6 py-4 text-[0.78rem]">
-          Explore the Full Portfolio
-        </a>
+        <a href="/services" class="button-gold rounded-lg px-6 py-4 text-[0.78rem]">View All Services</a>
       </div>
     </div>
   </section>
 
   <section class="section-pad">
-    <div class="container-shell grid gap-10 xl:grid-cols-[0.95fr_1.05fr]">
-      <div class="leaf-pattern rounded-[2rem] border border-champagne/18 bg-midnight p-8 md:p-10">
-        <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.26em] text-champagne/78">
-          Our Story
-        </p>
-        <h2 class="mt-4 font-[var(--font-display)] text-4xl leading-tight text-ivory md:text-5xl">
-          A landscape should feel composed, lived in, and quietly unforgettable.
-        </h2>
-        <p class="mt-6 max-w-xl text-base leading-8 text-white/72">
-          Ramirez Landscaping was built on the belief that outdoor spaces deserve the same level of
-          rigor, refinement, and hospitality as the interiors they surround. We partner with
-          homeowners, builders, and property managers who value quality over shortcuts.
-        </p>
-        <blockquote class="mt-8 border-l border-champagne/40 pl-5 font-[var(--font-heading)] text-3xl leading-tight text-champagne">
-          “The best landscapes are not simply installed. They are composed with care and stewarded
-          with pride.”
-        </blockquote>
-        <p class="mt-4 text-sm uppercase tracking-[0.18em] text-white/52">Carlos Ramirez, Founder</p>
-        <a href="/about" class="button-outline mt-10 inline-flex rounded-xl px-6 py-4 text-[0.78rem]">
-          Our Story
-        </a>
+    <div class="container-shell grid gap-10 xl:grid-cols-[0.88fr_1.12fr]">
+      <div>
+        <SectionHeading
+          title="A Simple Way to Keep the Yard Caught Up"
+          description="Most customers start with a quick estimate, choose weekly or biweekly service, and add cleanup work only when the yard needs it."
+        />
+        <div class="mt-8 grid gap-4">
+          {["Send a few details about the yard.", "Get a clear estimate and schedule window.", "We mow, edge, trim, clean up, and keep the route moving."].map((item, index) => (
+            <article class="rounded-lg border border-champagne/18 bg-white/[0.025] p-5">
+              <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.22em] text-champagne/80">Step {index + 1}</p>
+              <p class="mt-2 text-base leading-7 text-white/74">{item}</p>
+            </article>
+          ))}
+        </div>
       </div>
-      <div class="overflow-hidden rounded-[2rem] border border-champagne/20">
-        <img
-          src={founderPortrait.src}
-          alt="Founder Carlos Ramirez in an estate garden"
+      <div class="overflow-hidden rounded-lg border border-champagne/20">
+        <Image
+          src={seasonalPlanting}
+          alt="Yard cleanup with trimmed greenery"
           class="h-full min-h-[28rem] w-full object-cover"
+          widths={[720, 960]}
+          format="webp"
           loading="eager"
         />
       </div>
     </div>
   </section>
 
-  <section class="section-pad pt-0">
+  <section class="paper-panel section-pad">
+    <div class="container-shell">
+      <SectionHeading
+        title="Recent Yard Work"
+        description="A few examples of routine cuts, cleanups, and small-property maintenance."
+        theme="light"
+        align="center"
+      />
+      <div class="mt-12 grid gap-5 md:grid-cols-3">
+        {featuredProjects.map((project) => <ProjectCard project={project} compact />)}
+      </div>
+      <div class="mt-10 flex justify-center">
+        <a href="/portfolio" class="button-gold rounded-lg px-6 py-4 text-[0.78rem]">
+          See More Work
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
     <div class="container-shell">
       <TestimonialCarousel items={testimonials.slice(0, 5)} />
     </div>
   </section>
 
-  <section class="leaf-pattern border-y border-champagne/18 bg-[linear-gradient(135deg,#cfb369_0%,#c9a84c_45%,#8b6914_100%)] py-12 text-[#171309]">
+  <section class="border-y border-champagne/18 bg-[linear-gradient(135deg,#d3b45c_0%,#b9912e_100%)] py-12 text-[#171309]">
     <div class="container-shell flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
       <div>
         <p class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-[#31250c]/78">
-          Complimentary Consultation
+          Free Estimate
         </p>
         <h2 class="mt-4 font-[var(--font-display)] text-4xl leading-tight md:text-5xl">
-          Schedule your complimentary landscape consultation today.
+          Need the yard cleaned up or kept on a schedule?
         </h2>
       </div>
-      <form class="flex w-full max-w-xl flex-col gap-3 sm:flex-row">
-        <input
-          type="text"
-          placeholder="Enter your email or phone"
-          class="h-14 flex-1 rounded-xl border border-black/12 bg-[#111111] px-5 text-white placeholder:text-white/40"
-          aria-label="Email or phone"
-        />
-        <a href="/contact" class="inline-flex items-center justify-center rounded-xl bg-forest px-7 py-4 font-[var(--font-label)] text-[0.78rem] uppercase tracking-[0.18em] text-white">
-          Let's Connect
-        </a>
-      </form>
+      <a href="/contact" class="inline-flex items-center justify-center rounded-lg bg-forest px-7 py-4 font-[var(--font-label)] text-[0.78rem] uppercase tracking-[0.18em] text-white">
+        Request Yard Service
+      </a>
     </div>
   </section>
 
   <section class="paper-panel section-pad">
     <div class="container-shell">
       <SectionHeading
-        title="Journal & Resources"
-        description="Starter content for the future resource center, designed to support SEO growth and answer common client questions."
+        title="Yard Care Tips"
+        description="Short, practical notes for mowing schedules, cleanups, and keeping overgrowth under control."
         theme="light"
         align="center"
       />

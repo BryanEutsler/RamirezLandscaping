@@ -3,22 +3,22 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import PageHero from "@/components/PageHero.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import { projectFilters, projects } from "@/data/content";
-import heroEstate from "@/assets/photos/hero-estate.png";
+import lawnMaintenance from "@/assets/photos/lawn-maintenance.png";
 
 const portfolioSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Portfolio",
-  description: "Filterable portfolio of luxury residential and commercial landscaping projects.",
+  name: "Our Work",
+  description: "Examples of yard maintenance, mowing, edging, and cleanup work.",
 };
 ---
 
-<BaseLayout title="Portfolio | Ramirez Landscaping" description="Browse featured landscaping case studies and portfolio projects." schema={portfolioSchema}>
+<BaseLayout title="Our Work | Ramirez Yard Maintenance" description="Browse examples of yard maintenance, mowing, edging, and cleanup work." schema={portfolioSchema}>
   <PageHero
-    title="Portfolio"
-    description="Explore our body of work across estates, gardens, and commercial properties."
-    image={heroEstate}
-    crumbs={[{ label: "Home", href: "/" }, { label: "Portfolio" }]}
+    title="Our Work"
+    description="Examples of routine yard care, cleanups, mowing, edging, and small-property maintenance."
+    image={lawnMaintenance}
+    crumbs={[{ label: "Home", href: "/" }, { label: "Our Work" }]}
   />
 
   <section class="section-pad">
@@ -37,7 +37,7 @@ const portfolioSchema = {
           </select>
         </label>
         <label class="grid gap-2 text-sm text-white/72">
-          <span class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">Project Scale</span>
+          <span class="font-[var(--font-label)] text-xs uppercase tracking-[0.24em] text-champagne/75">Job Size</span>
           <select class="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3" data-filter-scale>
             {projectFilters.scales.map((option) => <option value={option}>{option}</option>)}
           </select>
@@ -87,19 +87,19 @@ const portfolioSchema = {
     const applyFilters = () => {
       const service = serviceSelect?.value || "All Services";
       const property = propertySelect?.value || "All Property Types";
-      const scale = scaleSelect?.value || "All Scales";
+      const scale = scaleSelect?.value || "All Job Sizes";
       const params = new URLSearchParams();
 
       cards.forEach((card) => {
         const matchesService = service === "All Services" || card.dataset.service === service;
         const matchesProperty = property === "All Property Types" || card.dataset.property === property;
-        const matchesScale = scale === "All Scales" || card.dataset.scale === scale;
+        const matchesScale = scale === "All Job Sizes" || card.dataset.scale === scale;
         card.classList.toggle("hidden", !(matchesService && matchesProperty && matchesScale));
       });
 
       if (service !== "All Services") params.set("service", service);
       if (property !== "All Property Types") params.set("property", property);
-      if (scale !== "All Scales") params.set("scale", scale);
+      if (scale !== "All Job Sizes") params.set("scale", scale);
 
       const nextUrl = `${window.location.pathname}${params.toString() ? `?${params}` : ""}`;
       window.history.replaceState({}, "", nextUrl);
@@ -112,7 +112,7 @@ const portfolioSchema = {
     resetButton?.addEventListener("click", () => {
       if (serviceSelect) serviceSelect.value = "All Services";
       if (propertySelect) propertySelect.value = "All Property Types";
-      if (scaleSelect) scaleSelect.value = "All Scales";
+      if (scaleSelect) scaleSelect.value = "All Job Sizes";
       applyFilters();
     });
 

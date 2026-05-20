@@ -3,22 +3,22 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import PageHero from "@/components/PageHero.astro";
 import BlogCard from "@/components/BlogCard.astro";
 import { articleCategories, blogPosts } from "@/data/content";
-import designInstallation from "@/assets/photos/design-installation.png";
+import lawnMaintenance from "@/assets/photos/lawn-maintenance.png";
 
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  name: "Ramirez Landscaping Journal & Resources",
-  description: "Educational articles on landscape design, maintenance, irrigation, and outdoor living.",
+  name: "Ramirez Yard Maintenance Tips",
+  description: "Practical articles on mowing, edging, cleanups, weeds, leaves, and routine yard care.",
 };
 ---
 
-<BaseLayout title="Blog | Ramirez Landscaping" description="Educational landscape design and maintenance resources from Ramirez Landscaping." schema={blogSchema}>
+<BaseLayout title="Yard Tips | Ramirez Yard Maintenance" description="Practical yard maintenance tips from Ramirez Yard Maintenance." schema={blogSchema}>
   <PageHero
-    title="Journal & Resources"
-    description="Insights, inspiration, and practical guidance to help you enjoy a more beautiful outdoor life."
-    image={designInstallation}
-    crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
+    title="Yard Tips"
+    description="Practical guidance for mowing schedules, edging, cleanups, weeds, leaves, and overgrown yards."
+    image={lawnMaintenance}
+    crumbs={[{ label: "Home", href: "/" }, { label: "Yard Tips" }]}
   />
 
   <section class="paper-panel section-pad">

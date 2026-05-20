@@ -29,7 +29,7 @@ const serviceSchema = [
     name: service.name,
     provider: {
       "@type": "LocalBusiness",
-      name: "Ramirez Landscaping",
+      name: "Ramirez Yard Maintenance",
     },
     description: service.shortDescription,
   },
@@ -48,7 +48,7 @@ const serviceSchema = [
 ];
 ---
 
-<BaseLayout title={`${service.name} | Ramirez Landscaping`} description={service.shortDescription} schema={serviceSchema}>
+<BaseLayout title={`${service.name} | Ramirez Yard Maintenance`} description={service.shortDescription} schema={serviceSchema}>
   <PageHero
     title={service.name}
     description={service.shortDescription}
@@ -81,7 +81,7 @@ const serviceSchema = [
     <div class="container-shell">
       <SectionHeading
         title="Our Process"
-        description="A step-by-step approach built around planning, quality control, and long-term success."
+        description="A simple service rhythm built around clear expectations and clean work."
         align="center"
       />
       <div class="mt-12 grid gap-6 xl:grid-cols-4">
@@ -105,7 +105,7 @@ const serviceSchema = [
 
   <section class="paper-panel section-pad">
     <div class="container-shell">
-      <SectionHeading title="Project Gallery" description="Demo gallery imagery ready to be replaced with client-supplied project photography." theme="light" align="center" />
+      <SectionHeading title="Service Gallery" description="Yard-care imagery for this service area." theme="light" align="center" />
       <div class="mt-12">
         <LightboxGallery images={service.gallery} />
       </div>
@@ -146,8 +146,8 @@ const serviceSchema = [
   <section class="section-pad">
     <div class="container-shell">
       <SectionHeading
-        title="Related Projects"
-        description="A few portfolio examples connected to this service category."
+        title="Related Yard Work"
+        description="A few examples connected to this service category."
         align="center"
       />
       <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

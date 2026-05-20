@@ -19,7 +19,7 @@ const {
 
 const site = Astro.site?.toString().replace(/\/$/, "") ?? "";
 const canonicalUrl = canonical ? new URL(canonical, site).toString() : undefined;
-const imageUrl = new URL(image, site || "https://www.ramirezlandscaping.com").toString();
+const imageUrl = new URL(image, site || "https://www.ramirezyardmaintenance.com").toString();
 const schemaData = Array.isArray(schema) ? schema : schema ? [schema] : [];
 ---
 
@@ -30,7 +30,7 @@ const schemaData = Array.isArray(schema) ? schema : schema ? [schema] : [];
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
-<meta property="og:site_name" content="Ramirez Landscaping" />
+<meta property="og:site_name" content="Ramirez Yard Maintenance" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
